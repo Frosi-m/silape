@@ -51,7 +51,10 @@
             <div class="homepage-login">
                 <div class="bungkus-isi-frame">
                     <div class="frame">
-                        <span class="valuable-report">Laporan anda berharga bagi kami</span>
+                        <div class="isi-frame">
+                            <span class="valuable-report">Laporan anda berharga bagi kami</span>
+                        </div>
+
                     </div>
                     <div class="flex-row">
                         <div class="nurse"></div>
