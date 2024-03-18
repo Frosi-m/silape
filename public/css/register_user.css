@@ -291,3 +291,28 @@
     white-space: nowrap;
     z-index: 19;
   }
+
+  @media (min-width: 360px) and (max-width: 599px) {
+    /* untuk mobile */
+    .main-container{
+      height: 100vh;
+      overflow-y: hidden;
+    }
+    .rectangle{
+      transform: translate(-50%,-50%) scale(20%);
+      }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1200px) {
+    /* untuk tablet */
+    .main-container{
+      height: 100vh;
+    }
+    .rectangle{
+      transform: translate(-50%,-50%) scale(0.75);
+      }
+  }
+  
+  @media (min-width: 1201px) { 
+    /* untuk desktop */
+  }
