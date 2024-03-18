@@ -905,3 +905,60 @@
     margin: 1px 0 0 0;
     background: #151515;
   }
+
+  @media (min-width: 360px) and (max-width: 599px) {
+    /* untuk mobile */
+    .image{
+      position: absolute;
+      width: 98px;
+      height: 97px;
+      top: 31px;
+      left: 3%;
+      background: url(../assets/images/1d7731c8731ed75a7f5d86c5b320a1246ab2d2ad.png)
+        no-repeat center;
+      background-size: cover;
+      /* transform: translate(-600.3%, 0); */
+      z-index: 55;
+      border-radius: 10px;
+    }
+    .silape, .sistem-laporan-pelayanan, .rsud-dr-h-slamet-martodirdjo{
+      margin-left: 16%;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1200px) {
+    /* untuk tablet */
+    .image{
+      position: absolute;
+      width: 98px;
+      height: 97px;
+      top: 31px;
+      left: 3%;
+      background: url(../assets/images/1d7731c8731ed75a7f5d86c5b320a1246ab2d2ad.png)
+        no-repeat center;
+      background-size: cover;
+      /* transform: translate(-600.3%, 0); */
+      z-index: 55;
+      border-radius: 10px;
+    }
+    .silape, .sistem-laporan-pelayanan, .rsud-dr-h-slamet-martodirdjo{
+      margin-left: 8%;
+    }
+  }
+  
+  @media (min-width: 1201px) { 
+    /* untuk desktop */
+    .image{
+      position: absolute;
+      width: 108px;
+      height: 107px;
+      top: 31px;
+      left: 3%;
+      background: url(../assets/images/1d7731c8731ed75a7f5d86c5b320a1246ab2d2ad.png)
+        no-repeat center;
+      background-size: cover;
+      /* transform: translate(-600.3%, 0); */
+      z-index: 55;
+      border-radius: 10px;
+    }
+  }
