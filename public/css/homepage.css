@@ -73,6 +73,7 @@
     height: 38px;
     top: 31px;
     left: 10%;
+    margin-left: 4%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 37px;
@@ -91,6 +92,7 @@
     height: 18px;
     top: 84px;
     left: 10%;
+    margin-left: 4%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 15px;
@@ -110,6 +112,7 @@
     height: 38px;
     top: 108px;
     left: 10%;
+    margin-left: 4%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 15px;

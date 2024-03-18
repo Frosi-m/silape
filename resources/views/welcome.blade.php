@@ -67,7 +67,7 @@
                             </div>
                         </a>
 
-                        <a href="halaman-login-user.blade.php">
+                        <a href="halaman_login_user">
                             <div class="rectangle-3">
                                 <div class="ph-user">
                                     <div class="vector-4"></div>
