@@ -41,7 +41,7 @@
     margin: 0 0 0 0;
     background: #f6fff2;
     z-index: 39;
-    overflow: visible auto;
+    overflow: hidden;
   }
   .header-homepage-silape {
     position: relative;
@@ -918,12 +918,27 @@
       background: url(../assets/images/1d7731c8731ed75a7f5d86c5b320a1246ab2d2ad.png)
         no-repeat center;
       background-size: cover;
-      /* transform: translate(-600.3%, 0); */
       z-index: 55;
       border-radius: 10px;
     }
     .silape, .sistem-laporan-pelayanan, .rsud-dr-h-slamet-martodirdjo{
-      margin-left: 16%;
+      margin-left: 24%;
+    }
+    .rectangle{
+      margin-top: 10%;
+      transform: translate(-50%, -50%) scale(30%);
+    }
+    .homepage-login{
+      height: 100vh;
+    }
+    .bungkus-isi-frame{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(30%);
+    }
+    .login-page{
+      height: 100vh;
     }
   }
   
@@ -945,6 +960,24 @@
     .silape, .sistem-laporan-pelayanan, .rsud-dr-h-slamet-martodirdjo{
       margin-left: 8%;
     }
+    .rectangle{
+      margin-top: 10%;
+      transform: translate(-50%, -50%) scale(50%);
+      
+    }
+    .homepage-login{
+      height: 100vh;
+    }
+    .bungkus-isi-frame{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(60%);
+    }
+    .login-page{
+      height: 100vh;
+      overflow-y: hidden;
+    }
   }
   
   @media (min-width: 1201px) { 
@@ -961,5 +994,12 @@
       /* transform: translate(-600.3%, 0); */
       z-index: 55;
       border-radius: 10px;
+    }
+    .rectangle{
+      margin: 4% 0;
+      transform: translate(-50%, -50) scale(30%);
+    }
+    .login-page{
+      /* height: 100vh; */
     }
   }

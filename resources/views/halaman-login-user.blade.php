@@ -29,7 +29,7 @@
                     <span class="login-text-2">login</span>
                 </button>
             </div>
-            <span class="register-text">Register</span>
+            <a href="register_user"><span class="register-text">Register</span></a>
             <div class="flex-row">
                 <div class="vector"></div>
                 <span class="metode-lain">Metode lain</span>
