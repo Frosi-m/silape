@@ -9,23 +9,23 @@
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
       "Source Han Sans CN", sans-serif;
   }
-  
+
   .main-container {
     overflow: hidden;
   }
-  
+
   .main-container,
   .main-container * {
     box-sizing: border-box;
   }
-  
+
   input,
   select,
   textarea,
   button {
     outline: 0;
   }
-  
+
   .main-container {
     position: relative;
     width: 100%;
@@ -57,11 +57,11 @@
     width: 108px;
     height: 107px;
     top: 31px;
-    left: 50%;
+    left: 3%;
     background: url(../assets/images/1d7731c8731ed75a7f5d86c5b320a1246ab2d2ad.png)
       no-repeat center;
     background-size: cover;
-    transform: translate(-600.3%, 0);
+    /* transform: translate(-600.3%, 0); */
     z-index: 55;
     border-radius: 10px;
   }
@@ -72,7 +72,7 @@
     position: absolute;
     height: 38px;
     top: 31px;
-    left: 172px;
+    left: 10%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 37px;
@@ -90,7 +90,7 @@
     position: absolute;
     height: 18px;
     top: 84px;
-    left: 172px;
+    left: 10%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 15px;
@@ -109,7 +109,7 @@
     width: 227px;
     height: 38px;
     top: 108px;
-    left: 172px;
+    left: 10%;
     color: #e3e3e3;
     font-family: Inter, var(--default-font-family);
     font-size: 15px;
@@ -902,4 +902,3 @@
     margin: 1px 0 0 0;
     background: #151515;
   }
-  
