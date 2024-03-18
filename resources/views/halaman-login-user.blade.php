@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Halaman login user</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -22,10 +22,9 @@
                 <span class="silape-text">SILAPE</span></button><span class="login-text">LOGIN</span>
             <div class="flex-row-c">
                 <span class="username">Username</span>
-                <div class="logo-smart-peamekasan"></div>
-                <div class="username-halaman-login-user"></div>
+                <input class="username-halaman-login-user" type="text">
                 <span class="password">Password</span>
-                <div class="password-input"></div>
+                <input class="password-input" type="password">
                 <button class="login-button-1">
                     <span class="login-text-2">login</span>
                 </button>

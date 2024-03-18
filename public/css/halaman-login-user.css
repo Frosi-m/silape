@@ -40,7 +40,6 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  /* margin: 221px 0 0 438px; */
   background: #f3f3f3;
   z-index: 1;
   overflow: hidden;
@@ -125,12 +124,15 @@ button {
 }
 .username-halaman-login-user {
   position: absolute;
+  border: none;
+  padding-left: 5%;
   width: 419.674px;
   height: 52.764px;
   top: 31.455px;
   left: 0;
-  background: #b8b8b8;
+  background: #c7c7c7;
   z-index: 19;
+  font-size: medium;
   border-radius: 70px;
 }
 .password {
@@ -152,12 +154,15 @@ button {
 }
 .password-input {
   position: absolute;
+  border: none;
   width: 419.674px;
   height: 52.764px;
   top: 138.606px;
   left: 0;
-  background: #b8b8b8;
+  background: #c7c7c7;
   z-index: 20;
+  padding-left: 5%d;
+  font-size: medium;
   border-radius: 70px;
 }
 .login-button-1 {
@@ -303,4 +308,55 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 12;
+}
+
+/* For mobile phones:
+[class*="col-"] {
+  width: 100%;
+} */
+
+/* @media (min-width: 600px) and (max-width:767px){
+  For tablets: 
+  
+}
+/*  
+/* @media (min-width: 768px) and (max-width: 1440px) 
+  
+} */
+
+
+@media (min-width: 360px) and (max-width: 599px) {
+  /* untuk mobile */
+  .main-container{
+    height: 100vh;
+  }
+  .login-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.55);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  /* untuk tablet */
+  .main-container{
+    height: 100vh;
+  }
+  .login-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.75);
+    }
+}
+
+@media (min-width: 1201px) { 
+  /* untuk desktop */
+  .login-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
 }
