@@ -58,18 +58,23 @@
                     </div>
                     <div class="flex-row">
                         <div class="nurse"></div>
-                        <div class="rectangle-2">
-                            <div class="user-placeholder">
-                                <div class="vector"></div>
+                        <a href="halaman_login_user">
+                            <div class="rectangle-2">
+                                <div class="user-placeholder">
+                                    <div class="vector"></div>
+                                </div>
+                                <span class="staff">Petugas</span>
                             </div>
-                            <span class="staff">Petugas</span>
-                        </div>
-                        <div class="rectangle-3">
-                            <div class="ph-user">
-                                <div class="vector-4"></div>
+                        </a>
+
+                        <a href="halaman-login-user.blade.php">
+                            <div class="rectangle-3">
+                                <div class="ph-user">
+                                    <div class="vector-4"></div>
+                                </div>
+                                <span class="masyarakat">Masyarakat</span>
                             </div>
-                            <span class="masyarakat">Masyarakat</span>
-                        </div>
+                        </a>
                         <div class="logo-smart-peamekasan"></div>
                     </div>
                 </div>

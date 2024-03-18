@@ -508,7 +508,7 @@
     justify-content: center;
     position: relative;
     width: 149px;
-    height: 18px;
+    height: 20px;
     margin: 184px 0 0 311px;
     color: #000000;
     font-family: Inter, var(--default-font-family);
@@ -517,6 +517,7 @@
     line-height: 18px;
     text-align: center;
     white-space: nowrap;
+    overflow: hidden;
     z-index: 15;
   }
   .frame-6 {
@@ -743,7 +744,8 @@
     justify-content: center;
     position: absolute;
     width: 53px;
-    height: 29px;
+    height: auto;
+    padding: 2px;
     top: 141px;
     left: 114px;
     color: #000000;
@@ -754,6 +756,7 @@
     text-align: center;
     white-space: nowrap;
     z-index: 24;
+    overflow-y: hidden;
   }
   .rectangle-10 {
     position: absolute;
