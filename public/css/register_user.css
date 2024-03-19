@@ -8,23 +8,23 @@
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
       "Source Han Sans CN", sans-serif;
   }
-  
+
   .main-container {
     overflow: hidden;
   }
-  
+
   .main-container,
   .main-container * {
     box-sizing: border-box;
   }
-  
+
   input,
   select,
   textarea,
   button {
     outline: 0;
   }
-  
+
   .main-container {
     position: relative;
     width: 100%;
@@ -107,6 +107,9 @@
     z-index: 5;
   }
   .rectangle-2 {
+    padding-left: 4%;
+    font-size: 20px;
+    border:none;
     position: relative;
     width: 507.316px;
     height: 64.884px;
@@ -134,6 +137,9 @@
   }
   .rectangle-3 {
     position: relative;
+    padding-left: 4%;
+    font-size: 20px;
+    border:none;
     width: 507.316px;
     height: 64.884px;
     margin: 9.413px 0 0 87.333px;
@@ -160,6 +166,9 @@
   }
   .main-content {
     position: relative;
+    padding-left: 4%;
+    font-size: 20px;
+    border:none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 87.333px;
@@ -186,6 +195,9 @@
   }
   .rectangle-box {
     position: relative;
+    padding-left: 4%;
+    font-size: 20px;
+    border:none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 86.352px;
@@ -212,6 +224,11 @@
   }
   .rectangle-box-4 {
     position: relative;
+    padding:2% 4%;
+    text-indent: 4%;
+    line-height: 25px;
+    font-size: 20px;
+    border:none;
     width: 507.316px;
     height: 131.764px;
     margin: 4.705px 0 0 87.333px;
@@ -238,6 +255,9 @@
   }
   .rectangle-5 {
     position: relative;
+    padding-left: 4%;
+    font-size: 20px;
+    border:none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 86.352px;
@@ -245,6 +265,16 @@
     z-index: 14;
     border-radius: 70px;
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
   .rectangle-6 {
     position: relative;
     width: 188.403px;
@@ -292,6 +322,10 @@
     z-index: 19;
   }
 
+  a{
+    text-decoration: none;
+    color: #9c9c9c;
+  }
   @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
     .main-container{
@@ -302,7 +336,7 @@
       transform: translate(-50%,-50%) scale(20%);
       }
   }
-  
+
   @media (min-width: 600px) and (max-width: 1200px) {
     /* untuk tablet */
     .main-container{
@@ -312,7 +346,7 @@
       transform: translate(-50%,-50%) scale(0.75);
       }
   }
-  
-  @media (min-width: 1201px) { 
+
+  @media (min-width: 1201px) {
     /* untuk desktop */
   }

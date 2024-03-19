@@ -309,6 +309,10 @@ button {
   background-size: 100% 100%;
   z-index: 12;
 }
+a{
+    text-decoration: none;
+    color: #2f2f2f;
+}
 
 /* For mobile phones:
 [class*="col-"] {
@@ -316,12 +320,12 @@ button {
 } */
 
 /* @media (min-width: 600px) and (max-width:767px){
-  For tablets: 
-  
+  For tablets:
+
 }
-/*  
-/* @media (min-width: 768px) and (max-width: 1440px) 
-  
+/*
+/* @media (min-width: 768px) and (max-width: 1440px)
+
 } */
 
 
@@ -351,7 +355,7 @@ button {
     }
 }
 
-@media (min-width: 1201px) { 
+@media (min-width: 1201px) {
   /* untuk desktop */
   .login-body{
     position: absolute;
