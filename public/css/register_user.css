@@ -1,52 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 :root {
     --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
 
-  .main-container {
+.main-container {
     overflow: hidden;
-  }
+}
 
-  .main-container,
-  .main-container * {
+.main-container,
+.main-container * {
     box-sizing: border-box;
-  }
+}
 
-  input,
-  select,
-  textarea,
-  button {
+input,
+select,
+textarea,
+button {
     outline: 0;
-  }
+}
 
-  .main-container {
+.main-container {
     position: relative;
     width: 100%;
     height: 1485px;
     margin: 0 auto;
     background: #858585;
     overflow: hidden;
-  }
-  .rectangle {
+}
+.rectangle {
     position: relative;
     width: 681px;
     height: 1232.791px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* margin: 136px 0 0 379px; */
     background: #f3f3f3;
     z-index: 1;
     overflow: visible auto;
     border-radius: 30px;
-  }
-  .rectangle-1 {
+}
+.rectangle-1 {
     position: relative;
     width: 681px;
     height: 102.816px;
@@ -54,8 +54,8 @@
     background: #90ff61;
     z-index: 2;
     border-radius: 30px 30px 0 0;
-  }
-  .silape {
+}
+.silape {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -71,8 +71,8 @@
     text-align: left;
     white-space: nowrap;
     z-index: 3;
-  }
-  .register {
+}
+.register {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -88,8 +88,8 @@
     text-align: center;
     white-space: nowrap;
     z-index: 20;
-  }
-  .username-input {
+}
+.username-input {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -105,11 +105,11 @@
     text-align: center;
     white-space: nowrap;
     z-index: 5;
-  }
-  .rectangle-2 {
+}
+.rectangle-2 {
     padding-left: 4%;
     font-size: 20px;
-    border:none;
+    border: none;
     position: relative;
     width: 507.316px;
     height: 64.884px;
@@ -117,8 +117,8 @@
     background: #b8b8b8;
     z-index: 7;
     border-radius: 70px;
-  }
-  .password-input {
+}
+.password-input {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -134,20 +134,20 @@
     text-align: center;
     white-space: nowrap;
     z-index: 6;
-  }
-  .rectangle-3 {
+}
+.rectangle-3 {
     position: relative;
     padding-left: 4%;
     font-size: 20px;
-    border:none;
+    border: none;
     width: 507.316px;
     height: 64.884px;
     margin: 9.413px 0 0 87.333px;
     background: #b8b8b8;
     z-index: 8;
     border-radius: 70px;
-  }
-  .nama-input {
+}
+.nama-input {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -163,20 +163,20 @@
     text-align: center;
     white-space: nowrap;
     z-index: 9;
-  }
-  .main-content {
+}
+.main-content {
     position: relative;
     padding-left: 4%;
     font-size: 20px;
-    border:none;
+    border: none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 87.333px;
     background: #b8b8b8;
     z-index: 10;
     border-radius: 70px;
-  }
-  .email-field {
+}
+.email-field {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -192,20 +192,20 @@
     text-align: center;
     white-space: nowrap;
     z-index: 11;
-  }
-  .rectangle-box {
+}
+.rectangle-box {
     position: relative;
     padding-left: 4%;
     font-size: 20px;
-    border:none;
+    border: none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 86.352px;
     background: #b8b8b8;
     z-index: 12;
     border-radius: 70px;
-  }
-  .address-field {
+}
+.address-field {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -221,22 +221,22 @@
     text-align: center;
     white-space: nowrap;
     z-index: 15;
-  }
-  .rectangle-box-4 {
+}
+.rectangle-box-4 {
     position: relative;
-    padding:2% 4%;
+    padding: 2% 4%;
     text-indent: 4%;
     line-height: 25px;
     font-size: 20px;
-    border:none;
+    border: none;
     width: 507.316px;
     height: 131.764px;
     margin: 4.705px 0 0 87.333px;
     background: #b8b8b8;
     z-index: 16;
     border-radius: 9px;
-  }
-  .no-telp {
+}
+.no-telp {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -252,30 +252,30 @@
     text-align: center;
     white-space: nowrap;
     z-index: 13;
-  }
-  .rectangle-5 {
+}
+.rectangle-5 {
     position: relative;
     padding-left: 4%;
     font-size: 20px;
-    border:none;
+    border: none;
     width: 507.316px;
     height: 64.884px;
     margin: 8.984px 0 0 86.352px;
     background: #b8b8b8;
     z-index: 14;
     border-radius: 70px;
-  }
-  input::-webkit-outer-spin-button,
+}
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
-  .rectangle-6 {
+.rectangle-6 {
     position: relative;
     width: 188.403px;
     height: 51.907px;
@@ -285,8 +285,8 @@ input[type=number] {
     border: none;
     z-index: 17;
     border-radius: 70px;
-  }
-  .buat-akun {
+}
+.buat-akun {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -303,8 +303,8 @@ input[type=number] {
     text-align: center;
     white-space: nowrap;
     z-index: 18;
-  }
-  .kembali {
+}
+.kembali {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -320,38 +320,35 @@ input[type=number] {
     text-align: center;
     white-space: nowrap;
     z-index: 19;
-  }
+}
 
-  a{
+a {
     text-decoration: none;
     color: #9c9c9c;
-  }
-  @media (min-width: 360px) and (max-width: 599px) {
+}
+@media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
-    .main-container{
-      height: 100vh;
-      overflow-y: hidden;
+    .main-container {
+        height: 100vh;
+        overflow-y: hidden;
     }
-    .rectangle{
-      transform: translate(-50%,-50%) scale(20%);
-      }
-  }
-<<<<<<< Updated upstream
+    .rectangle {
+        transform: translate(-50%, -50%) scale(45%);
+    }
+}
 
-  @media (min-width: 600px) and (max-width: 1200px) {
-=======
-  
-  @media (min-width: 600px) and (max-width: 1200px) {   
->>>>>>> Stashed changes
+@media (min-width: 600px) and (max-width: 1200px) {
     /* untuk tablet */
-    .main-container{
-      height: 100vh;
+    .main-container {
+        height: 100vh;
+        overflow-y: auto;
     }
-    .rectangle{
-      transform: translate(-50%,-50%) scale(0.75);
-      }
-  }
+    .rectangle {
+        margin-top: 20%;
+        transform: translate(-50%, -50%) scale(0.65);
+    }
+}
 
-  @media (min-width: 1201px) {
+@media (min-width: 1201px) {
     /* untuk desktop */
-  }
+}
