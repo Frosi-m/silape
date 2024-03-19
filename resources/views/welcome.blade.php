@@ -26,11 +26,14 @@
                             class="sistem-laporan-pelayanan">Sistem
                             Laporan
                             Pelayanan</span><br><span class="rsud-dr-h-slamet-martodirdjo">RSUD dr. H. Slamet
-                            Martodirdjo</span><span class="hasil-laporan">Hasil laporan</span><span
-                            class="home">Home</span><span class="login">Login</span></div>
+                            Martodirdjo</span><span class="hasil-laporan"><a href="#hasil-laporan">Hasil
+                                laporan</a></span>
+                        <span class="home"> <a href="#homepage">Home</a></span><span class="login"> <a
+                                href="#homepage-login">Login</a></span>
+                    </div>
 
                 </div>
-                <div class="rectangle">
+                <div class="rectangle" id="homepage">
                     <div class="group"></div>
                     <div class="flex-column-fea">
                         <div class="selamat-datang-di-sistem-laporan-pelayanan">
@@ -48,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="homepage-login">
+            <div class="homepage-login" id="homepage-login">
                 <div class="bungkus-isi-frame">
                     <div class="frame">
                         <div class="isi-frame">
@@ -80,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="halaman-hasil-laporan">
+            <div class="halaman-hasil-laporan" id="hasil-laporan">
                 <span class="hasil-pengaduan-diproses">Hasil Pengaduan yang telah diproses</span>
                 <div class="flex-row-e">
                     <div class="hasil-laporan-5">

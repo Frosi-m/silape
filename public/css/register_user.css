@@ -336,8 +336,13 @@ input[type=number] {
       transform: translate(-50%,-50%) scale(20%);
       }
   }
+<<<<<<< Updated upstream
 
   @media (min-width: 600px) and (max-width: 1200px) {
+=======
+  
+  @media (min-width: 600px) and (max-width: 1200px) {   
+>>>>>>> Stashed changes
     /* untuk tablet */
     .main-container{
       height: 100vh;
