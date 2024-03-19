@@ -22,3 +22,7 @@ Route::get('/register_user', function () {
     return view('user\register-user');
 });
 
+
+Route::get('/edit_user', function () {
+    return view('user\edit-data-user');
+});

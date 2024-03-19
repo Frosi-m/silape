@@ -180,33 +180,44 @@ button {
     border-radius: 70px;
 }
 
-:root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-        "Source Han Sans CN", sans-serif;
+@media (min-width: 360px) and (max-width: 599px) {
+    /* untuk mobile */
+
+    .rectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(55%);
+    }
 }
 
-.main-container {
-    overflow: hidden;
+@media (min-width: 600px) and (max-width: 1200px) {
+    /* untuk tablet */
+
+    .rectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.75);
+    }
 }
 
-.main-container,
-.main-container * {
-    box-sizing: border-box;
+@media (min-width: 1201px) {
+    /* untuk desktop */
+    .rectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(90%);
+    }
 }
 
-input,
-select,
-textarea,
-button {
-    outline: 0;
-}
+/* Bagian desain biodata */
 
 .main-container-bio {
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
     margin: 0 auto;
     background: #858585;
     overflow: hidden;
@@ -215,7 +226,9 @@ button {
     position: relative;
     width: 1098px;
     height: 526px;
-    margin: 138px 0 0 149px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #f3f3f3;
     border-radius: 30px;
 }
@@ -469,36 +482,4 @@ button {
 .ds-buffer {
     position: absolute;
     width: 259px;
-}
-
-@media (min-width: 360px) and (max-width: 599px) {
-    /* untuk mobile */
-
-    .rectangle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(55%);
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1200px) {
-    /* untuk tablet */
-
-    .rectangle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.75);
-    }
-}
-
-@media (min-width: 1201px) {
-    /* untuk desktop */
-    .rectangle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(90%);
-    }
 }
