@@ -12,21 +12,21 @@
 <body>
     <div class="main-container">
         <div class="rectangle">
-            <button class="rectangle-button"></button><span class="edit-data">Edit data</span>
+            <div class="rectangle-button"></div><span class="edit-data">Edit data</span>
             <div class="logo-smart-peamekasan">
 
             </div>
             <span class="nama">Nama</span>
-            <div class="rectangle-2">
-                <div class="rectangle-3"></div>
-            </div>
-            <div class="rectangle-4"></div>
+            <input class="rectangle-2" type="text">
+
+            <textarea class="rectangle-4"></textarea>
             <span class="tempat-lahir">Tempat lahir</span>
-            <div class="rectangle-5"></div>
+            <input class="rectangle-5">
+
             <span class="tanggal-lahir">Tanggal lahir</span>
-            <div class="rectangle-6"></div>
+            <input class="rectangle-6" type="date">
             <span class="no-tlp">No tlp</span>
-            <div class="rectangle-8"></div>
+            <input class="rectangle-8" type="number">
             <span class="alamat">Alamat</span>
             <div class="rectangle-7"><span class="batal">Batal</span></div>
             <div class="rectangle-1"><span class="simpan">Simpan</span>
