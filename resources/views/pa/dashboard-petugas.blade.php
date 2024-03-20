@@ -17,23 +17,25 @@
         <div nameid="Halaman dashboard petugas" id="_bg__halaman_dashboard_petugas"></div>
         <img src="assets/images/logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
             id="logo_smart_peamekasan_2" />
-        <div nameid="header hompage silape" id="header_hompage_silape"></div>
+        <div nameid="header hompage silape" id="header_hompage_silape">
+            <div id="logo_silape" nameid="logo silape">
+                <div nameid="logo silape" id="_bg__logo_silape_ek1"></div>
+                <div nameid="SILAPE" id="silape">
+                    SILAPE
+                </div>
+                <div nameid="Sistem Laporan Pelayanan" id="sistem_laporan_pelayanan">
+                    Sistem Laporan Pelayanan
+                </div>
+                <div nameid="RSUD dr. H. Slamet Martodirdjo" id="rsud_dr__h__slamet_martodirdjo">
+                    RSUD dr. H. Slamet Martodirdjo
+                </div>
+                <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
 
-        <div id="logo_silape" nameid="logo silape">
-            <div nameid="logo silape" id="_bg__logo_silape_ek1"></div>
-            <div nameid="SILAPE" id="silape">
-                SILAPE
             </div>
-            <div nameid="Sistem Laporan Pelayanan" id="sistem_laporan_pelayanan">
-                Sistem Laporan Pelayanan
-            </div>
-            <div nameid="RSUD dr. H. Slamet Martodirdjo" id="rsud_dr__h__slamet_martodirdjo">
-                RSUD dr. H. Slamet Martodirdjo
-            </div>
-            <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
+            <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
 
         </div>
-        <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
+
 
         <div id="group_20" nameid="Group 20">
             <div nameid="Group 20" id="_bg__group_20_ek1"></div>

@@ -47,21 +47,21 @@ div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 440px;
-    height: 440px;
+    width: 380px;
 }
 
 #header_hompage_silape {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 120px;
+    height: 130px;
     background: rgba(66.94, 66.94, 66.94, 1);
 }
 
 #logo_silape {
-    top: 1%;
-    left: 49px;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
     width: 350px;
     height: 115px;
 }
@@ -118,8 +118,9 @@ div {
 }
 
 #dsbuffer_1 {
-    top: 2%;
-    left: 90%;
+    top: 50%;
+    right: 3%;
+    transform: translate(0, -50%);
     width: 92px;
     height: 92px;
 }
@@ -443,3 +444,50 @@ div {
 }
 
 /* Add your custom CSS here */
+@media (min-width: 360px) and (max-width: 599px) {
+    /* untuk mobile */
+
+    #group_20 {
+        transform: translate(-50%, -50%) scale(45%);
+    }
+    #logo_smart_peamekasan_2 {
+        transform: translate(-50%, -50%) scale(65%);
+    }
+    #dsbuffer_1 {
+        transform: translate(0, -50%) scale(75%);
+    }
+    #header_hompage_silape {
+        height: 100px;
+    }
+    #logo_silape {
+        left: -2%;
+        transform: translate(0, -50%) scale(75%);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    /* untuk tablet */
+    #group_20 {
+        transform: translate(-50%, -50%) scale(75%);
+    }
+    #logo_smart_peamekasan_2 {
+        transform: translate(-50%, -50%) scale(85%);
+    }
+    #dsbuffer_1 {
+        transform: translate(0, -50%) scale(85%);
+    }
+    #header_hompage_silape {
+        height: 110px;
+    }
+    #logo_silape {
+        left: 2%;
+        transform: translate(0, -50%) scale(85%);
+    }
+}
+
+@media (min-width: 1201px) {
+    /* untuk desktop */
+    #group_20 {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
