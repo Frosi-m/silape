@@ -1,0 +1,312 @@
+/*
+	@name halaman_input_tanggapan_laporan
+*/
+/* Only edit this if you know what you are doing! */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial";
+    overflow-x: hidden;
+}
+
+/* Only edit this if you know what you are doing! */
+img {
+    position: absolute;
+    display: block;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+
+/* Only edit this if you know what you are doing! */
+div {
+    position: absolute;
+}
+span {
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+#content-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#_bg__halaman_input_tanggapan_laporan {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(133.87, 133.87, 133.87, 1);
+}
+
+#group_32 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1098px;
+    height: 513px;
+}
+
+#_bg__group_32_ek1 {
+    top: -138px;
+    left: -149px;
+    width: 1098px;
+    height: 513px;
+}
+
+#rectangle_18 {
+    top: 0px;
+    left: 0px;
+    width: 1098px;
+    height: 513px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(243.31, 243.31, 243.31, 1);
+}
+
+#logo_smart_peamekasan_2 {
+    top: 35px;
+    left: 329px;
+    width: 440px;
+    height: 440px;
+}
+
+#rectangle_21 {
+    top: 0px;
+    left: 0px;
+    width: 397px;
+    height: 86px;
+}
+
+#input_tanggapan {
+    top: 16px;
+    left: 34px;
+    width: 360px;
+    height: 82px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #2c2c2c;
+}
+
+#group_13 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 946px;
+    height: 293px;
+}
+
+#_bg__group_13_ek1 {
+    top: -279px;
+    left: -181px;
+    width: 946px;
+    height: 293px;
+}
+
+#kriteria_laporan {
+    top: 1px;
+    left: 2px;
+    width: 161px;
+    height: 30px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+#rectangle_19 {
+    top: 40px;
+    left: 0px;
+    width: 331px;
+    height: 35px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background: rgba(184.88, 184.88, 184.88, 1);
+}
+
+#nama_pelapor {
+    top: 96px;
+    left: 2px;
+    width: 146px;
+    height: 30px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+#rectangle_21_ek1 {
+    top: 135px;
+    left: 0px;
+    width: 331px;
+    height: 35px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background: rgba(184.88, 184.88, 184.88, 1);
+}
+
+#rectangle_20 {
+    position: relative;
+    padding: 2%;
+    text-indent: 4%;
+    top: 34px;
+    left: 509px;
+    width: 437px;
+    height: 259px;
+    border: none;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(184.88, 184.88, 184.88, 1);
+}
+
+#isi_tanggapan {
+    top: 0px;
+    left: 509px;
+    width: 242px;
+    height: 30px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+#tombol_konfirmasi {
+    top: 213px;
+    left: 20px;
+    width: 132px;
+    height: 41px;
+}
+
+#_bg__tombol_konfirmasi_ek1 {
+    top: -492px;
+    left: -201px;
+    width: 132px;
+    height: 41px;
+}
+
+#rectangle_21_ek2 {
+    top: 0px;
+    left: 0px;
+    width: 132px;
+    height: 41px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(103.06, 0, 0, 1);
+    cursor: pointer;
+    transition: 0.6s ease-in;
+}
+
+#rectangle_21_ek2:hover {
+    background: rgb(148, 0, 0);
+}
+
+#kirim {
+    position: absolutes;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 80.98px;
+    height: 30.14px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#tombol_konfirmasi_ek2 {
+    top: 213px;
+    left: 176px;
+    width: 132px;
+    height: 41px;
+}
+
+#_bg__tombol_konfirmasi_ek3 {
+    top: -492px;
+    left: -357px;
+    width: 132px;
+    height: 41px;
+}
+
+#rectangle_21_ek3 {
+    top: 0px;
+    left: 0px;
+    width: 132px;
+    height: 41px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: 0.6s ease-in;
+}
+#rectangle_21_ek3:hover {
+    background: rgb(64, 64, 64);
+}
+#batal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30.14px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* Add your custom CSS here */
+@media (min-width: 360px) and (max-width: 599px) {
+    /* untuk mobile */
+
+    #group_32,
+    #group_13 {
+        transform: translate(-50%, -50%) scale(45%);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    /* untuk tablet */
+    #group_32,
+    #group_13 {
+        transform: translate(-50%, -50%) scale(75%);
+    }
+}
+
+@media (min-width: 1201px) {
+    /* untuk desktop */
+    #group_32,
+    #group_13 {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

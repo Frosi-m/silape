@@ -18,6 +18,14 @@ Route::get('/halaman_login_pa', function () {
     return view('pa\halaman-login-pa');
 });
 
+Route::get('/input_tanggapan', function () {
+    return view('pa\halaman-input-tanggapan');
+});
+
+Route::get('/dashboard_petugas', function () {
+    return view('pa\dashboard-petugas');
+});
+
 Route::get('/register_user', function () {
     return view('user\register-user');
 });

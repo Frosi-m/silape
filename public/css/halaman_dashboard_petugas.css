@@ -1,0 +1,445 @@
+/*
+	@name halaman_dashboard_petugas
+*/
+/* Only edit this if you know what you are doing! */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial";
+    /* overflow-x: hidden; */
+}
+
+/* Only edit this if you know what you are doing! */
+img {
+    position: absolute;
+    display: block;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+
+/* Only edit this if you know what you are doing! */
+div {
+    position: absolute;
+}
+
+#content-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#_bg__halaman_dashboard_petugas {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(148.75, 222.92, 255, 1);
+}
+
+#logo_smart_peamekasan_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+    height: 440px;
+}
+
+#header_hompage_silape {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    background: rgba(66.94, 66.94, 66.94, 1);
+}
+
+#logo_silape {
+    top: 1%;
+    left: 49px;
+    width: 350px;
+    height: 115px;
+}
+
+#_bg__logo_silape_ek1 {
+    top: -31px;
+    left: -49px;
+    width: 350px;
+    height: 115px;
+}
+
+#silape {
+    top: 0px;
+    left: 123px;
+    width: 193.7px;
+    height: 48.7px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: left;
+    color: #e3e3e3;
+}
+
+#sistem_laporan_pelayanan {
+    top: 53px;
+    left: 123px;
+    width: 204.5px;
+    height: 22.5px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 15px;
+    text-align: left;
+    color: #e3e3e3;
+}
+
+#rsud_dr__h__slamet_martodirdjo {
+    top: 77px;
+    left: 123px;
+    width: 241.5px;
+    height: 42.5px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 15px;
+    text-align: left;
+    color: #e3e3e3;
+}
+
+#image_1 {
+    top: 0px;
+    left: 0px;
+    width: 108px;
+    height: 107px;
+}
+
+#dsbuffer_1 {
+    top: 2%;
+    left: 90%;
+    width: 92px;
+    height: 92px;
+}
+
+#group_20 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 764px;
+    height: 300px;
+}
+
+#_bg__group_20_ek1 {
+    top: -415px;
+    left: -338px;
+    width: 764px;
+    height: 300px;
+}
+
+#group_19 {
+    top: 0px;
+    left: 268px;
+    width: 228px;
+    height: 300px;
+}
+
+#_bg__group_19_ek1 {
+    top: -415px;
+    left: -606px;
+    width: 228px;
+    height: 300px;
+}
+
+#rectangle_38 {
+    opacity: 0.75;
+    top: 0px;
+    left: 0px;
+    width: 228px;
+    height: 300px;
+    background: rgba(226.31, 187.65, 187.65, 0.75);
+    border-radius: 6px;
+}
+
+#data_laporan {
+    top: 27px;
+    left: 42px;
+    width: 164.4px;
+    height: 36.4px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+#group_30 {
+    top: 102px;
+    left: 54px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#_bg__group_30_ek1 {
+    top: -517px;
+    left: -660px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#polygon_3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#carbon_report_data {
+    top: 0px;
+    left: 12px;
+    width: 96px;
+    height: 96px;
+}
+
+#_bg__carbon_report_data_ek1 {
+    top: 0px;
+    left: 0px;
+    width: 96px;
+    height: 96px;
+}
+
+#vector {
+    top: 42px;
+    left: 30px;
+    width: 36px;
+    height: 30px;
+}
+
+#vector_ek1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 84px;
+}
+
+#group_18 {
+    top: 0px;
+    left: 0px;
+    width: 228px;
+    height: 300px;
+}
+
+#_bg__group_18_ek1 {
+    top: -415px;
+    left: -338px;
+    width: 228px;
+    height: 300px;
+}
+
+#rectangle_37 {
+    opacity: 0.75;
+    top: 0px;
+    left: 0px;
+    width: 228px;
+    height: 300px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: rgba(226.31, 187.65, 187.65, 0.75);
+}
+
+#group_31 {
+    top: 102px;
+    left: 54px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#_bg__group_31_ek1 {
+    top: -517px;
+    left: -392px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#polygon_4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#ri_user_smile_fill {
+    top: 0px;
+    left: 12px;
+    width: 96px;
+    height: 96px;
+}
+
+#_bg__ri_user_smile_fill_ek1 {
+    top: 0px;
+    left: 0px;
+    width: 96px;
+    height: 96px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#flat_color_icons_feedback {
+    top: 8px;
+    left: 8px;
+    width: 80px;
+    height: 80px;
+}
+
+#_bg__flat_color_icons_feedback_ek1 {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+#vector_ek2 {
+    top: px;
+    left: 6.67px;
+    width: 66.67px;
+    height: 68.33px;
+}
+
+#vector_ek3 {
+    top: 18.33px;
+    left: 20px;
+    width: 40px;
+    height: 36.67px;
+}
+
+#vector_ek4 {
+    top: 22.67px;
+    left: 30px;
+    width: 20px;
+    height: 13px;
+}
+
+#vector_ek5 {
+    top: 28.33px;
+    left: 6.67px;
+    width: 66.67px;
+    height: 40px;
+}
+
+#vector_ek6 {
+    top: 33.33px;
+    left: 36.67px;
+    width: 6.67px;
+    height: 13.33px;
+}
+
+#feedback_laporan {
+    top: 21px;
+    left: 15px;
+    width: 217.4px;
+    height: 36.4px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+#group_18_ek2 {
+    top: 0px;
+    left: 536px;
+    width: 228px;
+    height: 300px;
+}
+
+#_bg__group_18_ek3 {
+    top: -415px;
+    left: -874px;
+    width: 228px;
+    height: 300px;
+}
+
+#rectangle_37_ek1 {
+    opacity: 0.75;
+    top: 0px;
+    left: 0px;
+    width: 228px;
+    height: 300px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: rgba(226.31, 187.65, 187.65, 0.75);
+}
+
+#group_29 {
+    top: 102px;
+    left: 54px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#_bg__group_29_ek1 {
+    top: -517px;
+    left: -928px;
+    width: 118.65px;
+    height: 96px;
+}
+
+#polygon_2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#ri_user_smile_fill_ek2 {
+    top: 0px;
+    left: 11px;
+    width: 96px;
+    height: 96px;
+}
+
+#_bg__ri_user_smile_fill_ek3 {
+    top: 0px;
+    left: 0px;
+    width: 96px;
+    height: 96px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#vector_ek7 {
+    top: 8px;
+    left: 8px;
+    width: 80px;
+    height: 80px;
+}
+
+#data_diri {
+    top: 27px;
+    left: 67px;
+    width: 114.4px;
+    height: 36.4px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+/* Add your custom CSS here */
