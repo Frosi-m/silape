@@ -163,6 +163,23 @@ div {
     height: 300px;
     background: rgba(226.31, 187.65, 187.65, 0.75);
     border-radius: 6px;
+    box-shadow: 0 2px #00000088;
+    transition: 0.3s ease-in-out;
+}
+
+#rectangle_38:hover {
+    opacity: 1;
+    top: -2%;
+    background: rgba(91, 81, 81, 0.75);
+    color: whitesmoke;
+    box-shadow: -2px 4px #000000e3;
+}
+#rectangle_38:hover #data_laporan {
+    color: whitesmoke;
+}
+
+#rectangle_38:hover #polygon_3 {
+    filter: brightness(150%);
 }
 
 #data_laporan {
@@ -175,6 +192,7 @@ div {
     font-size: 24px;
     text-align: left;
     color: #000000;
+    transition: 0.6s ease-in-out;
 }
 
 #group_30 {
@@ -196,6 +214,7 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
 #carbon_report_data {
@@ -253,6 +272,22 @@ div {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     background: rgba(226.31, 187.65, 187.65, 0.75);
+    box-shadow: 0 2px #00000088;
+    transition: 0.3s ease-in-out;
+}
+
+#rectangle_37:hover {
+    opacity: 1;
+    top: -2%;
+    background: rgba(91, 81, 81, 0.75);
+    box-shadow: -2px 4px #000000e3;
+}
+#rectangle_37:hover #feedback_laporan {
+    color: whitesmoke;
+}
+
+#rectangle_37:hover #polygon_4 {
+    filter: brightness(150%);
 }
 
 #group_31 {
@@ -274,6 +309,7 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
 #ri_user_smile_fill {
@@ -354,6 +390,7 @@ div {
     font-size: 24px;
     text-align: left;
     color: #000000;
+    transition: 0.6s ease-in-out;
 }
 
 #group_18_ek2 {
@@ -382,6 +419,22 @@ div {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     background: rgba(226.31, 187.65, 187.65, 0.75);
+    box-shadow: 0 2px #00000088;
+    transition: 0.3s ease-in-out;
+}
+
+#rectangle_37_ek1:hover {
+    opacity: 1;
+    top: -2%;
+    background: rgba(91, 81, 81, 0.75);
+    box-shadow: -2px 4px #000000e3;
+}
+
+#rectangle_37_ek1:hover #data_diri {
+    color: whitesmoke;
+}
+#rectangle_37_ek1:hover #polygon_2 {
+    filter: brightness(150%);
 }
 
 #group_29 {
@@ -403,6 +456,7 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
 #ri_user_smile_fill_ek2 {
@@ -441,6 +495,7 @@ div {
     font-size: 24px;
     text-align: left;
     color: #000000;
+    transition: 0.6s ease-in-out;
 }
 
 /* Add your custom CSS here */
