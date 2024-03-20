@@ -32,7 +32,12 @@
                 <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
 
             </div>
-            <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
+            <div class="akun">
+                <div class="welcome">Welcome ajdjfjd dkfjafja </div>
+                <div class="logout">Logout</div>
+                <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
+            </div>
+
 
         </div>
 

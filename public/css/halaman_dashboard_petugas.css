@@ -117,14 +117,34 @@ div {
     height: 107px;
 }
 
-#dsbuffer_1 {
-    top: 50%;
+.akun {
     right: 3%;
+    width: 40%;
+    height: 100%;
+}
+.akun #dsbuffer_1 {
+    top: 50%;
+    right: 0px;
     transform: translate(0, -50%);
     width: 92px;
     height: 92px;
 }
-
+.welcome {
+    bottom: 50%;
+    right: 25%;
+    text-align: right;
+    color: #e3e3e3;
+}
+.logout {
+    bottom: 15%;
+    right: 25%;
+    padding: 2px;
+    width: 60px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #e3e3e3;
+}
 #group_20 {
     position: relative;
     top: 50%;
@@ -508,7 +528,7 @@ div {
     #logo_smart_peamekasan_2 {
         transform: translate(-50%, -50%) scale(65%);
     }
-    #dsbuffer_1 {
+    .akun #dsbuffer_1 {
         transform: translate(0, -50%) scale(75%);
     }
     #header_hompage_silape {
@@ -517,6 +537,24 @@ div {
     #logo_silape {
         left: -2%;
         transform: translate(0, -50%) scale(75%);
+    }
+    #silape {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #sistem_laporan_pelayanan {
+        display: none;
+    }
+    #rsud_dr__h__slamet_martodirdjo {
+        display: none;
+    }
+    .welcome {
+        display: none;
+        transform: scale(75%);
+    }
+    .logout {
+        right: 50%;
+        transform: scale(75%);
     }
 }
 
@@ -528,7 +566,7 @@ div {
     #logo_smart_peamekasan_2 {
         transform: translate(-50%, -50%) scale(85%);
     }
-    #dsbuffer_1 {
+    .akun #dsbuffer_1 {
         transform: translate(0, -50%) scale(85%);
     }
     #header_hompage_silape {
@@ -537,6 +575,14 @@ div {
     #logo_silape {
         left: 2%;
         transform: translate(0, -50%) scale(85%);
+    }
+    .welcome {
+        right: 30%;
+        transform: scale(85%);
+    }
+    .logout {
+        right: 35%;
+        transform: scale(85%);
     }
 }
 
