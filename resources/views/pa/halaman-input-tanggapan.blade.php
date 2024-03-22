@@ -16,10 +16,10 @@
         <div nameid="Halaman input tanggapan laporan" id="_bg__halaman_input_tanggapan_laporan"></div>
 
         <div id="group_32" nameid="Group 32">
-            <div nameid="Group 32" id="_bg__group_32_ek1"></div>
-            <div nameid="Rectangle 18" id="rectangle_18"></div>
-            <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
-                id="logo_smart_peamekasan_2" />
+            <div nameid="Rectangle 18" id="rectangle_18">
+            <span class="ion--arrow-back-circle"></span>
+            </div>
+            <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2" id="logo_smart_peamekasan_2" />
             <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
             <div nameid="Input Tanggapan" id="input_tanggapan">
                 Input Tanggapan
@@ -28,11 +28,14 @@
         </div>
 
         <div id="group_13" nameid="Group 13">
-            <div nameid="Group 13" id="_bg__group_13_ek1"></div>
+
             <div nameid="Kriteria laporan" id="kriteria_laporan">
                 Kriteria laporan
             </div>
-            <div nameid="Rectangle 19" id="rectangle_19"><span>a</span></div>
+            <div nameid="Rectangle 19" id="rectangle_19">
+                <span>
+                </span>
+            </div>
             <div nameid="nama pelapor" id="nama_pelapor">
                 nama pelapor
             </div>

@@ -34,3 +34,11 @@ Route::get('/register_user', function () {
 Route::get('/edit_user', function () {
     return view('user\edit-data-user');
 });
+
+Route::get('/dashboard_user', function () {
+    return view('user\dashboard-user');
+});
+
+Route::get('/halaman-laporan', function () {
+    return view('user\halaman-laporan');
+});
