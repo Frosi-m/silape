@@ -1,0 +1,17 @@
+waktu buat pakai akun diolusi12
+untuk google
+
+client id = 511810438777-0kce7foec4sr7mdp4vacll8fhhprg7i3.apps.googleusercontent.com
+client secret = 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
+
+waktu buat pakai akun fahrurrosi
+untuk facebook
+ client id = 1083616069394073
+ client secret = c45b8f00980a20c1eec7b126a1931876
+
+
+waktu buat pakai akun google mbaknita100
+pw =mrxlagikp
+untuk twitter
+client id = s1nlv68Gb2HVTKQzaunCMyntY
+client secret = z0BHYz5FhAZRz5CdKFQi9ECt9krpbv2NsFS4DYvScZHMPHohV6
