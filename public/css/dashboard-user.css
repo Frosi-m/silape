@@ -27,7 +27,6 @@ div {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +84,6 @@ div {
     left: 123px;
     width: 193.7px;
     height: 48.7px;
-    overflow: hidden;
     font-family: Inter;
     font-size: 37px;
     font-weight: bold;
@@ -99,7 +97,6 @@ div {
     left: 123px;
     width: 204.5px;
     height: 22.5px;
-    overflow: hidden;
     font-family: Inter;
     font-size: 15px;
     text-align: left;
@@ -112,7 +109,6 @@ div {
     left: 123px;
     width: 241.5px;
     height: 42.5px;
-    overflow: hidden;
     font-family: Inter;
     font-size: 15px;
     text-align: left;
@@ -262,13 +258,14 @@ div {
 
 #data_diri {
     top: 27px;
-    left: 66px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 114.4px;
     height: 36.4px;
-    overflow: hidden;
+
     font-family: Inter;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     color: #000000;
     transition: 0.6s ease-in-out;
 }
@@ -433,13 +430,13 @@ div {
 
 #pengaduan {
     top: 27px;
-    left: 55px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 147.4px;
     height: 36.4px;
-    overflow: hidden;
     font-family: Inter;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     color: #000000;
     transition: 0.6s ease-in-out;
 }
@@ -514,20 +511,21 @@ div {
 
 #ubah_password {
     top: 27px;
-    left: 33px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 197.4px;
     height: 36.4px;
-    overflow: hidden;
     font-family: Inter;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     color: #000000;
     transition: 0.6s ease-in-out;
 }
 
 #group_27 {
-    top: 108px;
-    left: 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 118.65px;
     height: 96px;
 }
@@ -573,9 +571,62 @@ div {
 }
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
-
+    #_bg__halaman_dashboard_user  {
+        height: 840px;
+    }
+    #pengaduan, #data_diri, #ubah_password{
+        font-size: 35px;
+        width: 300px;
+    }
+    #header_hompage_silape {
+        position: fixed;
+        z-index: 100;
+    }
+    #group_18{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 400px;
+    }
+    #group_19{
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 400px;
+    }
+    #group_20{
+        top: 76%;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 400px;
+    }
+    #rectangle_37_ek1{
+        width: 400px;
+        height: 400px;
+    }
+    #rectangle_38{
+        width: 400px;
+        height: 400px;
+    }
+    #rectangle_37 {
+        opacity: 0.75;
+        width: 400px;
+        height: 400px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        background: rgba(217, 217, 217, 0.75);
+        box-shadow: 0 2px #00000088;
+        transition: 0.3s ease-in-out;
+    }
     #frame_27 {
-        transform: translate(-50%, -50%) scale(45%);
+        transform: translate(-50%, 0) scale(45%);
+        top: -25%;
+        left: 50%;
+        width: 700px;
+        height: 1300px;
     }
 
     #logo_smart_peamekasan_2 {
