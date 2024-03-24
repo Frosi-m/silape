@@ -45,7 +45,6 @@ div {
     background: rgba(183.34, 255, 153.13, 1);
 }
 
-
 #logo_smart_peamekasan_2 {
     top: 50%;
     left: 50%;
@@ -53,7 +52,6 @@ div {
     width: 440px;
     height: 440px;
 }
-
 
 #header_hompage_silape {
     top: 0px;
@@ -78,7 +76,6 @@ div {
     height: 115px;
 }
 
-
 #silape {
     top: 0px;
     left: 123px;
@@ -88,9 +85,8 @@ div {
     font-size: 37px;
     font-weight: bold;
     text-align: left;
-    color: #E3E3E3;
+    color: #e3e3e3;
 }
-
 
 #sistem_laporan_pelayanan {
     top: 53px;
@@ -100,9 +96,8 @@ div {
     font-family: Inter;
     font-size: 15px;
     text-align: left;
-    color: #E3E3E3;
+    color: #e3e3e3;
 }
-
 
 #rsud_dr__h__slamet_martodirdjo {
     top: 77px;
@@ -112,9 +107,8 @@ div {
     font-family: Inter;
     font-size: 15px;
     text-align: left;
-    color: #E3E3E3;
+    color: #e3e3e3;
 }
-
 
 #image_1 {
     top: 0px;
@@ -122,7 +116,6 @@ div {
     width: 108px;
     height: 107px;
 }
-
 
 .akun {
     right: 3%;
@@ -168,7 +161,6 @@ div {
     left: 0px;
     width: 920px;
     height: 300px;
-    background: #;
 }
 
 #group_18 {
@@ -183,9 +175,7 @@ div {
     left: 0px;
     width: 228px;
     height: 300px;
-    background: #;
 }
-
 
 #rectangle_37 {
     opacity: 0.75;
@@ -218,7 +208,6 @@ div {
     filter: brightness(150%);
 }
 
-
 #polygon_4 {
     top: 50%;
     left: 50%;
@@ -244,9 +233,7 @@ div {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    background: #;
 }
-
 
 #vector {
     top: 8px;
@@ -254,7 +241,6 @@ div {
     width: 80px;
     height: 80px;
 }
-
 
 #data_diri {
     top: 27px;
@@ -283,7 +269,6 @@ div {
     width: 228px;
     height: 300px;
 }
-
 
 #rectangle_38 {
     opacity: 0.75;
@@ -326,9 +311,7 @@ div {
     left: -371px;
     width: 175px;
     height: 167px;
-    background: #;
 }
-
 
 #polygon_2 {
     top: 50%;
@@ -349,9 +332,7 @@ div {
     left: 0px;
     width: 96px;
     height: 96px;
-    background: #;
 }
-
 
 #vector_ek1 {
     top: 50%;
@@ -373,7 +354,6 @@ div {
     left: 0px;
     width: 175px;
     height: 127px;
-    background: #;
 }
 
 #frame_36 {
@@ -394,7 +374,6 @@ div {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #000000;
-    background: #;
 }
 
 #frame_34 {
@@ -409,7 +388,6 @@ div {
     left: 0px;
     width: 152px;
     height: 37px;
-    background: #;
 }
 
 #frame_35 {
@@ -424,9 +402,7 @@ div {
     left: 0px;
     width: 128px;
     height: 29px;
-    background: #;
 }
-
 
 #pengaduan {
     top: 27px;
@@ -455,7 +431,6 @@ div {
     height: 30px;
 }
 
-
 #polygon_1 {
     top: 425.5px;
     left: 6px;
@@ -474,9 +449,7 @@ div {
     left: -692px;
     width: 228px;
     height: 300px;
-    background: #;
 }
-
 
 #rectangle_37_ek1 {
     opacity: 0.75;
@@ -535,9 +508,7 @@ div {
     left: -746px;
     width: 118.65px;
     height: 96px;
-    background: #;
 }
-
 
 #polygon_2_ek1 {
     top: 50%;
@@ -547,8 +518,9 @@ div {
 }
 
 #material_symbols_lock {
-    top: 0px;
-    left: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 96px;
     height: 96px;
 }
@@ -558,9 +530,7 @@ div {
     left: 0px;
     width: 96px;
     height: 96px;
-    background: #;
 }
-
 
 #vector_ek2 {
     top: 50%;
@@ -571,10 +541,21 @@ div {
 }
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
-    #_bg__halaman_dashboard_user  {
+    #_bg__halaman_dashboard_user {
         height: 840px;
     }
-    #pengaduan, #data_diri, #ubah_password{
+    #logo_smart_peamekasan_2 {
+        position: fixed;
+    }
+    #ri_user_smile_fill,
+    #material_symbols_lock,
+    #polygon_2_ek1,
+    #polygon_4 {
+        transform: translate(-50%, -50%) scale(150%);
+    }
+    #pengaduan,
+    #data_diri,
+    #ubah_password {
         font-size: 35px;
         width: 300px;
     }
@@ -582,29 +563,29 @@ div {
         position: fixed;
         z-index: 100;
     }
-    #group_18{
+    #group_18 {
         top: 0;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #group_19{
+    #group_19 {
         top: 38%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #group_20{
+    #group_20 {
         top: 76%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #rectangle_37_ek1{
+    #rectangle_37_ek1 {
         width: 400px;
         height: 400px;
     }
-    #rectangle_38{
+    #rectangle_38 {
         width: 400px;
         height: 400px;
     }
@@ -642,7 +623,7 @@ div {
     }
 
     #logo_silape {
-        left: -2%;
+        left: -6%;
         transform: translate(0, -50%) scale(75%);
     }
 
@@ -671,7 +652,6 @@ div {
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-
     /* untuk tablet */
     #frame_27 {
         transform: translate(-50%, -50%) scale(75%);
@@ -706,12 +686,10 @@ div {
 }
 
 @media (min-width: 1201px) {
-
     /* untuk desktop */
     #frame_27 {
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
 
 /* Add your custom CSS here */

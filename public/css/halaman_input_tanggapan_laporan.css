@@ -131,7 +131,7 @@ span {
 
 #rectangle_19 {
     top: 40px;
-    border:none;
+    border: none;
     left: 0px;
     width: 331px;
     height: 35px;
@@ -158,7 +158,7 @@ span {
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     z-index: 10;
-  }
+}
 #nama_pelapor {
     top: 96px;
     left: 2px;
@@ -214,7 +214,7 @@ span {
 }
 
 #tombol_konfirmasi {
-    top: 213px;
+    top: -41px;
     left: 20px;
     width: 132px;
     height: 41px;
@@ -260,7 +260,7 @@ span {
 }
 
 #tombol_konfirmasi_ek2 {
-    top: 213px;
+    top: -41px;
     left: 176px;
     width: 132px;
     height: 41px;
@@ -306,24 +306,70 @@ span {
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
 
-    #group_32,
+    #rectangle_18,
+    #logo_smart_peamekasan_2,
     #group_13 {
-        transform: translate(-50%, -50%) scale(45%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(55%);
+    }
+    #rectangle_18 {
+        width: 697px;
+        height: 1090px;
+    }
+    #rectangle_19,
+    #rectangle_21_ek1 {
+        width: 270px;
+    }
+    #group_13 {
+        width: 358px;
+        height: 499px;
+        transform: translate(-50%, -50%) scale(95%);
+    }
+    #isi_tanggapan {
+        top: 184px;
+        left: 2px;
+    }
+    #rectangle_20 {
+        top: 225px;
+        left: 0px;
+        width: 338px;
+        height: 136px;
+    }
+    #rectangle_21_ek2,
+    #rectangle_21_ek3 {
+        top: 0;
+    }
+    .bungkus_tombol {
+        top: 453px;
+        left: 50%;
+        width: 95%;
+        transform: translate(-50%, 0);
     }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
     /* untuk tablet */
-    #group_32,
-    #group_13 {
-        transform: translate(-50%, -50%) scale(75%);
+    #content-container {
+        height: 100vh;
+    }
+    #rectangle_18,
+    #group_13,
+    #logo_smart_peamekasan_2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.65);
     }
 }
 
 @media (min-width: 1201px) {
     /* untuk desktop */
-    #group_32,
-    #group_13 {
+    #content-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%) scale(1);
     }
 }

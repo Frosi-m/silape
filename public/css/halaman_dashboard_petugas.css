@@ -529,35 +529,35 @@ div {
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
     #_bg__halaman_dashboard_petugas {
-        height: 840px;
+        height: 917px;
     }
     #header_hompage_silape {
         position: fixed;
         z-index: 100;
     }
-    #group_18{
+    #group_18 {
         top: 0;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #group_19{
+    #group_19 {
         top: 38%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #group_18_ek2{
+    #group_18_ek2 {
         top: 76%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 400px;
     }
-    #rectangle_37_ek1{
+    #rectangle_37_ek1 {
         width: 400px;
         height: 400px;
     }
-    #rectangle_38{
+    #rectangle_38 {
         width: 400px;
         height: 400px;
     }
@@ -581,15 +581,21 @@ div {
         width: 700px;
         height: 1300px;
     }
-    #feedback_laporan, #data_laporan, #data_diri{
+    #feedback_laporan,
+    #data_laporan,
+    #data_diri {
         font-size: 35px;
         width: 300px;
     }
 
-    #polygon_4, #polygon_3, #polygon_2{
+    #polygon_4,
+    #polygon_3,
+    #polygon_2 {
         width: 150%;
     }
-    #flat_color_icons_feedback, #carbon_report_data, #ri_user_smile_fill_ek2{
+    #flat_color_icons_feedback,
+    #carbon_report_data,
+    #ri_user_smile_fill_ek2 {
         transform: scale(1.5);
     }
     #logo_smart_peamekasan_2 {
@@ -605,7 +611,7 @@ div {
     }
 
     #logo_silape {
-        left: -2%;
+        left: -4%;
         transform: translate(0, -50%) scale(75%);
     }
 
@@ -631,10 +637,12 @@ div {
         right: 50%;
         transform: scale(75%);
     }
+    #logo_smart_peamekasan_2 {
+        position: fixed;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-
     /* untuk tablet */
     #group_20 {
         transform: translate(-50%, -50%) scale(75%);
@@ -669,7 +677,6 @@ div {
 }
 
 @media (min-width: 1201px) {
-
     /* untuk desktop */
     #group_20 {
         transform: translate(-50%, -50%) scale(1);

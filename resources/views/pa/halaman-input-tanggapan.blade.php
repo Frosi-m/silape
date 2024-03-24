@@ -17,14 +17,15 @@
 
         <div id="group_32" nameid="Group 32">
             <div nameid="Rectangle 18" id="rectangle_18">
-            <span class="ion--arrow-back-circle"></span>
-            </div>
-            <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2" id="logo_smart_peamekasan_2" />
-            <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
-            <div nameid="Input Tanggapan" id="input_tanggapan">
-                Input Tanggapan
+                <span class="ion--arrow-back-circle"></span>
+                <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
+                <div nameid="Input Tanggapan" id="input_tanggapan">
+                    Input Tanggapan
+                </div>
             </div>
 
+            <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
+                id="logo_smart_peamekasan_2" />
         </div>
 
         <div id="group_13" nameid="Group 13">
@@ -45,27 +46,30 @@
                 Isi tanggapan
             </div>
 
-            <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
-                <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>
-                <div nameid="Rectangle 21" id="rectangle_21_ek2">
-                    <div nameid="Kirim" id="kirim">
-                        Kirim
+            <div class="bungkus_tombol">
+                <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
+                    <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>
+                    <div nameid="Rectangle 21" id="rectangle_21_ek2">
+                        <div nameid="Kirim" id="kirim">
+                            Kirim
+                        </div>
                     </div>
+
+
                 </div>
 
-
-            </div>
-
-            <div id="tombol_konfirmasi_ek2" nameid="tombol konfirmasi">
-                <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek3"></div>
-                <div nameid="Rectangle 21" id="rectangle_21_ek3">
-                    <div nameid="Batal" id="batal">
-                        Batal
+                <div id="tombol_konfirmasi_ek2" nameid="tombol konfirmasi">
+                    <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek3"></div>
+                    <div nameid="Rectangle 21" id="rectangle_21_ek3">
+                        <div nameid="Batal" id="batal">
+                            Batal
+                        </div>
                     </div>
+
+
                 </div>
-
-
             </div>
+
 
         </div>
 
