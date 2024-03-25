@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 })
 ;
+// bagian user
 Route::get('/biodata_user', function () {
     return view('user\biodata-user');
 });
@@ -14,6 +15,24 @@ Route::get('/halaman_login_user', function () {
     return view('user\halaman-login-user');
 });
 
+Route::get('/register_user', function () {
+    return view('user\register-user');
+});
+
+Route::get('/edit_user', function () {
+    return view('user\edit-data-user');
+});
+
+
+Route::get('/dashboard_user', function () {
+    return view('user\dashboard-user');
+});
+
+Route::get('/halaman-laporan', function () {
+    return view('user\halaman-laporan');
+});
+
+// bagian petugas
 Route::get('/halaman_login_pa', function () {
     return view('pa\halaman-login-pa');
 });
@@ -23,22 +42,12 @@ Route::get('/input_tanggapan', function () {
 });
 
 Route::get('/dashboard_petugas', function () {
-    return view('pa\dashboard-petugas');
+    return view('pa\dashboard-pa');
 });
 
-Route::get('/register_user', function () {
-    return view('user\register-user');
-});
+// bagian admin
 
 
-Route::get('/edit_user', function () {
-    return view('user\edit-data-user');
-});
 
-Route::get('/dashboard_user', function () {
-    return view('user\dashboard-user');
-});
 
-Route::get('/halaman-laporan', function () {
-    return view('user\halaman-laporan');
-});
+
