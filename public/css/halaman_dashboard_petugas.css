@@ -528,6 +528,10 @@ div {
 /* Add your custom CSS here */
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
+    #main-container{
+        height: 850px;
+    }
+
     #_bg__halaman_dashboard_petugas {
         height: 917px;
     }
