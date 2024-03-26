@@ -57,10 +57,8 @@
                         <img src="assets/images/polygon_5.png" nameid="Polygon 3" id="polygon_3" />
 
                         <div id="carbon_report_data" nameid="carbon:report-data">
-                            <div nameid="carbon:report-data" id="_bg__carbon_report_data_ek1"></div>
-                            <img src="assets/images/vector.png" nameid="Vector" id="vector" />
-                            <img src="assets/images/vector_ek1.png" nameid="Vector" id="vector_ek1" />
-
+                        
+                        <span class="fluent-mdl2--report-library-mirrored"></span>
                         </div>
 
                     </div>
@@ -80,12 +78,7 @@
                             <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
 
                             <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
-                                <div nameid="flat-color-icons:feedback" id="_bg__flat_color_icons_feedback_ek1"></div>
-                                <img src="assets/images/vector_ek2.png" nameid="Vector" id="vector_ek2" />
-                                <img src="assets/images/vector_ek3.png" nameid="Vector" id="vector_ek3" />
-                                <img src="assets/images/vector_ek4.png" nameid="Vector" id="vector_ek4" />
-                                <img src="assets/images/vector_ek5.png" nameid="Vector" id="vector_ek5" />
-                                <img src="assets/images/vector_ek6.png" nameid="Vector" id="vector_ek6" />
+                            <span class="fluent-mdl2--account-management"></span>
 
                             </div>
 
@@ -109,8 +102,7 @@
                         <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
 
                         <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
-                            <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek3"></div>
-                            <img src="assets/images/vector_ek7.png" nameid="Vector" id="vector_ek7" />
+                            <span class="mdi--register"></span>
                         </div>
 
                     </div>
@@ -131,8 +123,7 @@
                         <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
 
                         <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
-                            <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek3"></div>
-                            <img src="assets/images/vector_ek7.png" nameid="Vector" id="vector_ek7" />
+                            <span class="oui--app-reporting"></span>
                         </div>
 
                     </div>
