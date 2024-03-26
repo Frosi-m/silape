@@ -32,6 +32,9 @@ Route::get('/halaman-laporan', function () {
     return view('user\halaman-laporan');
 });
 
+Route::get('/ubah_pw', function () {
+    return view('user\ubah_pw');
+});
 // bagian petugas
 Route::get('/halaman_login_pa', function () {
     return view('pa\halaman-login-pa');
@@ -45,8 +48,14 @@ Route::get('/dashboard_petugas', function () {
     return view('pa\dashboard-pa');
 });
 
-// bagian admin
+Route::get('/biodata_petugas', function () {
+    return view('pa\biodata_petugas');
+});
 
+// bagian admin
+Route::get('/biodata_petugas', function () {
+    return view('pa\biodata_petugas');
+});
 
 
 

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman Bio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="css\background-logo.css" />
+    <link rel="stylesheet" href="css\biodata_petugas.css" />
 </head>
 
 <body>
     <div class="main-container-bio">
         <div class="rectangle-bio">
             <div class="rectangle-1-bio">
-                <span class="biodata-user">Biodata user</span>
+                <span class="biodata-user">Biodata petugas</span>
             </div>
 
             <div class="logo-smart-peamekasan">
@@ -31,7 +31,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Email</td>
+                    <td>Status</td>
                     <td>:</td>
                     <td></td>
                 </tr>

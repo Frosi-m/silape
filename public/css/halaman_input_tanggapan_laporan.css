@@ -11,6 +11,7 @@ body {
 
 /* Only edit this if you know what you are doing! */
 img {
+    pointer-events: none;
     position: absolute;
     /* display: block; */
     margin: 0px;
@@ -346,6 +347,23 @@ span {
         left: 50%;
         width: 95%;
         transform: translate(-50%, 0);
+    }
+    #rectangle_18 .ion--arrow-back-circle {
+        display: flex;
+        position: absolute;
+        top: 21px;
+        left: 615px;
+        width: 56px;
+        height: 56px;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M48 256c0 114.87 93.13 208 208 208s208-93.13 208-208S370.87 48 256 48S48 141.13 48 256m212.65-91.36a16 16 0 0 1 .09 22.63L208.42 240H342a16 16 0 0 1 0 32H208.42l52.32 52.73A16 16 0 1 1 238 347.27l-79.39-80a16 16 0 0 1 0-22.54l79.39-80a16 16 0 0 1 22.65-.09'/%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        z-index: 10;
     }
 }
 

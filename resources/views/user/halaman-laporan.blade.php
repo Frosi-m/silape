@@ -40,7 +40,7 @@
             </div>
             <div nameid="Rectangle 27" id="rectangle_27"></div>
             <div nameid="Rectangle 19" id="rectangle_19"></div>
-            <div nameid="Rectangle 20" id="rectangle_20"></div>
+            <textarea nameid="Rectangle 20" id="rectangle_20"></textarea>
             <div nameid="Isi laporan" id="isi_laporan">
                 Isi laporan
             </div>
