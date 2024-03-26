@@ -6,7 +6,7 @@
     <title>halaman_dashboard_petugas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="StyleSheet" href="css/halaman_dashboard_petugas.css" />
+    <link rel="StyleSheet" href="css/halaman_dashboard_admin.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
     <!-- Add your custom HEAD content here -->
 
@@ -49,7 +49,7 @@
                 <div nameid="Group 19" id="_bg__group_19_ek1"></div>
                 <div nameid="Rectangle 38" id="rectangle_38">
                     <div nameid="Data laporan" id="data_laporan">
-                        Data laporan
+                        Manajemen laporan
                     </div>
 
                     <div id="group_30" nameid="Group 30">
@@ -93,7 +93,7 @@
 
                     </div>
                     <div nameid="feedback laporan" id="feedback_laporan">
-                        feedback laporan
+                        Manajemen akun
                     </div>
                 </div>
 
@@ -115,7 +115,29 @@
 
                     </div>
                     <div nameid="Data diri" id="data_diri">
-                        Data diri
+                        registrasi akun
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div id="group_18_ek3" nameid="Group 18">
+                <div nameid="Group 18" id="_bg__group_18_ek3"></div>
+                <div nameid="Rectangle 37" id="rectangle_39">
+                    <div id="group_29" nameid="Group 29">
+                        <div nameid="Group 29" id="_bg__group_29_ek1"></div>
+                        <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
+
+                        <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
+                            <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek3"></div>
+                            <img src="assets/images/vector_ek7.png" nameid="Vector" id="vector_ek7" />
+                        </div>
+
+                    </div>
+                    <div nameid="Data diri" id="data_diri1">
+                        Data laporan
                     </div>
                 </div>
 

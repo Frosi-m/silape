@@ -53,8 +53,8 @@ Route::get('/biodata_petugas', function () {
 });
 
 // bagian admin
-Route::get('/biodata_petugas', function () {
-    return view('pa\biodata_petugas');
+Route::get('/da_admin', function () {
+    return view('pa\dashboard_admin');
 });
 
 

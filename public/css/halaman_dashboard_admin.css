@@ -148,11 +148,11 @@ div {
 
 #group_20 {
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 764px;
-    height: 300px;
+    transform: translate(-50%, -50%) scale(75%);
+    width: 500px;
+    height: 650px;
 }
 
 #_bg__group_20_ek1 {
@@ -448,8 +448,8 @@ div {
 }
 
 #group_18_ek2 {
-    top: 0px;
-    left: 536px;
+    top: 350px;
+    left: 0px;
     width: 228px;
     height: 300px;
 }
@@ -566,8 +566,8 @@ div {
     transition: 0.6s ease-in-out;
 }
 #group_18_ek3 {
-    top: 0px;
-    left: 536px;
+    top: 350px;
+    left: 268px;
     width: 228px;
     height: 300px;
 }
@@ -607,7 +607,8 @@ div {
         width: 400px;
         height: 400px;
     }
-    #rectangle_38 {
+    #rectangle_38,
+    #rectangle_39 {
         width: 400px;
         height: 400px;
     }
@@ -735,7 +736,4 @@ div {
 
 @media (min-width: 1201px) {
     /* untuk desktop */
-    #group_20 {
-        transform: translate(-50%, -50%) scale(1);
-    }
 }
