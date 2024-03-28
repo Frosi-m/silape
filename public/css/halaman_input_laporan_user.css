@@ -224,7 +224,7 @@ textarea {
 }
 
 #kirim {
-    top: 9px;
+    top: 7px;
     left: 35px;
     width: 80.98px;
     height: 30.14px;
@@ -263,7 +263,7 @@ textarea {
 }
 
 #batal {
-    top: 9px;
+    top: 7px;
     left: 35px;
     width: 80.98px;
     height: 30.14px;
@@ -317,7 +317,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(55%);
+        transform: translate(-50%, -50%);
     }
     #rectangle_18 {
         width: 697px;
@@ -330,7 +330,7 @@ textarea {
     #group_13 {
         width: 358px;
         height: 499px;
-        transform: translate(-50%, -50%) scale(95%);
+        transform: translate(-50%, -50%) scale(1.5);
     }
     #isi_laporan {
         top: 184px;
@@ -382,7 +382,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.65);
+        transform: translate(-50%, -50%) scale(0.85);
     }
 }
 
@@ -390,8 +390,15 @@ textarea {
     /* untuk desktop */
     #content-container {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
+    }
+    #_bg__halaman_dashboard_user {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 1200px;
+        background: rgba(183.34, 255, 153.13, 1);
     }
 }

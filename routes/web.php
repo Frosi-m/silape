@@ -25,7 +25,7 @@ Route::get('/edit_user', function () {
 
 
 Route::get('/dashboard_user', function () {
-    return view('user\dashboard-user');
+    return view('user\menu-user');
 });
 
 Route::get('/halaman-laporan', function () {
