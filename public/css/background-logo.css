@@ -398,7 +398,7 @@ div {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(45%);
+        transform: translate(-50%, -50%) scale(75%);
     }
     .rectangle-bio {
         width: 697px;
