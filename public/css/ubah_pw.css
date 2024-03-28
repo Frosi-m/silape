@@ -253,9 +253,6 @@ button {
         left: 50%;
         transform: translate(-50%, -50%) scale(130%);
     }
-    #_bg__halaman_dashboard_user {
-        height: 100vh;
-    }
     #frame_27 {
         transform: translate(-50%, 0) scale(55%);
         top: -25%;

@@ -13,52 +13,54 @@
         <div nameid="Sisa laporan :" id="sisa_laporan__">
             Sisa laporan :
         </div>
-    </div>
-    <img src="assets/images/logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2" id="logo_smart_peamekasan_2" />
+
+        <img src="assets/images/logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
+            id="logo_smart_peamekasan_2" />
 
 
 
 
 
-    <div id="group_13" nameid="Group 13">
-        <div nameid="Kriteria laporan" id="kriteria_laporan">
-            Kriteria laporan
-        </div>
-        <div nameid="jenis laporan" id="jenis_laporan">
-            jenis laporan
-        </div>
-        <div nameid="Rectangle 27" id="rectangle_27"></div>
-        <div nameid="Rectangle 19" id="rectangle_19"></div>
-        <textarea nameid="Rectangle 20" id="rectangle_20"></textarea>
-        <div nameid="Isi laporan" id="isi_laporan">
-            Isi laporan
-        </div>
-        <a href="dashboard_user">
-            <div class="bungkus_tombol">
-                <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
-                    <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>
-                    <div nameid="Rectangle 21" id="rectangle_21_ek1"></div>
-                    <div nameid="Kirim" id="kirim">
-                        Kirim
+        <div id="group_13" nameid="Group 13">
+            <div nameid="Kriteria laporan" id="kriteria_laporan">
+                Kriteria laporan
+            </div>
+            <div nameid="jenis laporan" id="jenis_laporan">
+                jenis laporan
+            </div>
+            <div nameid="Rectangle 27" id="rectangle_27"></div>
+            <div nameid="Rectangle 19" id="rectangle_19"></div>
+            <textarea nameid="Rectangle 20" id="rectangle_20"></textarea>
+            <div nameid="Isi laporan" id="isi_laporan">
+                Isi laporan
+            </div>
+            <a href="dashboard_user">
+                <div class="bungkus_tombol">
+                    <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
+                        <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>
+                        <div nameid="Rectangle 21" id="rectangle_21_ek1"></div>
+                        <div nameid="Kirim" id="kirim">
+                            Kirim
+                        </div>
+
+                    </div>
+            </a>
+
+            <a href="dashboard_user">
+                <div id="tombol_konfirmasi_ek2" nameid="tombol konfirmasi">
+                    <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek3"></div>
+                    <div nameid="Rectangle 21" id="rectangle_21_ek2"></div>
+                    <div nameid="Batal" id="batal">
+                        Batal
                     </div>
 
                 </div>
-        </a>
-
-        <a href="dashboard_user">
-            <div id="tombol_konfirmasi_ek2" nameid="tombol konfirmasi">
-                <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek3"></div>
-                <div nameid="Rectangle 21" id="rectangle_21_ek2"></div>
-                <div nameid="Batal" id="batal">
-                    Batal
-                </div>
-
-            </div>
-        </a>
+            </a>
 
 
+
+        </div>
 
     </div>
-
     </div>
 @endsection

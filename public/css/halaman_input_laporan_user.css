@@ -311,17 +311,10 @@ textarea {
     #content-container {
         height: 100vh;
     }
-    #rectangle_18,
-    #logo_smart_peamekasan_2,
-    #group_13 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
     #rectangle_18 {
         width: 697px;
         height: 1090px;
+        transform: translate(-50%, -50%) scale(0.8);
     }
     #rectangle_19,
     #rectangle_27 {
