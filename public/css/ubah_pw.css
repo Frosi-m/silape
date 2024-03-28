@@ -185,13 +185,13 @@ button {
     display: block;
     position: relative;
     height: 16px;
-    margin: 6.228px 0 0 24.258px;
+    /* margin: 6.228px 0 0 24.258px; */
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
-    line-height: 14.523px;
-    text-align: left;
+    /* line-height: 14.523px; */
+    text-align: center;
     white-space: nowrap;
     z-index: 13;
 }
@@ -222,13 +222,13 @@ button {
     display: block;
     position: relative;
     height: 16px;
-    margin: 6.228px 0 0 31.52px;
+    /* margin: 6.228px 0 0 31.52px; */
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
-    line-height: 14.523px;
-    text-align: left;
+    /* line-height: 14.523px; */
+    text-align: center;
     white-space: nowrap;
     z-index: 16;
 }
