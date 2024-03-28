@@ -342,6 +342,7 @@ input::-webkit-inner-spin-button {
     .rectangle {
         width: 697px;
         height: 1090px;
+        transform: translate(-50%, -50%);
     }
     .rectangle-2,
     .rectangle-5,

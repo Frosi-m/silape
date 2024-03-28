@@ -45,7 +45,7 @@ Route::get('/input_tanggapan', function () {
 });
 
 Route::get('/dashboard_petugas', function () {
-    return view('pa\dashboard-pa');
+    return view('pa\menu-pa');
 });
 
 Route::get('/biodata_petugas', function () {
@@ -54,9 +54,5 @@ Route::get('/biodata_petugas', function () {
 
 // bagian admin
 Route::get('/da_admin', function () {
-    return view('pa\dashboard_admin');
+    return view('pa\menu_admin');
 });
-
-
-
-

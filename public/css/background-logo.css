@@ -462,6 +462,16 @@ div {
         height: 86px;
         transform: translate(-50%, 0);
     }
+    #frame_27 {
+        transform: translate(-50%, 0) scale(55%);
+        top: -25%;
+        left: 50%;
+        width: 700px;
+        height: 1118px;
+    }
+    #_bg__halaman_dashboard_user {
+        height: 800px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {

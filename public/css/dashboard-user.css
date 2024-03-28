@@ -541,7 +541,7 @@ div {
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
     #_bg__halaman_dashboard_user {
-        height: 840px;
+        height: 950px;
     }
     #logo_smart_peamekasan_2 {
         position: fixed;
