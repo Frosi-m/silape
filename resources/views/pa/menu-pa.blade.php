@@ -32,31 +32,34 @@
 
     <div id="group_18" nameid="Group 18">
         <div nameid="Group 18" id="_bg__group_18_ek1"></div>
-        <div nameid="Rectangle 37" id="rectangle_37">
-            <div id="group_31" nameid="Group 31">
-                <div nameid="Group 31" id="_bg__group_31_ek1"></div>
-                <img src="assets/images/polygon_5.png" nameid="Polygon 4" id="polygon_4" />
+        <a href="input_tanggapan">
+            <div nameid="Rectangle 37" id="rectangle_37">
+                <div id="group_31" nameid="Group 31">
+                    <div nameid="Group 31" id="_bg__group_31_ek1"></div>
+                    <img src="assets/images/polygon_5.png" nameid="Polygon 4" id="polygon_4" />
 
-                <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
-                    <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
+                    <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
+                        <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
 
-                    <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
-                        <div nameid="flat-color-icons:feedback" id="_bg__flat_color_icons_feedback_ek1"></div>
-                        <img src="assets/images/vector_ek2.png" nameid="Vector" id="vector_ek2" />
-                        <img src="assets/images/vector_ek3.png" nameid="Vector" id="vector_ek3" />
-                        <img src="assets/images/vector_ek4.png" nameid="Vector" id="vector_ek4" />
-                        <img src="assets/images/vector_ek5.png" nameid="Vector" id="vector_ek5" />
-                        <img src="assets/images/vector_ek6.png" nameid="Vector" id="vector_ek6" />
+                        <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
+                            <div nameid="flat-color-icons:feedback" id="_bg__flat_color_icons_feedback_ek1"></div>
+                            <img src="assets/images/vector_ek2.png" nameid="Vector" id="vector_ek2" />
+                            <img src="assets/images/vector_ek3.png" nameid="Vector" id="vector_ek3" />
+                            <img src="assets/images/vector_ek4.png" nameid="Vector" id="vector_ek4" />
+                            <img src="assets/images/vector_ek5.png" nameid="Vector" id="vector_ek5" />
+                            <img src="assets/images/vector_ek6.png" nameid="Vector" id="vector_ek6" />
+
+                        </div>
 
                     </div>
 
                 </div>
+                <div nameid="feedback laporan" id="feedback_laporan">
+                    feedback laporan
+                </div>
+            </div>
 
-            </div>
-            <div nameid="feedback laporan" id="feedback_laporan">
-                feedback laporan
-            </div>
-        </div>
+        </a>
 
 
 

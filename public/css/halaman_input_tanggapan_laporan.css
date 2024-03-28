@@ -49,9 +49,9 @@ span {
 }
 
 #group_32 {
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9);
     width: 1098px;
     height: 513px;
 }
@@ -74,13 +74,6 @@ span {
     -webkit-border-radius: 30px;
     border-radius: 30px;
     background: rgba(243.31, 243.31, 243.31, 1);
-}
-
-#logo_smart_peamekasan_2 {
-    top: 35px;
-    left: 329px;
-    width: 440px;
-    height: 440px;
 }
 
 #rectangle_21 {
@@ -307,6 +300,11 @@ span {
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
 
+    #group_32 {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(155%);
+    }
     #rectangle_18,
     #logo_smart_peamekasan_2,
     #group_13 {
@@ -317,7 +315,7 @@ span {
     }
     #rectangle_18 {
         width: 697px;
-        height: 1090px;
+        height: 1065px;
     }
     #rectangle_19,
     #rectangle_21_ek1 {
@@ -378,7 +376,7 @@ span {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.65);
+        transform: translate(-50%, -50%) scale(0.9);
     }
 }
 
