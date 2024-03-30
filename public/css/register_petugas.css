@@ -37,13 +37,12 @@ button {
     position: relative;
     width: 714px;
     height: 1232.791px;
-    top: 80%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(80%);
     /* margin: 136px 0 0 379px; */
     background: #f3f3f3;
     z-index: 1;
-    overflow: visible auto;
     border-radius: 30px;
 }
 .rectangle-1 {
