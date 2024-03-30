@@ -19,6 +19,10 @@ img {
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
 /* Only edit this if you know what you are doing! */
 div {
     position: absolute;

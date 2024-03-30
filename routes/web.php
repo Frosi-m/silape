@@ -40,6 +40,10 @@ Route::get('/halaman_login_pa', function () {
     return view('pa\halaman-login-pa');
 });
 
+Route::get('/data_tanggapan', function () {
+    return view('pa\halaman-data-tanggapan');
+});
+
 Route::get('/input_tanggapan', function () {
     return view('pa\halaman-input-tanggapan');
 });
@@ -55,4 +59,16 @@ Route::get('/biodata_petugas', function () {
 // bagian admin
 Route::get('/da_admin', function () {
     return view('pa\menu_admin');
+});
+Route::get('/manajemen_akun', function () {
+    return view('pa\manajemen_akun');
+});
+Route::get('/manajemen_laporan', function () {
+    return view('pa\manajemen_laporan');
+});
+Route::get('/data_pelaporan', function () {
+    return view('pa\data-pelaporan');
+});
+Route::get('/register_petugas', function () {
+    return view('pa\register-petugas');
 });

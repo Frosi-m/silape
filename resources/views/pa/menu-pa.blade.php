@@ -8,24 +8,27 @@
 
     <div id="group_19" nameid="Group 19">
         <div nameid="Group 19" id="_bg__group_19_ek1"></div>
-        <div nameid="Rectangle 38" id="rectangle_38">
-            <div nameid="Data laporan" id="data_laporan">
-                Data laporan
-            </div>
-
-            <div id="group_30" nameid="Group 30">
-                <div nameid="Group 30" id="_bg__group_30_ek1"></div>
-                <img src="assets/images/polygon_5.png" nameid="Polygon 3" id="polygon_3" />
-
-                <div id="carbon_report_data" nameid="carbon:report-data">
-                    <div nameid="carbon:report-data" id="_bg__carbon_report_data_ek1"></div>
-                    <img src="assets/images/vector.png" nameid="Vector" id="vector" />
-                    <img src="assets/images/vector_ek1.png" nameid="Vector" id="vector_ek1" />
-
+        <a href="data_tanggapan">
+            <div nameid="Rectangle 38" id="rectangle_38">
+                <div nameid="Data laporan" id="data_laporan">
+                    Data Tanggapan
                 </div>
 
+                <div id="group_30" nameid="Group 30">
+                    <div nameid="Group 30" id="_bg__group_30_ek1"></div>
+                    <img src="assets/images/polygon_5.png" nameid="Polygon 3" id="polygon_3" />
+
+                    <div id="carbon_report_data" nameid="carbon:report-data">
+                        <div nameid="carbon:report-data" id="_bg__carbon_report_data_ek1"></div>
+                        <img src="assets/images/vector.png" nameid="Vector" id="vector" />
+                        <img src="assets/images/vector_ek1.png" nameid="Vector" id="vector_ek1" />
+
+                    </div>
+
+                </div>
             </div>
-        </div>
+        </a>
+
 
 
     </div>

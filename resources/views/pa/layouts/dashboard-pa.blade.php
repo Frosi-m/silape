@@ -6,7 +6,7 @@
     <title>halaman_dashboard_petugas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="StyleSheet" href="css/halaman_dashboard_petugas.css" />
+    <link rel="StyleSheet" href="css/halaman_dashboard_pa.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
     <!-- Add your custom HEAD content here -->
 

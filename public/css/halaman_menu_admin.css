@@ -2,45 +2,6 @@
 	@name halaman_dashboard_petugas
 */
 /* Only edit this if you know what you are doing! */
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Arial";
-    /* overflow-x: hidden; */
-}
-
-/* Only edit this if you know what you are doing! */
-img {
-    pointer-events: none;
-    position: absolute;
-    display: block;
-    margin: 0px;
-    border: none;
-    padding: 0px;
-}
-
-/* Only edit this if you know what you are doing! */
-div {
-    position: absolute;
-}
-
-#content-container {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#_bg__halaman_dashboard_petugas {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    background: rgba(148.75, 222.92, 255, 1);
-}
 
 #logo_smart_peamekasan_2 {
     position: absolute;
@@ -84,7 +45,23 @@ div {
     text-align: left;
     color: #e3e3e3;
 }
+.fluent-mdl2--account-management {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'%3E%3Cpath fill='black' d='M1148 1152q-83-62-179-95t-201-33q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H0q0-120 35-231t101-205t156-167t204-115q-56-35-100-82t-76-104t-47-119t-17-129q0-106 40-199t110-162T569 41T768 0q106 0 199 40t162 110t110 163t41 199q0 66-16 129t-48 119t-76 103t-101 83q60 23 113 54v152zM384 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1664 768v768H1024v-768h256v-256h512v256zm-640 0h256v-128h-256zm512 384h-128v128h-128v-128h-256v128h-128v-128h-128v256h768zm0-256h-768v128h768z'/%3E%3C/svg%3E");
+}
 
+.mdi--register {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M15 14c-2.67 0-8 1.33-8 4v2h16v-2c0-2.67-5.33-4-8-4m-9-4V7H4v3H1v2h3v3h2v-3h3v-2m6 2a4 4 0 0 0 4-4a4 4 0 0 0-4-4a4 4 0 0 0-4 4a4 4 0 0 0 4 4'/%3E%3C/svg%3E");
+}
 #sistem_laporan_pelayanan {
     top: 53px;
     left: 123px;
@@ -148,11 +125,11 @@ div {
 
 #group_20 {
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 764px;
-    height: 300px;
+    transform: translate(-50%, -50%) scale(75%);
+    width: 500px;
+    height: 650px;
 }
 
 #_bg__group_20_ek1 {
@@ -269,12 +246,20 @@ div {
 }
 
 #carbon_report_data {
-    top: 0px;
-    left: 12px;
-    width: 96px;
-    height: 96px;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
 }
-
+.oui--app-reporting {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='black'%3E%3Cpath d='M25 5h-.17v2H25a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h.17V5H7a3 3 0 0 0-3 3v20a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3'/%3E%3Cpath d='M23 3h-3V0h-8v3H9v6h14zm-2 4H11V5h3V2h4v3h3z'/%3E%3Cpath d='M10 13h12v2H10zm0 5h12v2H10zm0 5h12v2H10z' class='ouiIcon__fillSecondary'/%3E%3C/g%3E%3C/svg%3E");
+}
 #_bg__carbon_report_data_ek1 {
     top: 0px;
     left: 0px;
@@ -385,10 +370,11 @@ div {
 }
 
 #flat_color_icons_feedback {
-    top: 8px;
-    left: 8px;
+    top: 50%;
+    left: 50%;
     width: 80px;
     height: 80px;
+    transform: translate(-50%, -50%);
 }
 
 #_bg__flat_color_icons_feedback_ek1 {
@@ -448,8 +434,8 @@ div {
 }
 
 #group_18_ek2 {
-    top: 0px;
-    left: 536px;
+    top: 350px;
+    left: 0px;
     width: 228px;
     height: 300px;
 }
@@ -516,10 +502,19 @@ div {
 }
 
 #ri_user_smile_fill_ek2 {
-    top: 0px;
-    left: 11px;
-    width: 96px;
-    height: 96px;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+}
+.fluent-mdl2--report-library-mirrored {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'%3E%3Cpath fill='black' d='M608 128q45 0 77 9t58 24t46 31t40 31t44 23t55 10h992q27 0 50 10t40 27t28 41t10 50v384h-128V384H928q-31 0-54 9t-44 24t-41 31t-45 31t-58 23t-78 10H128v1152h128v128H0V256q0-27 10-50t27-40t41-28t50-10zm0 256q24 0 42-4t33-13t29-20t32-27q-17-15-31-26t-30-20t-33-13t-42-5H128v128zm1440 512v1152H384V896zm-128 128H512v896h1408zm-896 256H640v-128h384zm-256 128h256v128H768zm0 256h256v128H768zm1024 128h-640v-640h640zm-128-512h-384v384h384z'/%3E%3C/svg%3E");
 }
 
 #_bg__ri_user_smile_fill_ek3 {
@@ -566,8 +561,8 @@ div {
     transition: 0.6s ease-in-out;
 }
 #group_18_ek3 {
-    top: 0px;
-    left: 536px;
+    top: 350px;
+    left: 268px;
     width: 228px;
     height: 300px;
 }
@@ -607,7 +602,8 @@ div {
         width: 400px;
         height: 400px;
     }
-    #rectangle_38 {
+    #rectangle_38,
+    #rectangle_39 {
         width: 400px;
         height: 400px;
     }
@@ -647,7 +643,7 @@ div {
     #flat_color_icons_feedback,
     #carbon_report_data,
     #ri_user_smile_fill_ek2 {
-        transform: scale(1.5);
+        transform: translate(-50%, -50%) scale(1.5);
     }
     #logo_smart_peamekasan_2 {
         transform: translate(-50%, -50%) scale(65%);
@@ -735,7 +731,4 @@ div {
 
 @media (min-width: 1201px) {
     /* untuk desktop */
-    #group_20 {
-        transform: translate(-50%, -50%) scale(1);
-    }
 }
