@@ -192,7 +192,7 @@ button {
     white-space: nowrap;
     z-index: 11;
 }
-.rectangle-box {
+select.rectangle-box {
     position: relative;
     padding-left: 4%;
     font-size: 20px;

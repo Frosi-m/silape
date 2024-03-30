@@ -11,8 +11,12 @@
         <input class="rectangle-3" type="password">
         <span class="nama-input">Nama</span>
         <input class="main-content" type="text">
-        <span class="email-field">Email</span>
-        <input class="rectangle-box" type="email">
+        <span class="email-field">Jabatan</span>
+        <select class="rectangle-box">
+            <option value="">a</option>
+            <option value="">b</option>
+            <option value="">c</option>
+        </select>
         <span class="address-field">Alamat</span>
         <textarea class="rectangle-box-4"></textarea>
         <span class="no-telp">No telp</span>
