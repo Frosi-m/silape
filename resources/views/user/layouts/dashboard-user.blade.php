@@ -33,7 +33,9 @@
         </div>
         <div class="akun">
             <div class="welcome">Welcome ajdjfjd dkfjafja </div>
-            <div class="logout">Logout</div>
+            <a href="{{ route('logout_untuk_user') }}">
+                <div class="logout">Logout</div>
+            </a>
             <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
         </div>
     </div>

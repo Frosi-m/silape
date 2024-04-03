@@ -16,36 +16,50 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="login-body">
-            <button class="login-button">
-                <span class="silape-text">SILAPE</span></button><span class="login-text">LOGIN</span>
-            <div class="flex-row-c">
-                <span class="username">Username</span>
-                <input class="username-halaman-login-user" type="text">
-                <span class="password">Password</span>
-                <input class="password-input" type="password">
-                <button class="login-button-1">
-                    <span class="login-text-2">login</span>
-                </button>
-            </div>
-            <span class="register-text">
-            <a href="register_user">Register</a>
-            </span>
-            <div class="flex-row">
-                <div class="vector"></div>
-                <span class="metode-lain">Metode lain</span>
-                <div class="vector-3"></div>
-            </div>
-            <div class="flex-row-fa">
-                <div class="flat-color-icons-google"></div>
-                <div class="logos-facebook"></div>
-                <div class="square-x-twitter">
-                    <div class="vector-4"></div>
+    <form action="{{ route('autentikasi') }}" method="post">
+        @csrf
+        <div class="main-container">
+            <div class="login-body">
+                <button class="login-button">
+                    <span class="silape-text">SILAPE</span></button><span class="login-text">LOGIN</span>
+                <div class="flex-row-c">
+                    <span class="username">Username</span>
+                    <input class="username-halaman-login-user" type="text" name="username">
+                    @error('username')
+                        <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                            harap diisi
+                            dengan benar*</small>
+                    @enderror
+                    <span class="password">Password</span>
+                    <input class="password-input" type="password" name="password">
+                    @error('password')
+                        <small style="color: red;font-style: italic; position: absolute; top: 195px; left: 38px;">password
+                            harap
+                            diisi
+                            dengan benar*</small>
+                    @enderror
+                    <button class="login-button-1">
+                        <span class="login-text-2">login</span>
+                    </button>
+                </div>
+                <span class="register-text">
+                    <a href="register_user">Register</a>
+                </span>
+                <div class="flex-row">
+                    <div class="vector"></div>
+                    <span class="metode-lain">Metode lain</span>
+                    <div class="vector-3"></div>
+                </div>
+                <div class="flex-row-fa">
+                    <div class="flat-color-icons-google"></div>
+                    <div class="logos-facebook"></div>
+                    <div class="square-x-twitter">
+                        <div class="vector-4"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

@@ -47,4 +47,23 @@ class controller_pa extends Controller
     {
         return view('pa/data_pelaporan');
     }
+
+    public function proses_login_pa(Request $request){
+        $request->validate([
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
+        $data = [
+            'username' => $request->username,
+            'password' => $request->password
+        ];
+        if (Auth::guard('tb_pa')->attempt($data)) {
+            return redirect()->route('dashboard_untuk_pa');
+        }
+        else {
+            return redirect()->route('halaman_login_pa')->with('failed', 'Username atau password salah!!!');
+        }
+
+    }
 }

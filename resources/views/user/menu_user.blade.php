@@ -25,7 +25,7 @@
 
     <div id="group_19" nameid="Group 19">
         <div nameid="Group 18" id="_bg__group_18_ek1"></div>
-        <a href="halaman-laporan">
+        <a href="halaman_laporan">
             <div nameid="Rectangle 37" id="rectangle_38">
                 <img src="assets/images/polygon_4.png" nameid="Polygon 4" id="polygon_4" />
 
