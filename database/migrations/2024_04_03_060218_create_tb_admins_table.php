@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_admin', function (Blueprint $table) {
-            $table->id();
+        Schema::create('tb_pa', function (Blueprint $table) {
+            $table->integer('id')->autoIncrement();
+            $table->string('username');
+            $table->string('password');
+            $table->string('jabatan');
+            $table->text('alamat');
             $table->timestamps();
         });
     }
@@ -22,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tb_admin');
+        Schema::dropIfExists('tb_pa');
     }
 };

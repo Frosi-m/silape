@@ -44,6 +44,10 @@ return [
             'driver' => 'session',
             'provider' => 'tb_users',
         ],
+        'tb_pa' => [
+            'driver' => 'session',
+            'provider' => 'petugas_admin',
+        ],
     ],
 
     /*
@@ -72,6 +76,10 @@ return [
         'tb_users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\tb_user::class),
+        ],
+        'petugas_admin' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\tb_pa::class),
         ],
 
         // 'users' => [

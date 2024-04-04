@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class controller_pa extends Controller
 {
@@ -59,11 +62,15 @@ class controller_pa extends Controller
             'password' => $request->password
         ];
         if (Auth::guard('tb_pa')->attempt($data)) {
-            return redirect()->route('dashboard_untuk_pa');
+            return redirect()->route('da_admin');
         }
         else {
             return redirect()->route('halaman_login_pa')->with('failed', 'Username atau password salah!!!');
         }
 
+    }
+    public function logout_pa(){
+        Auth::logout();
+        return redirect()->route('halaman_login_pa')->with('succes', 'Anda sudah logout');
     }
 }
