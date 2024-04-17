@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 // bagian user
+
 Route::controller(controller_user::class)->group(function () {
 
     Route::get('/biodata_user', 'bio_user')->name('bio_user');
