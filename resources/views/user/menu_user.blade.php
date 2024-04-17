@@ -4,7 +4,7 @@
     <link rel="StyleSheet" href="css/dashboard-user.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
     <div id="group_18" nameid="Group 18">
-        <a href="biodata_user">
+        <a href="biodata_user/{}">
             <div nameid="Rectangle 37" id="rectangle_37">
                 <img src="assets/images/polygon_4.png" nameid="Polygon 4" id="polygon_4" />
 
@@ -53,7 +53,6 @@
                 </div>
 
                 <div id="group_27" nameid="Group 27">
-                    <div nameid="Group 27" id="_bg__group_27_ek1"></div>
                     <img src="assets/images/polygon_4.png" nameid="Polygon 2" id="polygon_2_ek1" />
 
                     <div id="material_symbols_lock" nameid="material-symbols:lock">
