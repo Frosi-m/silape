@@ -31,13 +31,16 @@
             <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
 
         </div>
-        <div class="akun">
-            <div class="welcome">Welcome ajdjfjd dkfjafja </div>
-            <a href="{{ route('logout_untuk_user') }}">
-                <div class="logout">Logout</div>
-            </a>
-            <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
-        </div>
+        @foreach ($data_user as $data)
+            <div class="akun">
+                <div class="welcome">Welcome {{ $data->username }}</div>
+                <a href="   ">
+                    <div class="logout">Logout</div>
+                </a>
+                <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
+            </div>
+        @endforeach
+
     </div>
     </div>
 
@@ -49,7 +52,6 @@
         <div id="frame_27" nameid="Frame 27">
 
             @yield('isi')
-
         </div>
     </div>
 

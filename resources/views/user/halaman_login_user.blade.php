@@ -24,8 +24,9 @@
                     <span class="silape-text">SILAPE</span></button><span class="login-text">LOGIN</span>
                 <div class="flex-row-c">
                     <span class="username">Username</span>
-                    <input class="username-halaman-login-user" type="text" name="username">
-                    @error('username')
+                    <input class="username-halaman-login-user" type="text" name="email"
+                        value="{{ old('email') }}">
+                    @error('email')
                         <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
                             harap diisi
                             dengan benar*</small>

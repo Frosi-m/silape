@@ -49,16 +49,19 @@ class controller_user extends Controller
 
     public function proses_login_user(Request $request){
         $request->validate([
-            'username' => 'required',
+            'email' => 'required',
             'password' => 'required',
         ]);
 
         $data = [
-            'email' => $request->username,
+            'email' => $request->email,
             'password' => $request->password
         ];
+        // $data_p = bcrypt($data['password']);
+        // dd($data);
+        $data_tb = DB::table('tb_user')->where('email','=', $data['email'])->get();
         if (Auth::guard('tb_user')->attempt($data)) {
-            return redirect()->route('dashboard_untuk_user');
+            return view('user/menu_user', ['data_user' => $data_tb]);
         }
         else {
             return redirect()->route('halaman_login_user')->with('failed', 'Username atau password salah!!!');
@@ -69,5 +72,12 @@ class controller_user extends Controller
     public function logout_user(){
         Auth::logout();
         return redirect()->route('halaman_login_user')->with('succes', 'Anda sudah logout');
+    }
+
+    public function tambah_laporan(Request $request){
+        $request->validate([
+            'isi' => 'required',
+            'jenis_laporan' => 'required',
+        ]);
     }
 }

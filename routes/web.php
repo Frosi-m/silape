@@ -17,17 +17,19 @@ Route::controller(controller_user::class)->group(function () {
     Route::get('/halaman_laporan', 'halaman_laporan')->name('halaman_laporan');
     Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
     Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
+    Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');
 
     Route::post('/proses_login_user', 'proses_login_user')->name('autentikasi');
-})->middleware('auth');
+    Route::post('/dashboard_user/tambah_laporan', 'tambah_laporan');
+});
 
 Route::get('/halaman_login_user', function () {
     return view('user/halaman_login_user');
-})->name('halaman_login_user')->middleware('guest');
+})->name('halaman_login_user');
 
 Route::get('/register_user', function () {
     return view('user/register_user');
-})->middleware('guest');
+});
 
 // bagian admin
 Route::controller(controller_pa::class)->group(function () {
@@ -45,7 +47,7 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/dashboard_petugas', 'dashboard_petugas')->name('dashboard_petugas');
     Route::get('/biodata_petugas', 'biodata_petugas')->name('biodata_petugas');
     Route::post('/proses_login_pa', 'proses_login_pa')->name('autentikasi_pa');
-    Route::get('/logout_user', 'logout_pa')->name('logout_untuk_pa');
+    Route::get('/logout_pa', 'logout_pa')->name('logout_untuk_pa');
 });
 
 Route::get('/halaman_login_pa', function () {
