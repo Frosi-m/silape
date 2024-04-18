@@ -10,11 +10,9 @@ use Illuminate\Support\Facades\Auth;
 class controller_user extends Controller
 {
     #untuk root bagian user
-    public function bio_user(Request $request)
+    public function bio_user()
     {
-        $data = $request->id;
-        $data_tb = DB::table('tb_user')->where('id','=', $data)->get();
-        return view('user/biodata_user', ['data_user' => $data_tb]);
+        return view('user/biodata_user');
     }
     
     public function halaman_login_user()
@@ -22,9 +20,17 @@ class controller_user extends Controller
         return view('user/halaman_login_user');
     }
 
-    public function register_user()
+    public function register_user(Request $request)
     {
-        return view('user/register_user');
+        $request->validate([
+            'email' => 'required',
+            'pass' => 'required',
+            'username' => 'required',
+            'alamat' => 'required',
+            'tlp' => 'requored'
+        ]);
+
+        return view('user/halaman_login_user');
     }
 
     public  function edit_user()
@@ -84,6 +90,7 @@ class controller_user extends Controller
 
     public function logout_user(){
         Auth::logout();
+        session()->flush();
         return redirect()->route('halaman_login_user')->with('succes', 'Anda sudah logout');
     }
 

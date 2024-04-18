@@ -11,29 +11,32 @@
 
         <div class="logo-smart-peamekasan">
         </div>
-        <img src="assets/images/8e1f03a2-70c8-4103-a205-bb51545ef76d.png" nameid="dsBuffer 1" id="dsbuffer_1" />
-        <table>
-            <tr>
-                <td>Nama</td>
-                <td>:</td>
-                <td>{{ session('data_user')['nama'] }}</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>:</td>
-                <td>{{ session('data_user')['alamat'] }}</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>:</td>
-                <td>{{ session('data_user')['email'] }}</td>
-            </tr>
-            <tr>
-                <td>No_telp</td>
-                <td>:</td>
-                <td>{{ session('data_user')['tlp'] }}</td>
-            </tr>
-        </table>
+        <img src="assets/images/8e1f03a2-70c8-4103-a205-bb51545ef76d.png" nameid="dsBuffer 1" id="dsbuffer" />
+        @if (session('data_user'))
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>{{ session('data_user')['nama'] }}</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td>{{ session('data_user')['alamat'] }}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td>{{ session('data_user')['email'] }}</td>
+                </tr>
+                <tr>
+                    <td>No_telp</td>
+                    <td>:</td>
+                    <td>{{ session('data_user')['tlp'] }}</td>
+                </tr>
+            </table>
+        @endif
+
 
         <div class="bungkus_tombol">
             <div id="tombol_konfirmasi" nameid="tombol konfirmasi">

@@ -280,7 +280,7 @@ table {
 td {
     padding: 8%;
 }
-#dsbuffer_1 {
+#dsbuffer {
     position: absolute;
     width: 15%;
     top: 50%;
@@ -413,7 +413,7 @@ div {
         font-size: 24px;
         font-family: Inter, var(--default-font-family);
     }
-    #dsbuffer_1 {
+    #dsbuffer {
         position: absolute;
         width: 25%;
         top: 150px;

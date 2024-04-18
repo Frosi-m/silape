@@ -10,22 +10,22 @@
 </head>
 
 <body>
+    <form action="{{ route('register_user') }}"></form>
     <div class="main-container">
         <div class="rectangle">
+            @csrf
             <div class="rectangle-1"><span class="silape">SILAPE</span></div>
             <span class="register">REGISTER</span>
-            <span class="username-input">Username</span>
-            <input class="rectangle-2" type="text">
+            <span class="username-input">Email</span>
+            <input class="rectangle-2" type="text" name="email">
             <span class="password-input">Password</span>
-            <input class="rectangle-3" type="password">
-            <span class="nama-input">Nama</span>
-            <input class="main-content" type="text">
-            <span class="email-field">Email</span>
-            <input class="rectangle-box" type="email">
+            <input class="rectangle-3" type="password" name="pass">
+            <span class="nama-input">Username</span>
+            <input class="main-content" type="text" name="username">
             <span class="address-field">Alamat</span>
-            <textarea class="rectangle-box-4"></textarea>
+            <textarea class="rectangle-box-4" name="alamat"></textarea>
             <span class="no-telp">No telp</span>
-            <input class="rectangle-5" type="number">
+            <input class="rectangle-5" type="number" name="tlp">
             <button class="rectangle-6">
                 <span class="buat-akun">Buat akun</span>
             </button>

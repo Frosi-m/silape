@@ -33,20 +33,17 @@
             <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
 
         </div>
-        {{-- @if ($pesan = Session::get('data'))
-            {{ $pesan }}
-        @endif --}}
 
-        {{-- {{-- @foreach ($data_user as $data) --}}
         <div class="akun">
-            <div class="welcome">Welcome {{ session('data_user')['nama'] }}</div>
-            {{-- <input type="hidden" name="id" value="{{ session('data_user')['nama'] }}"> --}}
+            @if (session('data_user'))
+                <div class="welcome">Welcome {{ session('data_user')['nama'] }}</div>
+            @endif
             <a href="{{ route('logout_untuk_user') }}">
                 <div class="logout">Logout</div>
             </a>
             <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
         </div>
-        {{-- @endforeach --}}
+
 
     </div>
     </div>
