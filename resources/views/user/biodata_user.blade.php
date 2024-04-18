@@ -16,29 +16,25 @@
             <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <td>Fahrurrosi</td>
-            </tr>
-            <tr>
-                <td>Tempat tgl</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>No_telp</td>
-                <td>:</td>
-                <td></td>
+                <td>{{ session('data_user')['nama'] }}</td>
             </tr>
             <tr>
                 <td>Alamat</td>
                 <td>:</td>
-                <td></td>
+                <td>{{ session('data_user')['alamat'] }}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>{{ session('data_user')['email'] }}</td>
+            </tr>
+            <tr>
+                <td>No_telp</td>
+                <td>:</td>
+                <td>{{ session('data_user')['tlp'] }}</td>
             </tr>
         </table>
+
         <div class="bungkus_tombol">
             <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
                 <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>

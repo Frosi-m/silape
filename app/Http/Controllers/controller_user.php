@@ -10,9 +10,11 @@ use Illuminate\Support\Facades\Auth;
 class controller_user extends Controller
 {
     #untuk root bagian user
-    public function bio_user()
+    public function bio_user(Request $request)
     {
-        return view('user/biodata_user');
+        $data = $request->id;
+        $data_tb = DB::table('tb_user')->where('id','=', $data)->get();
+        return view('user/biodata_user', ['data_user' => $data_tb]);
     }
     
     public function halaman_login_user()
@@ -59,9 +61,20 @@ class controller_user extends Controller
         ];
         // $data_p = bcrypt($data['password']);
         // dd($data);
-        $data_tb = DB::table('tb_user')->where('email','=', $data['email'])->get();
+        // $data_tb = DB::table('tb_user')->where('email','=', $data['email'])->get();
         if (Auth::guard('tb_user')->attempt($data)) {
-            return view('user/menu_user', ['data_user' => $data_tb]);
+            $user = Auth::guard('tb_user')->user();
+            
+            $data_user = [
+                'nama' => $user->username,
+                'email' => $user->email,
+                'alamat' => $user->alamat,
+                'tlp' => $user->no_tlp
+            ];
+            
+            session()->put('data_user', $data_user);
+
+            return redirect()->route('dashboard_untuk_user');
         }
         else {
             return redirect()->route('halaman_login_user')->with('failed', 'Username atau password salah!!!');

@@ -11,6 +11,8 @@
     <!-- Add your custom HEAD content here -->
 
 </head>
+@csrf
+
 
 <body>
     <div nameid="Halaman dashboard user" id="_bg__halaman_dashboard_user"></div>
@@ -31,15 +33,20 @@
             <img src="assets/images/image_1.png" nameid="image 1" id="image_1" />
 
         </div>
-        @foreach ($data_user as $data)
-            <div class="akun">
-                <div class="welcome">Welcome {{ $data->username }}</div>
-                <a href="   ">
-                    <div class="logout">Logout</div>
-                </a>
-                <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
-            </div>
-        @endforeach
+        {{-- @if ($pesan = Session::get('data'))
+            {{ $pesan }}
+        @endif --}}
+
+        {{-- {{-- @foreach ($data_user as $data) --}}
+        <div class="akun">
+            <div class="welcome">Welcome {{ session('data_user')['nama'] }}</div>
+            {{-- <input type="hidden" name="id" value="{{ session('data_user')['nama'] }}"> --}}
+            <a href="{{ route('logout_untuk_user') }}">
+                <div class="logout">Logout</div>
+            </a>
+            <img src="assets/images/dsbuffer_1.png" nameid="dsBuffer 1" id="dsbuffer_1" />
+        </div>
+        {{-- @endforeach --}}
 
     </div>
     </div>
@@ -58,5 +65,6 @@
 
 
 </body>
+
 
 </html>
