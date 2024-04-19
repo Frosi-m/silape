@@ -46,6 +46,29 @@ class controller_pa extends Controller
     {
         return view('pa/register_petugas');
     }
+    public function tambah_akun(Request $request)
+    {
+        $request->validate([
+            'username' => 'required',
+            'pass_p' => 'required',
+            'jabatan' => 'required',
+            'alamat' => 'required' ,
+        ]);
+
+        $data = [
+            'username' => $request->username,
+            'password' => $request->pass_p,
+            'alamat' => $request->alamat,
+            'jabatan' => $request->jabatan,
+        ];
+        DB::table('tb_pa')->insert([
+            'username' => $data['username'],
+            'password' => bcrypt($data['password']),
+            'jabatan' => $data['jabatan'],
+            'alamat' => $data['alamat'],
+        ]);
+        return redirect()->route('halaman_login_pa')->with('berhasil', 'Akun anda berhasil dibuat');
+    }
     public function data_laporan()
     {
         return view('pa/data_pelaporan');

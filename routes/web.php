@@ -39,6 +39,7 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/manajemen_akun', 'manajemen_akun')->name('manajemen_akun');
     Route::get('/manajemen_laporan', 'manajemen_laporan')->name('manajemen_laporan');
     Route::get('/register_petugas', 'register_akun')->name('register_akun');
+    Route::post('/tambah_petugas', 'tambah_akun')->name('tambah_akun');
     Route::get('/data_pelaporan', 'data_laporan')->name('data_laporan');
 
     // petugas
