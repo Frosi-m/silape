@@ -20,7 +20,7 @@ Route::controller(controller_user::class)->group(function () {
     Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');
 
     Route::post('/proses_login_user', 'proses_login_user')->name('autentikasi');
-    Route::post('/register_user', '')->name('register_user');
+    Route::post('/tambah_akun_user', 'tambah_user')->name('register_user');
     Route::post('/dashboard_user/tambah_laporan', 'tambah_laporan');
 });
 

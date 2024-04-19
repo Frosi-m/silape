@@ -20,17 +20,32 @@ class controller_user extends Controller
         return view('user/halaman_login_user');
     }
 
-    public function register_user(Request $request)
+    public function tambah_user(Request $request)
     {
         $request->validate([
-            'email' => 'required',
-            'pass' => 'required',
+            'email' => 'required|email:tb_user-email',
+            'pass_u' => 'required',
             'username' => 'required',
             'alamat' => 'required',
-            'tlp' => 'requored'
+            'tlp' => 'required'
         ]);
 
-        return view('user/halaman_login_user');
+        $data = [
+            'username' => $request->username,
+            'password' => $request->pass_u,
+            'alamat' => $request->alamat,
+            'no_tlp' => $request->tlp,
+            'email' => $request->email,
+        ];
+
+        DB::table('tb_user')->insert([
+            'username' => $data['username'],
+            'password' => bcrypt($data['password']),
+            'alamat' => $data['alamat'],
+            'no_tlp' =>$data['no_tlp'],
+            'email' => $data['email'],
+        ]);
+        return redirect()->route('halaman_login_user')->with('berhasil', 'Akun anda berhasil dibuat');
     }
 
     public  function edit_user()

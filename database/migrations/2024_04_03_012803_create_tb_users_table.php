@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->integer('batas_laporan')->default(3);
             $table->text('alamat');
+            $table->string('tempat_tanggal_lahir')->nullable();
             $table->bigInteger('no_tlp');
             $table->rememberToken();
             $table->timestamps();

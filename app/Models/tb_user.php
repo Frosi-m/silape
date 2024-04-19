@@ -18,5 +18,6 @@ class tb_user extends Authenticatable
         'password',
         'alamat',
         'no_tlp',
+        'tempat_tanggal_lahir',
     ];
 }
