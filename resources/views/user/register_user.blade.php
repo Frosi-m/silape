@@ -19,14 +19,14 @@
                 <span class="username-input">Email</span>
                 <input class="rectangle-2" type="text" name="email">
                 @error('email')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Email
                         harap diisi
                         dengan benar*</small>
                 @enderror
                 <span class="password-input">Password</span>
                 <input class="rectangle-3" type="password" name="pass_u">
                 @error('pass_u')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Password
                         harap diisi
                         dengan benar*</small>
                 @enderror
@@ -40,14 +40,14 @@
                 <span class="address-field">Alamat</span>
                 <textarea class="rectangle-box-4" name="alamat"></textarea>
                 @error('alamat')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Alamat
                         harap diisi
                         dengan benar*</small>
                 @enderror
                 <span class="no-telp">No telp</span>
                 <input class="rectangle-5" type="number" name="tlp">
                 @error('tlp')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">No telp
                         harap diisi
                         dengan benar*</small>
                 @enderror

@@ -85,7 +85,23 @@ class controller_pa extends Controller
             'password' => $request->password
         ];
         if (Auth::guard('tb_pa')->attempt($data)) {
-            return redirect()->route('da_admin');
+            $user = Auth::guard('tb_pa')->user();
+            
+            if ($user->jabatan == "admin") {
+                $data = [
+                    'nama' => $user->username
+                ];
+                session()->put('data_pa', $data);
+                return redirect()->route('da_admin');
+            }
+            else {
+                $data = [
+                    'nama' => $user->username
+                ];
+                session()->put('data_pa', $data);
+                return redirect()->route('dashboard_petugas');
+            }
+            
         }
         else {
             return redirect()->route('halaman_login_pa')->with('failed', 'Username atau password salah!!!');
@@ -94,6 +110,7 @@ class controller_pa extends Controller
     }
     public function logout_pa(){
         Auth::logout();
+        session()->flush();
         return redirect()->route('halaman_login_pa')->with('succes', 'Anda sudah logout');
     }
 }
