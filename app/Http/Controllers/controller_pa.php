@@ -36,7 +36,8 @@ class controller_pa extends Controller
     }
     public function manajemen_akun()
     {
-        return view('pa/manajemen_akun');
+        $data_petugas = DB::table('tb_pa')->get();
+        return view('pa/manajemen_akun', ['$data_p' => $data_petugas]);
     }
     public function manajemen_laporan()
     {

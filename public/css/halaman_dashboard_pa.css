@@ -37,12 +37,13 @@ div {
     top: 0px;
     left: 0px;
     width: 100%;
+    position: fixed;
     height: 100vh;
     background: rgb(67 198 255);
 }
 
 #logo_smart_peamekasan_2 {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

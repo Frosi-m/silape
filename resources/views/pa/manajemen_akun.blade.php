@@ -18,7 +18,18 @@
         <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
             id="logo_smart_peamekasan_2" />
         <div id="group_13" nameid="Group 13">
-
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>Jabatan</td>
+                    <td>Alamat</td>
+                </tr>
+                @foreach ($data_p as $data)
+                    <td>{{ $data->username }}</td>
+                    <td>{{ $data->jabatan }}</td>
+                    <td>{{ $alamat->alamat }}</td>
+                @endforeach
+            </table>
 
 
 

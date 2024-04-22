@@ -32,9 +32,9 @@ Route::get('/register_user', function () {
     return view('user/register_user');
 });
 
-// bagian admin
-Route::controller(controller_pa::class)->group(function () {
 
+Route::controller(controller_pa::class)->group(function () {
+    // bagian admin
     Route::get('/da_admin', 'da_admin')->name('da_admin');
     Route::get('/manajemen_akun', 'manajemen_akun')->name('manajemen_akun');
     Route::get('/manajemen_laporan', 'manajemen_laporan')->name('manajemen_laporan');
