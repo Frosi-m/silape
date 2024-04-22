@@ -20,14 +20,19 @@
         <div id="group_13" nameid="Group 13">
             <table>
                 <tr>
-                    <td>Username</td>
-                    <td>Jabatan</td>
-                    <td>Alamat</td>
+                    <th>Username</th>
+                    <th>Jabatan</th>
+                    <th>Alamat</th>
+                    <th colspan="2">Opsi</th>
                 </tr>
                 @foreach ($data_p as $data)
-                    <td>{{ $data->username }}</td>
-                    <td>{{ $data->jabatan }}</td>
-                    <td>{{ $alamat->alamat }}</td>
+                    <tr>
+                        <td>{{ $data->username }}</td>
+                        <td>{{ $data->jabatan }}</td>
+                        <td>{{ $data->alamat }}</td>
+                        <td><a href="edit_petugas\{{ $data->id }}">Edit</a></td>
+                        <td><a href="hapus_petugas\{{ $data->id }}">Hapus</a></td>
+                    </tr>
                 @endforeach
             </table>
 

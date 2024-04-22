@@ -34,13 +34,19 @@ Route::get('/register_user', function () {
 
 
 Route::controller(controller_pa::class)->group(function () {
+
+    Route::post('/proses_login_pa', 'proses_login_pa')->name('autentikasi_pa');
     // bagian admin
     Route::get('/da_admin', 'da_admin')->name('da_admin');
     Route::get('/manajemen_akun', 'manajemen_akun')->name('manajemen_akun');
     Route::get('/manajemen_laporan', 'manajemen_laporan')->name('manajemen_laporan');
     Route::get('/register_petugas', 'register_akun')->name('register_akun');
-    Route::post('/tambah_petugas', 'tambah_akun')->name('tambah_akun');
     Route::get('/data_pelaporan', 'data_laporan')->name('data_laporan');
+    Route::get('/edit_petugas/{p}', 'edit_petugas');
+    Route::get('/hapus_petugas/{p}', 'hapus_akun');
+
+    Route::post('/tambah_petugas', 'tambah_akun')->name('tambah_akun');
+    Route::post('/proses_edit_akun', 'proses_edit_akun')->name('edit_pa');
 
     // petugas
 
@@ -48,7 +54,6 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/input_tanggapan', 'input_tanggapan')->name('input_tanggapan');
     Route::get('/dashboard_petugas', 'dashboard_petugas')->name('dashboard_petugas');
     Route::get('/biodata_petugas', 'biodata_petugas')->name('biodata_petugas');
-    Route::post('/proses_login_pa', 'proses_login_pa')->name('autentikasi_pa');
     Route::get('/logout_pa', 'logout_pa')->name('logout_untuk_pa');
 });
 
