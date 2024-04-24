@@ -101,7 +101,7 @@ class controller_pa extends Controller
 
         $pass = $request->pass_p;
         DB::table('tb_pa')->where('id',$request->kunci)->update([
-            'username' => $request->username,
+            'username' => $request->username,   
             'password' => bcrypt($pass),
             'jabatan' => $request->jabatan,
             'alamat' => $request->alamat,

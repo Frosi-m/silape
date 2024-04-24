@@ -21,6 +21,7 @@ Route::controller(controller_user::class)->group(function () {
 
     Route::post('/proses_login_user', 'proses_login_user')->name('autentikasi');
     Route::post('/tambah_akun_user', 'tambah_user')->name('register_user');
+    Route::post('/ubah_data_diri', 'proses_edit_user')->name('proses_edit');
     Route::post('/dashboard_user/tambah_laporan', 'tambah_laporan');
 });
 

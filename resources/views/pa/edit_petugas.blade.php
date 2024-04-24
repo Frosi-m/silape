@@ -47,7 +47,7 @@
                 <span class="buat-akun">Simpan</span>
             </button>
             <span class="kembali">
-                <a href="../manajemen_akun">Kembali</a>
+                <a href="\manajemen_akun">Kembali</a>
             </span>
         </form>
     </div>

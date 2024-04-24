@@ -12,30 +12,30 @@
         <div class="logo-smart-peamekasan">
         </div>
         <img src="assets/images/8e1f03a2-70c8-4103-a205-bb51545ef76d.png" nameid="dsBuffer 1" id="dsbuffer" />
-        @if (session('data_user'))
+        @foreach ($data_user as $data)
             <table>
                 <tr>
                     <td>Nama</td>
                     <td>:</td>
-                    <td>{{ session('data_user')['nama'] }}</td>
+                    <td>{{ $data->username }}</td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
                     <td>:</td>
-                    <td>{{ session('data_user')['alamat'] }}</td>
+                    <td>{{ $data->alamat }}</td>
                 </tr>
                 <tr>
                     <td>Email</td>
                     <td>:</td>
-                    <td>{{ session('data_user')['email'] }}</td>
+                    <td>{{ $data->email }}</td>
                 </tr>
                 <tr>
                     <td>No_telp</td>
                     <td>:</td>
-                    <td>{{ session('data_user')['tlp'] }}</td>
+                    <td>{{ $data->no_tlp }}</td>
                 </tr>
             </table>
-        @endif
+        @endforeach
 
 
         <div class="bungkus_tombol">
