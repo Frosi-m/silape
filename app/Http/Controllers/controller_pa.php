@@ -71,9 +71,9 @@ class controller_pa extends Controller
         $inputan = new tb_pa;
 
         $inputan->username  = $request->username;
-        $inputan->password  = bcrypt($request->username);
-        $inputan->alamat    = $request->username;
-        $inputan->jabatan  = $request->username;
+        $inputan->password  = bcrypt($request->pass_p);
+        $inputan->alamat    = $request->alamat;
+        $inputan->jabatan  = $request->jabatan;
 
         $inputan->save();
         //ini menggunakan metode insert biasa
