@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
+use App\Models\tb_pa;
 
 class controller_pa extends Controller
 {
@@ -56,7 +58,7 @@ class controller_pa extends Controller
         return view('pa/register_petugas');
     }
 
-    public function tambah_akun(Request $request)
+    public function tambah_akun(Request $request) :RedirectResponse
     {
         $request->validate([
             'username' => 'required',
@@ -64,19 +66,29 @@ class controller_pa extends Controller
             'jabatan' => 'required',
             'alamat' => 'required' ,
         ]);
+        //ini mengguakan metode eloquent laravel
 
-        $data = [
-            'username' => $request->username,
-            'password' => $request->pass_p,
-            'alamat' => $request->alamat,
-            'jabatan' => $request->jabatan,
-        ];
-        DB::table('tb_pa')->insert([
-            'username' => $data['username'],
-            'password' => bcrypt($data['password']),
-            'jabatan' => $data['jabatan'],
-            'alamat' => $data['alamat'],
-        ]);
+        $inputan = new tb_pa;
+
+        $inputan->username  = $request->username;
+        $inputan->password  = bcrypt($request->username);
+        $inputan->alamat    = $request->username;
+        $inputan->jabatan  = $request->username;
+
+        $inputan->save();
+        //ini menggunakan metode insert biasa
+        // $data = [
+        //     'username' => $request->username,
+        //     'password' => $request->pass_p,
+        //     'alamat' => $request->alamat,
+        //     'jabatan' => $request->jabatan,
+        // ];
+        // DB::table('tb_pa')->insert([
+        //     'username' => $data['username'],
+        //     'password' => bcrypt($data['password']),
+        //     'jabatan' => $data['jabatan'],
+        //     'alamat' => $data['alamat'],
+        // ]);
         return redirect()->route('da_admin')->with('berhasil', 'Akun anda berhasil dibuat');
     }
 
@@ -99,13 +111,24 @@ class controller_pa extends Controller
             'alamat' => 'required' ,
         ]);
 
-        $pass = $request->pass_p;
-        DB::table('tb_pa')->where('id',$request->kunci)->update([
-            'username' => $request->username,   
-            'password' => bcrypt($pass),
-            'jabatan' => $request->jabatan,
-            'alamat' => $request->alamat,
-        ]);
+        //ini menggunakan metode eloquent
+        $update_pa = tb_pa::find($request->kunci);
+
+        $update_pa->username = $request->username;
+        $update_pa->password = bcrypt($request->pass_p);
+        $update_pa->jabatan = $request->jabatan;
+        $update_pa->alamat = $request->alamat;
+
+        $update_pa->save();
+        //ini menggunakan metode biasa
+
+        // $pass = $request->pass_p;
+        // DB::table('tb_pa')->where('id',$request->kunci)->update([
+        //     'username' => $request->username,   
+        //     'password' => bcrypt($pass),
+        //     'jabatan' => $request->jabatan,
+        //     'alamat' => $request->alamat,
+        // ]);
         return redirect()->route('manajemen_akun');
     }
 
