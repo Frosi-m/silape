@@ -28,8 +28,18 @@
             <div nameid="jenis laporan" id="jenis_laporan">
                 jenis laporan
             </div>
-            <div nameid="Rectangle 27" id="rectangle_27"></div>
-            <div nameid="Rectangle 19" id="rectangle_19"></div>
+            <select nameid="Rectangle 19" id="rectangle_19">
+                <option value="fasilitas">Fasilitas</option>
+                <option value="pelayanan">Pelayanan</option>
+
+            </select>
+
+            <script src="js/opsi.js"></script>
+
+            {{-- <select nameid="Rectangle 27" id="rectangle_27">
+                <option value="c">c</option>
+            </select> --}}
+
             <textarea nameid="Rectangle 20" id="rectangle_20"></textarea>
             <div nameid="Isi laporan" id="isi_laporan">
                 Isi laporan

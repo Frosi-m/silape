@@ -120,7 +120,8 @@ class controller_pa extends Controller
         $update_pa->alamat = $request->alamat;
 
         $update_pa->save();
-        //ini menggunakan metode biasa
+
+        //ini menggunakan metode biasa untuk update data
 
         // $pass = $request->pass_p;
         // DB::table('tb_pa')->where('id',$request->kunci)->update([
