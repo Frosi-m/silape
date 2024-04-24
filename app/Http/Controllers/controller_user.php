@@ -108,7 +108,8 @@ class controller_user extends Controller
 
     public  function halaman_laporan()
     {
-        return view('user/halaman_laporan');
+        $data_user  = DB::table('tb_user')->where('id',session('data_user')['id'])->first();
+        return view('user/halaman_laporan', ['batas' => $data_user->batas_laporan]);
     }
 
     public  function ubah_pw()
@@ -156,7 +157,10 @@ class controller_user extends Controller
     public function tambah_laporan(Request $request){
         $request->validate([
             'isi'           => 'required',
-            'jenis_laporan' => 'required',
         ]);
+        if ($request->kriteria_laporan != 'fasilitas') {
+            echo "ok";
+            
+        }
     }
 }
