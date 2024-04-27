@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class tb_laporan extends Model
 {
     use HasFactory;
-    protected $table = 'tb_laporan';
-    protected $primaryKey = 'id_laporan';
+    protected $table        = 'tb_laporan';
+    protected $primaryKey   = 'id_laporan';
 
     protected $fillable = [
         'isi_laporan',

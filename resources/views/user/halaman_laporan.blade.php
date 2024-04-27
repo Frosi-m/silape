@@ -12,7 +12,7 @@
                 Input Laporan
             </div>
             <div nameid="Sisa laporan :" id="sisa_laporan__">
-                Sisa laporan : {{ $batas }}
+                Sisa laporan : {{ session('batas') }}
             </div>
 
             <img src="assets/images/logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"

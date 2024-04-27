@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Carbon;
 use Illuminate\Http\RedirectResponse;
 use App\Models\tb_user;
+use App\Models\tb_laporan;
+use App\Models\detail_laporan_u;
 
 class controller_user extends Controller
 {
@@ -109,7 +112,8 @@ class controller_user extends Controller
     public  function halaman_laporan()
     {
         $data_user  = DB::table('tb_user')->where('id',session('data_user')['id'])->first();
-        return view('user/halaman_laporan', ['batas' => $data_user->batas_laporan]);
+        session()->put('batas', $data_user->batas_laporan);
+        return view('user/halaman_laporan');
     }
 
     public  function ubah_pw()
@@ -158,9 +162,45 @@ class controller_user extends Controller
         $request->validate([
             'isi'           => 'required',
         ]);
-        if ($request->kriteria_laporan != 'fasilitas') {
-            echo "ok";
+
+        if ($request->kriteria_laporan == 'fasilitas') {
+            $tambah_laporan = new tb_laporan;
+
+            $tambah_laporan->isi_laporan    = $request->isi;
+            $tambah_laporan->id_pelapor     = session('data_user')['id'];
+
+            $tambah_laporan->save();
             
+            $detail_laporan                 = new detail_laporan_u;
+            $tgl_laporan = Carbon::now();
+
+            $detail_laporan->id_pelaporan     = $tambah_laporan->id_laporan;
+            $detail_laporan->jenis_laporan  = $request->kriteria_laporan;
+            $detail_laporan->tgl_laporan    = $tgl_laporan->format('Y/m/d');
+            $detail_laporan->status_laporan = 'sedang diproses';
+
+            $detail_laporan->save();
+            
+
         }
+        else{
+            $tambah_laporan = new tb_laporan;
+
+            $tambah_laporan->isi_laporan    = $request->isi;
+            $tambah_laporan->id_pelapor     = session('data_user')['id'];
+
+            $tambah_laporan->save();
+            
+            $detail_laporan                 = new detail_laporan_u;
+            $tgl_laporan = Carbon::now();
+
+            $detail_laporan->id_pelaporan   = $tambah_laporan->id_laporan;
+            $detail_laporan->jenis_laporan  = $request->jenis_laporan;
+            $detail_laporan->tgl_laporan    = $tgl_laporan->format('Y/m/d');
+            $detail_laporan->status_laporan = 'sedang diproses';
+
+            $detail_laporan->save();
+        }
+        return redirect()->route('halaman_laporan')->with('laporan_berhasil', 'laporan berhasil ditambahkan');
     }
 }

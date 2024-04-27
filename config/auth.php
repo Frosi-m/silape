@@ -48,6 +48,10 @@ return [
             'driver' => 'session',
             'provider' => 'petugas_admin',
         ],
+        'tb_laporan' => [
+            'driver' => 'session',
+            'provider' => 'data_laporan',
+        ],
     ],
 
     /*
@@ -80,6 +84,10 @@ return [
         'petugas_admin' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\tb_pa::class),
+        ],
+        'data_laporan' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\tb_laporan::class),
         ],
 
         // 'users' => [

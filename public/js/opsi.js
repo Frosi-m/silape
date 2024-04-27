@@ -6,17 +6,17 @@ document.getElementById('rectangle_19').addEventListener('change', function() {
 
     if (rectangle19Value === 'pelayanan' && !document.getElementById('rectangle_27')) {
         var rectangle_27_Select = document.createElement('select');
-        rectangle_27_Select.setAttribute('name', 'Rectangle 27');
+        rectangle_27_Select.setAttribute('name', 'jenis_laporan');
         rectangle_27_Select.setAttribute('id', 'rectangle_27');
 
         // Tambahkan option ke dalam select Rectangle 27
         var option_1 = document.createElement('option');
-        option_1.value = 'rawat_jalan';
+        option_1.value = 'rawat jalan';
         option_1.textContent = 'Rawat jalan';
         rectangle_27_Select.appendChild(option_1);
 
         var option_2 = document.createElement('option');
-        option_2.value = 'rawat_inap';
+        option_2.value = 'rawat inap';
         option_2.textContent = 'Rawat inap';
         rectangle_27_Select.appendChild(option_2);
         
@@ -50,6 +50,6 @@ document.getElementById('rectangle_19').addEventListener('change', function() {
         jenis_laporan.style.display = 'none';
 
     } else {
-        rectangle27Select.style.display = 'none';
+        jenis_laporan.style.display = 'none';
     }
 });

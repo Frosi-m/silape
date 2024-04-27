@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controller_user;
 use App\Http\Controllers\controller_pa;
+use Illuminate\Support\Carbon;
 
 Route::get('/', function () {
     return view('welcome');
@@ -61,3 +62,9 @@ Route::controller(controller_pa::class)->group(function () {
 Route::get('/halaman_login_pa', function () {
     return view('pa/halaman_login_pa');
 })->name('halaman_login_pa');
+
+Route::get('/coba', function(){
+    $sekarang = Carbon::now();
+
+    echo $sekarang->format('d/m/Y');
+});

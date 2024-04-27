@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\tb_laporan;
 use App\Http\Requests\Storetb_laporanRequest;
 use App\Http\Requests\Updatetb_laporanRequest;
+use Illuminate\Support\Carbon;
 
-class TbLaporanController extends Controller
+class TbLaporan extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +20,7 @@ class TbLaporanController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function tambah_laporan()
     {
         //
     }
