@@ -15,7 +15,6 @@ return new class extends Migration
             $table->integer('id_laporan')->autoIncrement();
             $table->text('isi_laporan');
             $table->integer('id_pelapor');
-            $table->timestamps();
         });
     }
 

@@ -163,44 +163,30 @@ class controller_user extends Controller
             'isi'           => 'required',
         ]);
 
+
+        $tambah_laporan = new tb_laporan;
+        $detail_laporan = new detail_laporan_u;
+        $tgl_laporan    = Carbon::now();
+
+        $tambah_laporan->isi_laporan    = $request->isi;
+        $tambah_laporan->id_pelapor     = session('data_user')['id'];
+        $tambah_laporan->save();
+
+        $detail_laporan->id_pelaporan   = $tambah_laporan->id_laporan;
+        $detail_laporan->tgl_laporan    = $tgl_laporan->format('Y/m/d');
+        $detail_laporan->status_laporan = 'belum diproses';
+
         if ($request->kriteria_laporan == 'fasilitas') {
-            $tambah_laporan = new tb_laporan;
-
-            $tambah_laporan->isi_laporan    = $request->isi;
-            $tambah_laporan->id_pelapor     = session('data_user')['id'];
-
-            $tambah_laporan->save();
             
-            $detail_laporan                 = new detail_laporan_u;
-            $tgl_laporan = Carbon::now();
-
-            $detail_laporan->id_pelaporan     = $tambah_laporan->id_laporan;
             $detail_laporan->jenis_laporan  = $request->kriteria_laporan;
-            $detail_laporan->tgl_laporan    = $tgl_laporan->format('Y/m/d');
-            $detail_laporan->status_laporan = 'sedang diproses';
-
-            $detail_laporan->save();
-            
 
         }
         else{
-            $tambah_laporan = new tb_laporan;
 
-            $tambah_laporan->isi_laporan    = $request->isi;
-            $tambah_laporan->id_pelapor     = session('data_user')['id'];
-
-            $tambah_laporan->save();
-            
-            $detail_laporan                 = new detail_laporan_u;
-            $tgl_laporan = Carbon::now();
-
-            $detail_laporan->id_pelaporan   = $tambah_laporan->id_laporan;
             $detail_laporan->jenis_laporan  = $request->jenis_laporan;
-            $detail_laporan->tgl_laporan    = $tgl_laporan->format('Y/m/d');
-            $detail_laporan->status_laporan = 'sedang diproses';
-
-            $detail_laporan->save();
         }
+        
+        $detail_laporan->save();
         return redirect()->route('halaman_laporan')->with('laporan_berhasil', 'laporan berhasil ditambahkan');
     }
 }

@@ -11,7 +11,7 @@ class detail_laporan_u extends Model
     use HasFactory;
     protected $table        = 'detail_laporan';
     protected $primaryKey   = 'id_detail_laporan';
-    public $timestamps   = false;
+    public $timestamps      = false;
 
     protected $fillable = [
         'jenis_laporan',

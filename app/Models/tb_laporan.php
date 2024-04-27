@@ -10,6 +10,7 @@ class tb_laporan extends Model
     use HasFactory;
     protected $table        = 'tb_laporan';
     protected $primaryKey   = 'id_laporan';
+    public $timestamps      = false;
 
     protected $fillable = [
         'isi_laporan',
