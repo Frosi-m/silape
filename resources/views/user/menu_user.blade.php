@@ -25,20 +25,31 @@
 
     <div id="group_19" nameid="Group 19">
         <div nameid="Group 18" id="_bg__group_18_ek1"></div>
-        <a href="halaman_laporan">
-            <div nameid="Rectangle 37" id="rectangle_38">
-                <img src="assets/images/polygon_4.png" nameid="Polygon 4" id="polygon_4" />
+        {{-- <a href="halaman_laporan"> --}}
+        <div nameid="Rectangle 37" id="rectangle_38">
+            <img src="assets/images/polygon_4.png" nameid="Polygon 4" id="polygon_4" />
 
-                <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
-                    <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
-                    <img src="assets/images/costumers.png" nameid="Vector" id="vector" />
+            <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
+                <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
+                <img src="assets/images/costumers.png" nameid="Vector" id="vector" />
 
-                </div>
-                <div nameid="Data diri" id="pengaduan">
-                    Pengaduan
-                </div>
             </div>
-        </a>
+            <div nameid="Data diri" id="pengaduan">
+                Pengaduan
+            </div>
+
+            <div class="list_dropdown">
+                <a href="halaman_laporan">
+                    Tambah laporan
+                </a>
+
+                <a href="list_laporan">
+                    List laporan
+                </a>
+            </div>
+        </div>
+        {{-- </a> --}}
+
 
 
     </div>

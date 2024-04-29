@@ -8,6 +8,7 @@ use Illuminate\Support\Carbon;
 Route::get('/', function () {
     return view('welcome');
 });
+
 // bagian user
 
 Route::controller(controller_user::class)->group(function () {
@@ -16,6 +17,8 @@ Route::controller(controller_user::class)->group(function () {
     Route::get('/edit_user', 'edit_user')->name('edit_user');
     Route::get('/dashboard_user', 'dashboard_user')->name('dashboard_untuk_user');
     Route::get('/halaman_laporan', 'halaman_laporan')->name('halaman_laporan');
+    Route::get('/list_laporan', 'list_laporan')->name('list_laporan');
+    Route::get('/detail_laporan/{data}', 'detail_laporan');
     Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
     Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
     Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');

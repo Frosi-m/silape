@@ -34,28 +34,35 @@
 
     <div id="group_18" nameid="Group 18">
         <div nameid="Group 18" id="_bg__group_18_ek1"></div>
-        <a href="manajemen_akun">
-            <div nameid="Rectangle 37" id="rectangle_37">
-                <div id="group_31" nameid="Group 31">
-                    <div nameid="Group 31" id="_bg__group_31_ek1"></div>
-                    <img src="assets/images/polygon_5.png" nameid="Polygon 4" id="polygon_4" />
+        <div nameid="Rectangle 37" id="rectangle_37">
+            <div id="group_31" nameid="Group 31">
+                <div nameid="Group 31" id="_bg__group_31_ek1"></div>
+                <img src="assets/images/polygon_5.png" nameid="Polygon 4" id="polygon_4" />
 
-                    <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
-                        <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
+                <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
+                    <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
 
-                        <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
-                            <span class="fluent-mdl2--account-management"></span>
-
-                        </div>
+                    <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
+                        <span class="fluent-mdl2--account-management"></span>
 
                     </div>
 
                 </div>
-                <div nameid="feedback laporan" id="feedback_laporan">
-                    Manajemen akun
-                </div>
+
             </div>
-        </a>
+            <div nameid="feedback laporan" id="feedback_laporan">
+                Manajemen akun
+            </div>
+            <div class="list_dropdown">
+                <a href="manajemen_akun">
+                    Akun admin/petugas
+                </a>
+
+                <a href="manajemen_akun_user">
+                    Akun user
+                </a>
+            </div>
+        </div>
 
 
 

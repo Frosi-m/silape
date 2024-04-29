@@ -21,11 +21,15 @@
                     harap diisi
                     dengan benar*</small>
             @enderror
-            <span class="email-field">Jabatan</span>
+            <span class="email-field">Bidang</span>
             <select class="rectangle-box" name="jabatan">
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
+                <option value="Fasilitas">Fasilitas</option>
+                <option value="Rawat jalan">Rawat jalan</option>
+                <option value="Rawat inap">Rawat inap</option>
+                <option value="Admisi">Admisi</option>
+                <option value="Farmasi">Farmasi</option>
+                <option value="Lab">Lab</option>
+                <option value="Radiologi">Radiologi</option>
             </select>
             @error('jabatan')
                 <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">jabatan

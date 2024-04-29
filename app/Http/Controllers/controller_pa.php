@@ -50,7 +50,11 @@ class controller_pa extends Controller
 
     public function manajemen_laporan()
     {
-        return view('pa/manajemen_laporan');
+        $data_user = DB::table('detail_laporan')
+                            ->where('status_laporan', 'belum diproses')
+                            ->get();
+        // dd($data_user);
+        return view('pa/manajemen_laporan',['list_lp' => $data_user]);
     }
 
     public function register_akun()

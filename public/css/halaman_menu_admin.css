@@ -566,11 +566,50 @@
     width: 228px;
     height: 300px;
 }
+
+.list_dropdown {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    min-width: 160px;
+    background: #e3e3e3;
+    top: 25%;
+    left: 10%;
+    border-radius: 4px;
+    box-shadow: -2px 2px 5px black;
+}
+
+.list_dropdown a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+}
+
+.list_dropdown a:hover {
+    background: gold;
+}
+#rectangle_37:hover .list_dropdown {
+    display: block;
+}
+
 /* Add your custom CSS here */
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
     #main-container {
         height: 850px;
+    }
+    .list_dropdown {
+        display: none;
+        position: absolute;
+        overflow: hidden;
+        min-width: 250px;
+        background: #e3e3e3;
+        top: 25%;
+        left: 10%;
+        border-radius: 4px;
+        font-size: 25px;
+        box-shadow: -2px 2px 5px black;
     }
 
     #_bg__halaman_dashboard_petugas {

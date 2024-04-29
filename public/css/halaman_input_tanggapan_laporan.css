@@ -57,6 +57,7 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     border-collapse: collapse;
+    z-index: 10;
 }
 
 #content-container {
@@ -335,8 +336,10 @@ table {
         left: 50%;
         transform: translate(-50%, -50%) scale(155%);
     }
+    #logo_smart_peamekasan_2 {
+        display: none;
+    }
     #rectangle_18,
-    #logo_smart_peamekasan_2,
     #group_13 {
         position: absolute;
         top: 50%;

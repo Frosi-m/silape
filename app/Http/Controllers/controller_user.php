@@ -115,6 +115,26 @@ class controller_user extends Controller
         session()->put('batas', $data_user->batas_laporan);
         return view('user/halaman_laporan');
     }
+    public  function list_laporan()
+    {
+        $data_user  = DB::table('tb_laporan')
+                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                            ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                            ->where('id_pelapor',session('data_user')['id'])
+                            ->get();
+        // dd($data_user);
+        return view('user/list_laporan', ['list_lp' => $data_user]);
+    }
+
+    public function detail_laporan($data){
+        $data_user  = DB::table('tb_laporan')
+                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                            ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                            ->where('id_laporan',$data)
+                            ->first();
+        dd($data_user);
+        return view('user/detail_laporan', ['detail_lp' => $data_user]);
+    }
 
     public  function ubah_pw()
     {
