@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use App\Models\tb_pa;
+use App\Models\detail_laporan_a;
 
 class controller_pa extends Controller
 {
@@ -57,6 +58,42 @@ class controller_pa extends Controller
         return view('pa/manajemen_laporan',['list_lp' => $data_user]);
     }
 
+    public function laporan_konfirmasi($p){
+        $data_laporan = DB::table('tb_laporan')
+                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                            ->join('tb_user', 'tb_laporan.id_pelapor', '=', 'tb_user.id_user')
+                            ->select('tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                            ->where('id_laporan',$p)
+                            ->first();
+        // dd($data_laporan);
+        return view('pa/halaman_konfirmasi_tanggapan', ['dt_laporan' => $data_laporan]);
+    }
+
+    public function laporan_ditolak($p){
+        $update_status_laporan = detail_laporan_a::find($p);
+
+        $update_status_laporan->status_laporan  = 'gagal diproses';
+
+        $update_status_laporan->save();
+
+        return redirect()->route('manajemen_laporan');
+
+    }
+
+    public function laporan_diterima($p){
+        $update_status_laporan = detail_laporan_a::find($p);
+
+        //cek dulu takut datanya tidak ditemukan
+        if($update_status_laporan == null){
+            return redirect()->route('manajemen_laporan')->with('lp_gagal','laporan gagal di proses');
+        }
+        $update_status_laporan->status_laporan  = 'sedang diproses';
+
+        $update_status_laporan->save();
+
+        return redirect()->route('manajemen_laporan')->with('lp_berhasil','laporan berhasil di proses');
+
+    }
     public function register_akun()
     {
         return view('pa/register_petugas');
@@ -118,10 +155,10 @@ class controller_pa extends Controller
         //ini menggunakan metode eloquent
         $update_pa = tb_pa::find($request->kunci);
 
-        $update_pa->username = $request->username;
-        $update_pa->password = bcrypt($request->pass_p);
-        $update_pa->jabatan = $request->jabatan;
-        $update_pa->alamat = $request->alamat;
+        $update_pa->username    = $request->username;
+        $update_pa->password    = bcrypt($request->pass_p);
+        $update_pa->jabatan     = $request->jabatan;
+        $update_pa->alamat      = $request->alamat;
 
         $update_pa->save();
 

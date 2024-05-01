@@ -14,43 +14,47 @@
                 Manajemen laporan
             </div>
 
-            <table>
-                <tr>
-                    <th>No</th>
-                    <th>Jenis laporan</th>
-                    <th>Tanggal laporan</th>
-                    <th>Status laporan</th>
-                    <th>Opsi</th>
-                </tr>
-                <?php
-                $no = 1;
-                ?>
-                @foreach ($list_lp as $data_list)
+            @if (!$list_lp->isEmpty())
+                <table>
                     <tr>
-                        <td>{{ $no }}</td>
-                        <td>{{ $data_list->jenis_laporan }}</td>
-                        <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
-                        <td>{{ $data_list->status_laporan }}</td>
-                        <td>
-                            <div class="nav_table">
-                                <a href="detail_laporan\">konfirmasi</a>
-                            </div>
-                        </td>
-                        <?php
-                        $no++;
-                        ?>
-@endforeach
-            </table>
+                        <th>No</th>
+                        <th>Jenis laporan</th>
+                        <th>Tanggal laporan</th>
+                        <th>Status laporan</th>
+                        <th>Opsi</th>
+                    </tr>
+                    <?php
+                    $no = 1;
+                    ?>
+                    @foreach ($list_lp as $data_list)
+                        <tr>
+                            <td>{{ $no }}</td>
+                            <td>{{ $data_list->jenis_laporan }}</td>
+                            <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                            <td>{{ $data_list->status_laporan }}</td>
+                            <td>
+                                <div class="nav_table">
+                                    <a href="konfirmasi_laporan\{{ $data_list->id_pelaporan }}">konfirmasi</a>
+                                </div>
+                            </td>
+                            <?php
+                            $no++;
+                            ?>
+                    @endforeach
+                </table>
+            @else
+                <div class="pesan">
+                    <p>Maaf untuk saat ini laporan user belum ada !!</p>
+                </div>
+            @endif
 
         </div>
 
-        <img src="assets\images\logo_smart_peamekasan_2.png"
-                                    nameid="logo smart peamekasan 2" id="logo_smart_peamekasan_2" />
-                                <div id="group_13" nameid="Group 13">
+        <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
+            id="logo_smart_peamekasan_2" />
+        <div id="group_13" nameid="Group 13">
 
 
-
-
-                                </div>
-                            </div>
-                        @endsection
+        </div>
+    </div>
+@endsection

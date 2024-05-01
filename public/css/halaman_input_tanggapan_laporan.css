@@ -27,6 +27,26 @@ a {
 div {
     position: absolute;
 }
+
+#rectangle_22 {
+    top: 0px;
+    left: 0px;
+    width: 496px;
+    height: 86px;
+}
+
+#konfirmasi_tanggapan {
+    top: 16px;
+    left: 34px;
+    width: 469px;
+    height: 82px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #2c2c2c;
+}
 span {
     position: relative;
     top: 25%;
@@ -104,7 +124,22 @@ table {
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
     border-radius: 30px;
+    border-top-left-radius: 35px;
     background: rgba(243.31, 243.31, 243.31, 1);
+    overflow: hidden;
+}
+
+#konfirmasi {
+    position: absolutes;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 117px;
+    height: 21px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 19px;
+    color: #ffffff;
 }
 
 #rectangle_21 {
@@ -224,6 +259,14 @@ table {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(184.88, 184.88, 184.88, 1);
+    overflow: hidden;
+}
+
+#rectangle_20 p {
+    line-height: 30px;
+    font-size: 20px;
+    word-spacing: 5px;
+    text-align: justify;
 }
 
 #isi_tanggapan {
@@ -251,7 +294,18 @@ table {
     width: 132px;
     height: 41px;
 }
+.pesan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.pesan p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
 #rectangle_21_ek2 {
     top: 0px;
     left: 0px;
@@ -404,12 +458,14 @@ table {
         height: 100vh;
     }
     #rectangle_18,
-    #group_13,
-    #logo_smart_peamekasan_2 {
+    #group_13 {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.9);
+    }
+    #logo_smart_peamekasan_2 {
+        display: none;
     }
 }
 

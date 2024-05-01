@@ -48,6 +48,9 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/register_petugas', 'register_akun')->name('register_akun');
     Route::get('/data_pelaporan', 'data_laporan')->name('data_laporan');
     Route::get('/edit_petugas/{p}', 'edit_petugas');
+    Route::get('/konfirmasi_laporan/{p}', 'laporan_konfirmasi');
+    Route::get('/tolak_laporan/{p}', 'laporan_ditolak')->name('tolak_laporan');
+    Route::get('/terima_laporan/{p}', 'laporan_diterima')->name('konfirmasi_laporan');
     Route::get('/hapus_petugas/{p}', 'hapus_akun');
 
     Route::post('/tambah_petugas', 'tambah_akun')->name('tambah_akun');

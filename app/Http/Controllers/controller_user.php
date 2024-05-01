@@ -17,7 +17,7 @@ class controller_user extends Controller
     #untuk root bagian user
     public function bio_user()
     {
-        $data_user = DB::table('tb_user')->where('id',session('data_user')['id'])->get();
+        $data_user = DB::table('tb_user')->where('id_user',session('data_user')['id'])->get();
         return view('user/biodata_user', ['data_user' => $data_user]);
     }
     
@@ -69,7 +69,7 @@ class controller_user extends Controller
 
     public  function edit_user()
     {
-        $data_user = DB::table('tb_user')->where('id',session('data_user')['id'])->get();
+        $data_user = DB::table('tb_user')->where('id_user',session('data_user')['id'])->get();
         return view('user/edit_data_user', ['data_u'=>$data_user]);
     }
 
@@ -111,7 +111,7 @@ class controller_user extends Controller
 
     public  function halaman_laporan()
     {
-        $data_user  = DB::table('tb_user')->where('id',session('data_user')['id'])->first();
+        $data_user  = DB::table('tb_user')->where('id_user',session('data_user')['id'])->first();
         session()->put('batas', $data_user->batas_laporan);
         return view('user/halaman_laporan');
     }
@@ -158,7 +158,7 @@ class controller_user extends Controller
             $user = Auth::guard('tb_user')->user();
             
             $ada = [
-                'id'    => $user->id,
+                'id'    => $user->id_user,
                 'nama'  => $user->username
             ];
             
