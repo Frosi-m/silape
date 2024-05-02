@@ -7,8 +7,11 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Carbon;
 use App\Models\tb_pa;
+use App\Models\tb_tanggapan;
 use App\Models\detail_laporan_a;
+use App\Models\detail_laporan_p;
 
 class controller_pa extends Controller
 {
@@ -22,11 +25,50 @@ class controller_pa extends Controller
         return view('pa/halaman_data_tanggapan');
     }
 
-    public function input_tanggapan()
-    {
-        return view('pa/halaman_input_tanggapan');
+    public function input_tanggapan($s)
+    {   $data_laporan = DB::table('tb_laporan')
+                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                            ->join('tb_user', 'tb_laporan.id_pelapor', '=', 'tb_user.id_user')
+                            ->select('tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan', 'detail_laporan.id_pelaporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan')
+                            ->where('id_laporan',$s)
+                            ->first();
+        return view('pa/halaman_input_tanggapan', ['dt_laporan' => $data_laporan]);
     }
 
+    public function proses_tanggapan(Request $request){
+        $request->validate([
+            'isi_tanggapan' => 'required'
+        ]);
+
+        $tambah_tanggapan   = new tb_tanggapan;
+        $data_tanggapan     = detail_laporan_p::find($request->id_laporan);
+        $tgl_tanggapan      = Carbon::now();
+
+        $tambah_tanggapan->isi_tanggapan    = $request->isi_tanggapan;
+        $tambah_tanggapan->id_petugas       = session('data_pa')['id'];
+        $tambah_tanggapan->save();
+
+        $data_tanggapan->id_umpan_balik     = $tambah_tanggapan->id_tanggapan;
+        $data_tanggapan->tgl_tanggapan      = $tgl_tanggapan->format('Y/m/d');
+        $data_tanggapan->status_laporan     = 'selesai diproses';
+        $data_tanggapan->save();
+
+        return redirect()->route('list_lp');
+
+
+    }    
+
+    public function list_laporan(){
+        $data_user =DB::table('tb_laporan')
+                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                            ->join('tb_user', 'tb_laporan.id_pelapor', '=', 'tb_user.id_user')
+                            ->select('tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan', 'detail_laporan.id_pelaporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan')
+                            ->where('status_laporan', 'sedang diproses')
+                            ->where('jenis_laporan', session('data_pa')['jbt'])
+                            ->get();
+        // dd($data_user);
+        return view('pa/halaman_list_lp', ['list_lp' => $data_user]);
+    }
     public function dashboard_petugas()
     {
         return view('pa/menu_pa');
@@ -191,18 +233,18 @@ class controller_pa extends Controller
         if (Auth::guard('tb_pa')->attempt($data)) {
             $user = Auth::guard('tb_pa')->user();
             
+            $data = [
+                'id'    => $user->id_pa,
+                'nama'  => $user->username,
+                'jbt'   => $user->jabatan
+            ];
+            session()->put('data_pa', $data);
+
             if ($user->jabatan == "admin") {
-                $data = [
-                    'nama' => $user->username
-                ];
-                session()->put('data_pa', $data);
+                
                 return redirect()->route('da_admin');
             }
             else {
-                $data = [
-                    'nama' => $user->username
-                ];
-                session()->put('data_pa', $data);
                 return redirect()->route('dashboard_petugas');
             }
             

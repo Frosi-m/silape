@@ -200,7 +200,7 @@ table {
     -moz-border-radius: 70px;
     -webkit-border-radius: 70px;
     border-radius: 70px;
-    background: rgba(184.88, 184.88, 184.88, 1);
+    background: rgb(210, 210, 210);
 }
 #rectangle_18 .ion--arrow-back-circle {
     display: flex;
@@ -241,7 +241,7 @@ table {
     -moz-border-radius: 70px;
     -webkit-border-radius: 70px;
     border-radius: 70px;
-    background: rgba(184.88, 184.88, 184.88, 1);
+    background: rgb(210, 210, 210);
 }
 
 #rectangle_20 {
@@ -258,7 +258,42 @@ table {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(184.88, 184.88, 184.88, 1);
+    background: rgb(220, 220, 220);
+    overflow: hidden;
+}
+#rectangle_20_isi_lp {
+    position: relative;
+    padding: 2%;
+    text-indent: 4%;
+    top: 34px;
+    left: 509px;
+    width: 437px;
+    height: 100px;
+    border: none;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(220, 220, 220);
+    overflow: hidden;
+    font-size: 20px;
+}
+#rectangle_20_isi_tp {
+    position: relative;
+    padding: 2%;
+    text-indent: 4%;
+    top: 80px;
+    left: 509px;
+    width: 437px;
+    height: 125px;
+    border: none;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(220, 220, 220);
     overflow: hidden;
 }
 
@@ -271,6 +306,17 @@ table {
 
 #isi_tanggapan {
     top: 0px;
+    left: 509px;
+    width: 242px;
+    height: 30px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+}
+#isi_tanggapan_2 {
+    top: 185px;
     left: 509px;
     width: 242px;
     height: 30px;
@@ -326,9 +372,24 @@ table {
 }
 
 #kirim {
-    position: absolutes;
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-40%, -50%);
+    width: 80.98px;
+    height: 30.14px;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: 24px;
+    color: #ffffff;
+}
+button {
+    border: none;
+}
+#kirim_2 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
     transform: translate(-40%, -50%);
     width: 80.98px;
     height: 30.14px;
@@ -413,10 +474,7 @@ table {
         height: 499px;
         transform: translate(-50%, -50%) scale(95%);
     }
-    #isi_tanggapan {
-        top: 184px;
-        left: 2px;
-    }
+
     #rectangle_20 {
         top: 225px;
         left: 0px;

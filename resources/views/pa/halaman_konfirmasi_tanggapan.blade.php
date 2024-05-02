@@ -39,7 +39,7 @@
                 </p>
             </div>
             <div nameid="Isi tanggapan" id="isi_tanggapan">
-                Isi tanggapan
+                Isi laporan
             </div>
 
             <div class="bungkus_tombol">

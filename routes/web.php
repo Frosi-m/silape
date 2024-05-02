@@ -59,10 +59,13 @@ Route::controller(controller_pa::class)->group(function () {
     // petugas
 
     Route::get('/data_tanggapan', 'data_tanggapan')->name('data_tanggapan');
-    Route::get('/input_tanggapan', 'input_tanggapan')->name('input_tanggapan');
+    Route::get('/list_lp', 'list_laporan')->name('list_lp');
+    Route::get('/input_tanggapan/{s}', 'input_tanggapan')->name('input_tanggapan');
     Route::get('/dashboard_petugas', 'dashboard_petugas')->name('dashboard_petugas');
     Route::get('/biodata_petugas', 'biodata_petugas')->name('biodata_petugas');
     Route::get('/logout_pa', 'logout_pa')->name('logout_untuk_pa');
+    
+    Route::post('/p_lp', 'proses_tanggapan')->name('proses_tanggapan');
 });
 
 Route::get('/halaman_login_pa', function () {

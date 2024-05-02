@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\RedirectResponse;
 use App\Models\tb_user;
-use App\Models\tb_laporan;
 use App\Models\detail_laporan_u;
 
 class controller_user extends Controller
@@ -76,7 +75,7 @@ class controller_user extends Controller
     public  function proses_edit_user(Request $request)
     {
         $request->validate([
-            'namauser' => 'required',
+            'namauser'  => 'required',
             'tela'      => 'required',
             'tala'      => 'required',
             'no_tlp'    => 'required',
@@ -84,10 +83,10 @@ class controller_user extends Controller
         ]);
         $update_user = tb_user::find($request->id_kunci);
 
-        $update_user->username = $request->namauser;
-        $update_user->tempat_tanggal_lahir = $request->tela.",".$request->tala;
-        $update_user->no_tlp = $request->no_tlp;
-        $update_user->alamat = $request->tempat;
+        $update_user->username              = $request->namauser;
+        $update_user->tempat_tanggal_lahir  = $request->tela.",".$request->tala;
+        $update_user->no_tlp                = $request->no_tlp;
+        $update_user->alamat                = $request->tempat;
         
         $update_user->save();
         // dd($cek);

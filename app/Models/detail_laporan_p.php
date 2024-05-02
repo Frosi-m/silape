@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class detail_laporan_a  extends Model
+
+class detail_laporan_p  extends Model
 {
     use HasFactory;
     protected $table        = 'detail_laporan';
@@ -14,7 +15,8 @@ class detail_laporan_a  extends Model
     public $timestamps      = false;
 
     protected $fillable = [
+        'tgl_tanggapan',
         'status_laporan',
+        'id_umpan_balik',
     ];
 }
-

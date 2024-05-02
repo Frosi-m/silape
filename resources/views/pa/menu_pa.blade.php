@@ -35,7 +35,7 @@
 
     <div id="group_18" nameid="Group 18">
         <div nameid="Group 18" id="_bg__group_18_ek1"></div>
-        <a href="input_tanggapan">
+        <a href="list_lp">
             <div nameid="Rectangle 37" id="rectangle_37">
                 <div id="group_31" nameid="Group 31">
                     <div nameid="Group 31" id="_bg__group_31_ek1"></div>
