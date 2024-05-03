@@ -174,10 +174,80 @@ class controller_pa extends Controller
         // ]);
         return redirect()->route('da_admin')->with('berhasil', 'Akun anda berhasil dibuat');
     }
-
+    public function total_laporan(){
+        $t_lp_f = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'fasilitas')
+                        ->count();
+        $t_lp_rj = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'rawat jalan')
+                        ->count();
+        $t_lp_ri = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'rawat inap')
+                        ->count();
+        $t_lp_a = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'admisi')
+                        ->count();
+        $t_lp_fi = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'farmasi')
+                        ->count();
+        $t_lp_l = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'lab')
+                        ->count();
+        $t_lp_r = DB::table('detail_laporan')
+                        ->where('jenis_laporan', 'radiologi')
+                        ->count();
+        $data_lp = [
+            'labels'    => [
+                            'Fasilitas', 
+                            'Rawat Jalan', 
+                            'Rawat Inap', 
+                            'Admisi', 
+                            'farmasi', 
+                            'lab', 
+                            'radiologi'
+                    ],
+            'data'      => [
+                            $t_lp_f, 
+                            $t_lp_rj, 
+                            $t_lp_ri, 
+                            $t_lp_a, 
+                            $t_lp_fi, 
+                            $t_lp_l, 
+                            $t_lp_r]
+        ];
+        // dd($data_lp);
+        return view('pa/total_pelaporan', compact('data_lp'));
+    }
     public function data_laporan()
     {
-        return view('pa/data_pelaporan');
+        $t_lp_g = DB::table('detail_laporan')
+                        ->where('status_laporan', 'gagal diproses')
+                        ->count();
+        $t_lp_sep = DB::table('detail_laporan')
+                        ->where('status_laporan', 'sedang diproses')
+                        ->count();
+        $t_lp_b = DB::table('detail_laporan')
+                        ->where('status_laporan', 'belum diproses')
+                        ->count();
+        $t_lp_sup = DB::table('detail_laporan')
+                        ->where('status_laporan', 'selesai diproses')
+                        ->count();
+        
+        $data_lp = [
+            'labels'    => [
+                            'Gagal diproses', 
+                            'Sedang diproses', 
+                            'Belum diproses', 
+                            'Selesai diproses', 
+                    ],
+            'data'      => [
+                            $t_lp_g, 
+                            $t_lp_sep, 
+                            $t_lp_b, 
+                            $t_lp_sup, 
+                            ]
+        ];                
+        return view('pa/status_pelaporan', compact('data_lp'));
     }
 
     public function edit_petugas($p){

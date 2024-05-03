@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <link rel="StyleSheet" href="../css/halaman_dashboard_pa.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Add your custom HEAD content here -->
 
 </head>

@@ -386,6 +386,19 @@ table {
 button {
     border: none;
 }
+.bagan_chart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+#myChart {
+    width: 150%;
+    padding: 4%;
+    overflow: auto;
+}
 #kirim_2 {
     position: absolute;
     top: 50%;
