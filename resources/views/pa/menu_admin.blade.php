@@ -69,8 +69,8 @@
 
     </div>
 
-    <div id="group_18_ek2" nameid="Group 18">
-        <div nameid="Group 18" id="_bg__group_18_ek3"></div>
+    <div id="group_18_ek2">
+        <div id="_bg__group_18_ek3"></div>
         <a href="register_petugas">
             <div nameid="Rectangle 37" id="rectangle_37_ek1">
                 <div id="group_29" nameid="Group 29">
@@ -94,23 +94,31 @@
     </div>
 
     <div id="group_18_ek3" nameid="Group 18">
-        <div nameid="Group 18" id="_bg__group_18_ek3"></div>
-        <a href="data_pelaporan">
-            <div nameid="Rectangle 37" id="rectangle_39">
-                <div id="group_29" nameid="Group 29">
-                    <div nameid="Group 29" id="_bg__group_29_ek1"></div>
-                    <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
+        <div id="_bg__group_18_ek3"></div>
+        <div id="rectangle_39">
+            <div id="group_29" nameid="Group 29">
+                <div nameid="Group 29" id="_bg__group_29_ek1"></div>
+                <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
 
-                    <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
-                        <span class="oui--app-reporting"></span>
-                    </div>
+                <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
+                    <span class="oui--app-reporting"></span>
+                </div>
 
-                </div>
-                <div nameid="Data diri" id="data_diri1">
-                    Data laporan
-                </div>
             </div>
-        </a>
+            <div nameid="Data diri" id="data_diri1">
+                Data laporan
+            </div>
+            <div class="list_dropdown">
+                <a href="status_pelaporan">
+                    Status laporan
+                </a>
+
+                <a href="total_laporan">
+                    Total laporan
+                </a>
+            </div>
+        </div>
+
 
 
 

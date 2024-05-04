@@ -399,6 +399,12 @@ button {
     padding: 4%;
     overflow: auto;
 }
+
+#myChart_bar {
+    width: 220%;
+    padding: 4%;
+    overflow: auto;
+}
 #kirim_2 {
     position: absolute;
     top: 50%;

@@ -218,6 +218,285 @@ class controller_pa extends Controller
         // dd($data_lp);
         return view('pa/total_pelaporan', compact('data_lp'));
     }
+
+    public function detail_tp(Request $request){
+        $jenis_laporan = $request->query('jenis_laporan');
+        if ($jenis_laporan == "Fasilitas") {
+            //ini bagian laporan
+            $data_thn_lp = DB::table('detail_laporan')
+                            ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                            ->where('jenis_laporan', 'fasilitas')
+                            ->pluck('tahun')
+                            ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                                ->whereYear('tgl_laporan', $data)
+                                ->where('jenis_laporan', 'fasilitas')
+                                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+            }
+
+            // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                                ->where('jenis_laporan', 'fasilitas')
+                                ->pluck('tahun')
+                                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                                ->whereYear('tgl_tanggapan', $data)
+                                ->where('jenis_laporan', 'fasilitas')
+                                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Rawat_jalan") {
+            //ini bagian laporan
+            $data_thn_lp = DB::table('detail_laporan')
+                                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                                ->where('jenis_laporan', 'rawat jalan')
+                                ->pluck('tahun')
+                                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                                    ->whereYear('tgl_laporan', $data)
+                                    ->where('jenis_laporan', 'rawat jalan')
+                                    ->count();
+
+                array_push($jml_data, $jml_data_thn);
+            }
+             // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'rawat jalan')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'rawat jalan')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Rawat_inap") {
+            $data_thn_lp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'rawat inap')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_laporan', $data)
+                ->where('jenis_laporan', 'rawat inap')
+                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+            }
+            // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'rawat inap')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'rawat inap')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Admisi") {
+            $data_thn_lp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'admisi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_laporan', $data)
+                ->where('jenis_laporan', 'admisi')
+                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+            }
+            // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'admisi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'admisi')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Lab") {
+            $data_thn_lp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'lab')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_laporan', $data)
+                ->where('jenis_laporan', 'lab')
+                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+            }
+            // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'lab')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'lab')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Radiologi") {
+            $data_thn_lp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'radiologi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_laporan', $data)
+                ->where('jenis_laporan', 'radiologi')
+                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+                echo $data;
+            }
+            // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'radiologi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'radiologi')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        elseif ($jenis_laporan == "Farmasi") {
+            $data_thn_lp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'farmasi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $jml_data = array();
+            foreach ($data_thn_lp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_laporan', $data)
+                ->where('jenis_laporan', 'farmasi')
+                ->count();
+
+                array_push($jml_data, $jml_data_thn);
+                echo $data;
+            }
+      // ini bagian tanggapan
+            $data_thn_tp = DB::table('detail_laporan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', 'farmasi')
+                ->pluck('tahun')
+                ->toArray();
+            
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', 'farmasi')
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+            $data_per_thn = [
+                "tahunan"   => $data_thn_lp,
+                "data_thn"  => $jml_data,
+                "data_thn_2"=> $ttl_data
+            ];
+        }
+        else{
+
+        }
+        return view('pa/detail_total_pelaporan', compact('data_per_thn'));
+    }
     public function data_laporan()
     {
         $t_lp_g = DB::table('detail_laporan')

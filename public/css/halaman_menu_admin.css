@@ -593,6 +593,9 @@
     display: block;
 }
 
+#rectangle_39:hover .list_dropdown {
+    display: block;
+}
 /* Add your custom CSS here */
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */

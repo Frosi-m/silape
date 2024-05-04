@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\RedirectResponse;
 use App\Models\tb_user;
+use App\Models\tb_laporan;
 use App\Models\detail_laporan_u;
 
 class controller_user extends Controller

@@ -1,8 +1,6 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
     <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <div id="group_32" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18">
@@ -12,6 +10,19 @@
             <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
             <div nameid="Input Tanggapan" id="input_tanggapan">
                 Total pelaporan
+            </div>
+
+            <div class="opsi_laporan">
+                <select onchange="window.location.href=this.value;">
+                    <option value="{{ route('detail_t_p') }}">Pilih opsinya</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Fasilitas">Fasilitas</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Rawat_jalan">Rawat jalan</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Rawat_inap">Rawat inap</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Admisi">Admisi</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Lab">Lab</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Radiologi">Radiologi</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Farmasis">Farmasi</option>
+                </select>
             </div>
 
             <div class="bagan_chart">
@@ -34,9 +45,9 @@
                                 'rgba(54, 162, 235, 1)',
                                 'rgba(255, 206, 86, 1)',
                                 'rgba(75, 192, 192, 1)',
-                                'rgb(92, 64, 51)',
-                                'rgba(75, 12, 192, 1)',
-                                'rgba(25, 26, 86, 1)',
+                                'rgb(230, 115, 0)',
+                                'rgb(153, 102, 255)',
+                                'rgba(0, 102, 255)',
                             ],
                             hoverOffset: 1
                         }]
@@ -58,6 +69,5 @@
                 });
             </script>
         </div>
-
     </div>
 @endsection
