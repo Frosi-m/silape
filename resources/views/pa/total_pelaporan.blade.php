@@ -21,7 +21,7 @@
                     <option value="{{ route('detail_t_p') }}?jenis_laporan=Admisi">Admisi</option>
                     <option value="{{ route('detail_t_p') }}?jenis_laporan=Lab">Lab</option>
                     <option value="{{ route('detail_t_p') }}?jenis_laporan=Radiologi">Radiologi</option>
-                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Farmasis">Farmasi</option>
+                    <option value="{{ route('detail_t_p') }}?jenis_laporan=Farmasi">Farmasi</option>
                 </select>
             </div>
 
