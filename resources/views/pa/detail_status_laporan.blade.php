@@ -6,7 +6,7 @@
 
 <div id="group_32" nameid="Group 32">
     <div nameid="Rectangle 18" id="rectangle_18">
-        <a href="da_admin">
+        <a href="{{ route('data_laporan') }}">
             <span class="ion--arrow-back-circle"></span>
         </a>
         <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
@@ -34,31 +34,51 @@
             const ctx = document.getElementById('myChart');
 
             new Chart(ctx, {
-                type: 'doughnut',
+                type: 'bar',
                 data: {
-                    labels: @json($data_lp['labels']),
+                    labels: @json($data_s_per_thn['tahunan']),
                     datasets: [{
-                        label: 'Total',
-                        data: @json($data_lp['data']),
+                        label: 'Gagal diproses',
+                        data: @json($data_s_per_thn['data_thn'][0]),
                         borderWidth: 0,
                         backgroundColor: [
                             'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(255, 26, 86, 1)',
-                            'rgba(75, 12, 192, 1)',
-                            'rgba(25, 26, 86, 1)',
                         ],
                         hoverOffset: 1
-                    }]
+                    },
+                    {
+                        label: 'Belum diproses',
+                        data: @json($data_s_per_thn['data_thn'][1]),
+                        borderWidth: 0,
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 1)',
+                        ],
+                        hoverOffset: 1
+                    },{
+                        label: 'Sedang diproses',
+                        data: @json($data_s_per_thn['data_thn'][2]),
+                        borderWidth: 0,
+                        backgroundColor: [
+                            'rgba(255, 206, 86, 1)',
+                        ],
+                        hoverOffset: 1
+                    },{
+                        label: 'Selesai diproses',
+                        data: @json($data_s_per_thn['data_thn'][3]),
+                        borderWidth: 0,
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 1)',
+                        ],
+                        hoverOffset: 1
+                    }
+                ]
                 },
                 options: {
                     responsive: false,
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
+                            position: 'bottom',
                         },
                         title: {
                             position: 'top',

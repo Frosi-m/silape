@@ -49,6 +49,7 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/status_pelaporan', 'data_laporan')->name('data_laporan');
     Route::get('/total_laporan', 'total_laporan')->name('total_laporan');
     Route::get('/detail_total_laporan', 'detail_tp')->name('detail_t_p');
+    Route::get('/detail_status_laporan', 'detail_sp')->name('detail_s_p');
     Route::get('/edit_petugas/{p}', 'edit_petugas');
     Route::get('/konfirmasi_laporan/{p}', 'laporan_konfirmasi');
     Route::get('/tolak_laporan/{p}', 'laporan_ditolak')->name('tolak_laporan');
@@ -66,7 +67,7 @@ Route::controller(controller_pa::class)->group(function () {
     Route::get('/dashboard_petugas', 'dashboard_petugas')->name('dashboard_petugas');
     Route::get('/biodata_petugas', 'biodata_petugas')->name('biodata_petugas');
     Route::get('/logout_pa', 'logout_pa')->name('logout_untuk_pa');
-    
+
     Route::post('/p_lp', 'proses_tanggapan')->name('proses_tanggapan');
 });
 
