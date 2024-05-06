@@ -30,8 +30,8 @@
                         <td>{{ $data->username }}</td>
                         <td>{{ $data->jabatan }}</td>
                         <td>{{ $data->alamat }}</td>
-                        <td><a href="edit_petugas\{{ $data->id }}">Edit</a></td>
-                        <td><a href="hapus_petugas\{{ $data->id }}">Hapus</a></td>
+                        <td><a href="edit_petugas\{{ $data->id_pa }}">Edit</a></td>
+                        <td><a href="hapus_petugas\{{ $data->id_pa }}">Hapus</a></td>
                     </tr>
                 @endforeach
             </table>
