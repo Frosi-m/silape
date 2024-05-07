@@ -13,15 +13,49 @@
             <div nameid="Input Tanggapan" id="input_tanggapan">
                 Data tanggapan
             </div>
+            <div class="bagan_chart">
+                <canvas id="myChart_bar"></canvas>
+            </div>
         </div>
 
-        <img src="assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
-            id="logo_smart_peamekasan_2" />
-        <div id="group_13" nameid="Group 13">
+
+
+        <script>
+            const ctx = document.getElementById('myChart_bar');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: @json($simpan_data['tahunan']),
+                    datasets: [{
+                        label: 'data pelaporan',
+                        data: @json($simpan_data['data_thn']),
+                        borderColor: 'rgb(0, 255, 0)',
+                        backgroundColor: 'rgba(0, 255, 0, 0.5)',
+                        borderWidth: 2,
+                        borderRadius: 10,
+                        hoverOffset: 1
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        },
+                        title: {
+                            position: 'bottom',
+                            display: true,
+                            text: 'Keterangan total laporan'
+                        }
+                    },
+                }
+            });
+        </script>
 
 
 
-
-        </div>
+    </div>
     </div>
 @endsection

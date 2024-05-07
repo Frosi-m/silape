@@ -22,7 +22,32 @@ class controller_pa extends Controller
 
     public function data_tanggapan()
     {
-        return view('pa/halaman_data_tanggapan');
+        $data_thn_tp = DB::table('detail_laporan')
+                ->join('tb_tanggapan', 'detail_laporan.id_umpan_balik', '=', 'tb_tanggapan.id_tanggapan')
+                ->select(DB::raw('DISTINCT YEAR(tgl_laporan) as tahun'))
+                ->where('jenis_laporan', session('data_pa')['jbt'])
+                ->where('id_petugas', session('data_pa')['id'])
+                ->pluck('tahun')
+                ->toArray();
+
+            $ttl_data = array();
+            foreach ($data_thn_tp as $data) {
+                $jml_data_thn = DB::table('detail_laporan')
+                ->join('tb_tanggapan', 'detail_laporan.id_umpan_balik', '=', 'tb_tanggapan.id_tanggapan')
+                ->whereYear('tgl_tanggapan', $data)
+                ->where('jenis_laporan', session('data_pa')['jbt'])
+                ->where('id_petugas', session('data_pa')['id'])
+                ->count();
+
+                array_push($ttl_data, $jml_data_thn);
+            }
+        
+            $simpan_data =  [
+                "tahunan"   => $data_thn_tp,
+                "data_thn"  => $ttl_data,
+            ];
+            // dd($simpan_data);
+        return view('pa/halaman_data_tanggapan', compact('simpan_data'));
     }
 
     public function input_tanggapan($s)
