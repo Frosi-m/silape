@@ -1,12 +1,11 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
     <link rel="stylesheet" href="..\css\register_petugas.css" />
     <div class="rectangle">
         <form action="{{ route('edit_pa') }}" method="post">
             @csrf
             @foreach ($data_pa as $data)
-                <input type="hidden" value="{{ $data->id_pa}}" name="kunci">
+                <input type="hidden" value="{{ $data->id_pa }}" name="kunci">
                 <div class="rectangle-1"><span class="silape">SILAPE</span></div>
                 <span class="register">Edit akun</span>
                 <span class="username-input">Username</span>

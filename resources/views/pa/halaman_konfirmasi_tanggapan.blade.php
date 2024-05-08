@@ -1,7 +1,6 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
     <link rel="StyleSheet" href="\css\halaman_input_tanggapan_laporan.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
 
     <div id="group_32" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18">

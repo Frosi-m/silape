@@ -1,8 +1,6 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
     <link rel="StyleSheet" href="css/halaman_dashboard_petugas.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-    <!-- Add your custom HEAD content here -->
 
     <div nameid="Group 20" id="_bg__group_20_ek1"></div>
 

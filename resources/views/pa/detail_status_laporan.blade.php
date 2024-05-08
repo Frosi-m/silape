@@ -1,7 +1,6 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
     <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
 
 
     <div id="group_32" nameid="Group 32">
@@ -15,9 +14,10 @@
             </div>
 
             <div class="opsi_laporan">
+                <h4>Lihat lebih detail</h4>
                 <select onchange="window.location.href=this.value;">
                     <option value="{{ route('detail_s_p') }}">Pilih opsinya</option>
-                    <option value="{{ route('detail_s_p') }}?jenis_laporan=Fasilitas">Fasilitas</option>
+                    <option value="{{ route('detail_s_p') }}?jenis_laporan=Fasilitas" actived>Fasilitas</option>
                     <option value="{{ route('detail_s_p') }}?jenis_laporan=Rawat_jalan">Rawat jalan</option>
                     <option value="{{ route('detail_s_p') }}?jenis_laporan=Rawat_inap">Rawat inap</option>
                     <option value="{{ route('detail_s_p') }}?jenis_laporan=Admisi">Admisi</option>

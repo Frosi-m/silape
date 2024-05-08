@@ -1,6 +1,5 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
     <link rel="stylesheet" href="css\register_petugas.css" />
     <div class="rectangle">
         <form action="{{ route('tambah_akun') }}" method="post">

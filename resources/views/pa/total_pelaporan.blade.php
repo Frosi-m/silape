@@ -13,6 +13,7 @@
             </div>
 
             <div class="opsi_laporan">
+                <h4>Lihat lebih detail</h4>
                 <select onchange="window.location.href=this.value;">
                     <option value="{{ route('detail_t_p') }}">Pilih opsinya</option>
                     <option value="{{ route('detail_t_p') }}?jenis_laporan=Fasilitas">Fasilitas</option>

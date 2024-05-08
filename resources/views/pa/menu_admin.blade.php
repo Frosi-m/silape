@@ -3,7 +3,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="StyleSheet" href="css/halaman_menu_admin.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
 
 
 
