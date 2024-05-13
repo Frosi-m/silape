@@ -30,7 +30,7 @@
                 <canvas id="myChart"></canvas>
             </div>
 
-            <script>
+            <script src="">
                 const ctx = document.getElementById('myChart');
 
                 new Chart(ctx, {

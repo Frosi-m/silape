@@ -280,11 +280,7 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
+            
         }
         elseif ($jenis_laporan == "Rawat_jalan") {
             //ini bagian laporan
@@ -319,11 +315,6 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         elseif ($jenis_laporan == "Rawat_inap") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -357,11 +348,6 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         elseif ($jenis_laporan == "Admisi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -395,11 +381,6 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         elseif ($jenis_laporan == "Lab") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -433,11 +414,6 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         elseif ($jenis_laporan == "Radiologi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -472,11 +448,6 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         elseif ($jenis_laporan == "Farmasi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -511,15 +482,16 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-            $data_per_thn = [
-                "tahunan"   => $data_thn_lp,
-                "data_thn"  => $jml_data,
-                "data_thn_2"=> $ttl_data
-            ];
         }
         else{
 
         }
+
+        $data_per_thn = [
+            "tahunan"   => $data_thn_lp,
+            "data_thn"  => $jml_data,
+            "data_thn_2"=> $ttl_data
+        ];
 
         return view('pa/detail_total_pelaporan', compact('data_per_thn'));
     }
