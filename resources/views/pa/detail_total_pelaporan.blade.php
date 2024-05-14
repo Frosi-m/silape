@@ -2,9 +2,9 @@
 @section('isi')
     <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
 
-    <div id="group_32" nameid="Group 32">
+    <div id="group_32_laporan" nameid="Group 32">
         <form action="{{ route('detail_t_p') }}" method="POST">
-            <div nameid="Rectangle 18" id="rectangle_18">
+            <div nameid="Rectangle 18" id="rectangle_18_laporan">
                 <a href="{{ route('total_laporan') }}">
                     <span class="ion--arrow-back-circle"></span>
                 </a>
@@ -77,29 +77,49 @@
                 </script>
 
                 {{-- ini masih uji coba --}}
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Jenis laporan</th>
-                        <th>Tanggal laporan</th>
-                        <th>Status laporan</th>
-                        <th>Isi laporan</th>
-                    </tr>
-                    <?php
-                    $no = 1;
-                    ?>
-                    @foreach ($data_per_thn['list_lp'] as $data_list)
-                        <tr>
-                            <td>{{ $no }}</td>
-                            <td>{{ $data_list->jenis_laporan }}</td>
-                            <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
-                            <td>{{ $data_list->status_laporan }}</td>
-                            <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
-                            <?php
-                            $no++;
-                            ?>
-                    @endforeach
-                </table>
+                <div class="card ">
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Jenis laporan</th>
+                                    <th>Tanggal laporan</th>
+                                    <th>Status laporan</th>
+                                    <th>Isi laporan</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <?php
+                                $no = 1;
+                                ?>
+                                @foreach ($data_per_thn['list_lp'] as $data_list)
+                                    <tr>
+                                        <td>{{ $no }}</td>
+                                        <td>{{ $data_list->jenis_laporan }}</td>
+                                        <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                                        <td>{{ $data_list->status_laporan }}</td>
+                                        <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
+                                        <?php
+                                        $no++;
+                                        ?>
+                                @endforeach
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Jenis laporan</th>
+                                    <th>Tanggal laporan</th>
+                                    <th>Status laporan</th>
+                                    <th>Isi laporan</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
             </div>
         </form>
     </div>

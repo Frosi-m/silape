@@ -3,7 +3,7 @@
     <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
 
     <div id="group_32_laporan" nameid="Group 32">
-        <div id="rectangle_18_laporan">
+        <div id="rectangle_18_laporan" class="">
             <a href="da_admin">
                 <span class="ion--arrow-back-circle"></span>
             </a>
@@ -12,6 +12,7 @@
                 Total pelaporan
             </div>
 
+            <div></div>
             <div class="opsi_laporan">
                 <h4>Lihat lebih detail</h4>
                 <select onchange="window.location.href=this.value;">
@@ -70,30 +71,55 @@
                 });
             </script>
 
+
+            <div class="card ">
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Jenis laporan</th>
+                                <th>Tanggal laporan</th>
+                                <th>Status laporan</th>
+                                <th>Isi laporan</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <?php
+                            $no = 1;
+                            ?>
+                            @foreach ($data_lp['list_lp'] as $data_list)
+                                <tr>
+                                    <td>{{ $no }}</td>
+                                    <td>{{ $data_list->jenis_laporan }}</td>
+                                    <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                                    <td>{{ $data_list->status_laporan }}</td>
+                                    <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
+                                    <?php
+                                    $no++;
+                                    ?>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>No</th>
+                                <th>Jenis laporan</th>
+                                <th>Tanggal laporan</th>
+                                <th>Status laporan</th>
+                                <th>Isi laporan</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+
+
+
             {{-- ini masih uji coba --}}
-            <table id="example1" class="table table-bordered table-hover w-75">
-                <tr>
-                    <th>No</th>
-                    <th>Jenis laporan</th>
-                    <th>Tanggal laporan</th>
-                    <th>Status laporan</th>
-                    <th>Isi laporan</th>
-                </tr>
-                <?php
-                $no = 1;
-                ?>
-                @foreach ($data_lp['list_lp'] as $data_list)
-                    <tr>
-                        <td>{{ $no }}</td>
-                        <td>{{ $data_list->jenis_laporan }}</td>
-                        <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
-                        <td>{{ $data_list->status_laporan }}</td>
-                        <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
-                        <?php
-                        $no++;
-                        ?>
-                @endforeach
-            </table>
+
         </div>
     </div>
 @endsection
