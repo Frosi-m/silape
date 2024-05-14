@@ -2,8 +2,8 @@
 @section('isi')
     <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
 
-    <div id="group_32" nameid="Group 32">
-        <div nameid="Rectangle 18" id="rectangle_18">
+    <div id="group_32_laporan" nameid="Group 32">
+        <div id="rectangle_18_laporan">
             <a href="da_admin">
                 <span class="ion--arrow-back-circle"></span>
             </a>
@@ -71,7 +71,7 @@
             </script>
 
             {{-- ini masih uji coba --}}
-            <table>
+            <table id="example1" class="table table-bordered table-hover w-75">
                 <tr>
                     <th>No</th>
                     <th>Jenis laporan</th>
@@ -89,11 +89,6 @@
                         <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
                         <td>{{ $data_list->status_laporan }}</td>
                         <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
-                        <td>
-                            <div class="nav_table">
-                                <a href="detail_laporan\{{ $data_list->id_laporan }}">Lihat detail</a>
-                            </div>
-                        </td>
                         <?php
                         $no++;
                         ?>
