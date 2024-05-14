@@ -5,7 +5,7 @@
     <div id="group_32" nameid="Group 32">
         <form action="{{ route('detail_t_p') }}" method="POST">
             <div nameid="Rectangle 18" id="rectangle_18">
-                <a href="da_admin">
+                <a href="{{ route('total_laporan') }}">
                     <span class="ion--arrow-back-circle"></span>
                 </a>
                 <img src="assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
@@ -75,6 +75,31 @@
                         }
                     });
                 </script>
+
+                {{-- ini masih uji coba --}}
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis laporan</th>
+                        <th>Tanggal laporan</th>
+                        <th>Status laporan</th>
+                        <th>Isi laporan</th>
+                    </tr>
+                    <?php
+                    $no = 1;
+                    ?>
+                    @foreach ($data_per_thn['list_lp'] as $data_list)
+                        <tr>
+                            <td>{{ $no }}</td>
+                            <td>{{ $data_list->jenis_laporan }}</td>
+                            <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                            <td>{{ $data_list->status_laporan }}</td>
+                            <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
+                            <?php
+                            $no++;
+                            ?>
+                    @endforeach
+                </table>
             </div>
         </form>
     </div>

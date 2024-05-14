@@ -221,6 +221,11 @@ class controller_pa extends Controller
         $t_lp_r = DB::table('detail_laporan')
                         ->where('jenis_laporan', 'radiologi')
                         ->count();
+        
+        $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->get();
         $data_lp = [
             'labels'    => [
                             'Fasilitas',
@@ -238,7 +243,9 @@ class controller_pa extends Controller
                             $t_lp_a,
                             $t_lp_fi,
                             $t_lp_l,
-                            $t_lp_r]
+                            $t_lp_r
+            ],
+            'list_lp'   => $data_lp_user
         ];
         // dd($data_lp);
         return view('pa/total_pelaporan', compact('data_lp'));
@@ -280,6 +287,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'fasilitas')
+                        ->get();
             
         }
         elseif ($jenis_laporan == "Rawat_jalan") {
@@ -315,6 +328,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'rawat jalan')
+                        ->get();
         }
         elseif ($jenis_laporan == "Rawat_inap") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -348,6 +367,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'rawat inap')
+                        ->get();
         }
         elseif ($jenis_laporan == "Admisi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -381,6 +406,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'admisi')
+                        ->get();
         }
         elseif ($jenis_laporan == "Lab") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -414,6 +445,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'lab')
+                        ->get();
         }
         elseif ($jenis_laporan == "Radiologi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -448,6 +485,12 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'radiologi')
+                        ->get();
         }
         elseif ($jenis_laporan == "Farmasi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -482,6 +525,11 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'farmasi')
+                        ->get();
         }
         else{
 
@@ -490,7 +538,8 @@ class controller_pa extends Controller
         $data_per_thn = [
             "tahunan"   => $data_thn_lp,
             "data_thn"  => $jml_data,
-            "data_thn_2"=> $ttl_data
+            "data_thn_2"=> $ttl_data,
+            "list_lp"   => $data_lp_user
         ];
 
         return view('pa/detail_total_pelaporan', compact('data_per_thn'));

@@ -30,7 +30,7 @@
                 <canvas id="myChart"></canvas>
             </div>
 
-            <script src="">
+            <script>
                 const ctx = document.getElementById('myChart');
 
                 new Chart(ctx, {
@@ -69,6 +69,36 @@
                     }
                 });
             </script>
+
+            {{-- ini masih uji coba --}}
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Jenis laporan</th>
+                    <th>Tanggal laporan</th>
+                    <th>Status laporan</th>
+                    <th>Isi laporan</th>
+                </tr>
+                <?php
+                $no = 1;
+                ?>
+                @foreach ($data_lp['list_lp'] as $data_list)
+                    <tr>
+                        <td>{{ $no }}</td>
+                        <td>{{ $data_list->jenis_laporan }}</td>
+                        <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                        <td>{{ $data_list->status_laporan }}</td>
+                        <td>{{ substr($data_list->isi_laporan, 0, 20) }}</td>
+                        <td>
+                            <div class="nav_table">
+                                <a href="detail_laporan\{{ $data_list->id_laporan }}">Lihat detail</a>
+                            </div>
+                        </td>
+                        <?php
+                        $no++;
+                        ?>
+                @endforeach
+            </table>
         </div>
     </div>
 @endsection
