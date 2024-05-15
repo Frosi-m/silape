@@ -1,9 +1,6 @@
 @extends('user.layouts.dashboard-user')
 
 @section('isi')
-    <link rel="StyleSheet" href="css/halaman_input_laporan_user.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-
     <form action="{{ route('tambah_laporan') }}" method="post">
         @csrf
         <div nameid="Rectangle 18" id="rectangle_18">

@@ -558,6 +558,12 @@ class controller_pa extends Controller
         $t_lp_sup = DB::table('detail_laporan')
                         ->where('status_laporan', 'selesai diproses')
                         ->count();
+        
+        $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->get();
 
         $data_lp = [
             'labels'    => [
@@ -571,7 +577,8 @@ class controller_pa extends Controller
                             $t_lp_sep,
                             $t_lp_b,
                             $t_lp_sup,
-                            ]
+            ],
+            'list_lp'   =>$data_lp_user
         ];
         return view('pa/status_pelaporan', compact('data_lp'));
     }
@@ -622,6 +629,12 @@ class controller_pa extends Controller
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
 
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'fasilitas')
+                        ->get();
 
         }
         elseif ($jenis_laporan == "Rawat_jalan") {
@@ -667,7 +680,12 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
-
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'rawat jalan')
+                        ->get();
         }
         elseif ($jenis_laporan == "Rawat_inap") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -712,6 +730,12 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'rawat inap')
+                        ->get();
         }
         elseif ($jenis_laporan == "Admisi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -756,6 +780,12 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'admisi')
+                        ->get();
         }
         elseif ($jenis_laporan == "Lab") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -800,6 +830,12 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'lab')
+                        ->get();
         }
         elseif ($jenis_laporan == "Radiologi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -844,6 +880,12 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'radiologi')
+                        ->get();
         }
         elseif ($jenis_laporan == "Farmasi") {
             $data_thn_lp = DB::table('detail_laporan')
@@ -888,14 +930,23 @@ class controller_pa extends Controller
 
                 array_push($jml_data_sl, $jml_data_thn_sl);
             }
-        }
-        else{
-
+            $data_lp_user  = DB::table('tb_laporan')
+                        ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
+                        ->where('jenis_laporan', 'farmasi')
+                        ->get();
         }
 
         $data_s_per_thn = [
-            "tahunan"   => $data_thn_lp,
-            "data_thn"  => [$jml_data_g, $jml_data_b, $jml_data_sd, $jml_data_sl],
+            "tahunan"       => $data_thn_lp,
+            "data_thn"      => [
+                                $jml_data_g, 
+                                $jml_data_b, 
+                                $jml_data_sd, 
+                                $jml_data_sl
+                            ],
+            "list_lp"       => $data_lp_user 
         ];
         // dd($data_s_per_thn['data_thn'][0][0]);
         return view('pa/detail_status_laporan', compact('data_s_per_thn'));

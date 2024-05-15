@@ -66,6 +66,10 @@ div.flex-wrap {
     text-align: left;
     color: #2c2c2c;
 }
+#example1 {
+    position: absolute;
+    left: 2pc;
+}
 span {
     position: relative;
     top: 25%;
@@ -128,7 +132,7 @@ table {
 
 #group_32_laporan {
     position: absolute;
-    top: 200%;
+    top: 160%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
 }
@@ -137,10 +141,33 @@ table {
     top: 46pc;
     left: 50pc;
 }
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    position: absolute;
+    left: 50pc;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: right;
+}
+
 .table {
     position: absolute;
     top: 8pc;
+    text-align: center;
     width: 1000px;
+}
+#example2 {
+    position: absolute;
+    left: 3pc;
+}
+.btn {
+    display: inline;
+    text-align: center;
 }
 .dataTables_info {
     position: absolute;

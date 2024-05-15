@@ -2,8 +2,6 @@
 
 
 @section('isi')
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="css/background-logo.css" />
     <div class="rectangle-bio">
         <div class="rectangle-1-bio">
             <span class="biodata-user">Biodata user</span>

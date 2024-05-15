@@ -1,9 +1,7 @@
 @extends('user.layouts.dashboard-user')
 
 @section('isi')
-    <link rel="StyleSheet" href="css/dashboard-user.css" />
-    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-    <div id="group_18" nameid="Group 18">
+    <div id="group_18_menu" nameid="Group 18">
         <a href="biodata_user">
             <div nameid="Rectangle 37" id="rectangle_37">
                 <img src="assets/images/polygon_4.png" nameid="Polygon 4" id="polygon_4" />

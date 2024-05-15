@@ -1,9 +1,6 @@
 @extends('user.layouts.dashboard-user')
 
 @section('isi')
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="css/ubah_pw.css" />
-
     <div class="rectangle">
         <button class="rectangle-1"></button><span class="ubah-password">Ubah password</span>
         <div class="rectangle-2"></div>

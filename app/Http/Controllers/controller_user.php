@@ -207,6 +207,6 @@ class controller_user extends Controller
         }
         
         $detail_laporan->save();
-        return redirect()->route('halaman_laporan')->with('laporan_berhasil', 'laporan berhasil ditambahkan');
+        return redirect()->route('dashboard_untuk_user')->with('laporan_berhasil', 'laporan berhasil ditambahkan');
     }
 }

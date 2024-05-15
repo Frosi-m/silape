@@ -9,6 +9,20 @@
     <link rel="StyleSheet" href="css/dashboard-user.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
     <!-- Add your custom HEAD content here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="css/background-logo.css" />
+    <link rel="stylesheet" href="css/edit-data-user.css" />
+    <link rel="StyleSheet" href="css/halaman_input_laporan_user.css" />
+    <link rel="StyleSheet" href="css/dashboard-user.css" />
+    <link rel="stylesheet" href="css/ubah_pw.css" />
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('lte/dist/css/adminlte.min.css') }}   ">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
 
 </head>
 @csrf
@@ -59,7 +73,40 @@
         </div>
     </div>
 
-
+    <!-- jQuery -->
+    <script src="{{ asset('lte/plugins/jquery/jquery.min.js') }}"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="{{ asset('lte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/jszip/jszip.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('lte/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": false,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
 
 </body>
 

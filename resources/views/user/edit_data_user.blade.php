@@ -1,9 +1,6 @@
 @extends('user.layouts.dashboard-user')
 
 @section('isi')
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="css/edit-data-user.css" />
-
     <div class="rectangle">
         <div class="rectangle-button"></div><span class="edit-data">Edit data</span>
         <div class="logo-smart-peamekasan">
