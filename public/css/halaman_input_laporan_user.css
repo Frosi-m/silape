@@ -47,7 +47,7 @@ textarea {
 
 .table {
     position: absolute;
-    top: 4pc;
+    top: 6pc;
     text-align: center;
 }
 #example2 {
@@ -67,7 +67,7 @@ textarea {
 }
 #group_32_laporan {
     position: absolute;
-    top: 95%;
+    top: 115%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
 }
