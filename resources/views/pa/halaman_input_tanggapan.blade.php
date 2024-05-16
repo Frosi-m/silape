@@ -1,8 +1,5 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <link rel="StyleSheet" href="\css\halaman_input_tanggapan_laporan.css" />
-
-
     <div id="group_32" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18">
             <img src="\assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />

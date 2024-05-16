@@ -4,7 +4,7 @@
 /* Only edit this if you know what you are doing! */
 
 #logo_smart_peamekasan_2 {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

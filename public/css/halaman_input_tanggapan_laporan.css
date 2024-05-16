@@ -2,6 +2,9 @@
 	@name halaman_input_tanggapan_laporan
 */
 /* Only edit this if you know what you are doing! */
+* {
+    box-sizing: content-box;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -72,8 +75,8 @@ div.flex-wrap {
 }
 span {
     position: relative;
-    top: 25%;
-    left: 10%;
+    top: 0;
+    left: 0;
 }
 /* table,
 td {
@@ -132,7 +135,7 @@ table {
 
 #group_32_laporan {
     position: absolute;
-    top: 160%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
 }
@@ -587,7 +590,7 @@ button {
         transform: translate(-50%, -50%) scale(155%);
     }
     #logo_smart_peamekasan_2 {
-        display: none;
+        display: block;
     }
     #rectangle_18,
     #group_13 {
@@ -658,7 +661,7 @@ button {
         transform: translate(-50%, -50%) scale(0.9);
     }
     #logo_smart_peamekasan_2 {
-        display: none;
+        display: block;
     }
 }
 

@@ -1,7 +1,5 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <link rel="StyleSheet" href="\css\halaman_input_tanggapan_laporan.css" />
-
     <div id="group_32" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18">
             <a href="{{ route('manajemen_laporan') }}"><span class="ion--arrow-back-circle"></span></a>

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="StyleSheet" href="../css/halaman_dashboard_pa.css" />
+
+    <link rel="StyleSheet" href="css/halaman_menu_admin.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
@@ -16,6 +18,9 @@
     <link rel="stylesheet" href="{{ asset('lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('lte/dist/css/adminlte.min.css') }}   ">
+    <link rel="StyleSheet" href="css/halaman_input_tanggapan_laporan.css" />
+    <link rel="stylesheet" href="css/register_petugas.css" />
+    {{-- <link rel="StyleSheet" href="css/biodata_petugas.css" /> --}}
 
 
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>

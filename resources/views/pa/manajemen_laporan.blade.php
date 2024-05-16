@@ -1,8 +1,5 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <link rel="StyleSheet" href="css\halaman_input_tanggapan_laporan.css" />
-
-
     <div id="group_32_laporan" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18_laporan">
             <a href="da_admin">

@@ -1,11 +1,5 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link rel="StyleSheet" href="css/halaman_menu_admin.css" />
-
-
-
     <div id="group_19" nameid="Group 19">
         <div nameid="Group 19" id="_bg__group_19_ek1"></div>
         <a href="manajemen_laporan">
