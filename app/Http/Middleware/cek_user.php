@@ -5,8 +5,10 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
+use App\Models\tb_user;
 
-class coba
+class cek_user
 {
     /**
      * Handle an incoming request.
@@ -15,6 +17,9 @@ class coba
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+        if ($request->session()->has('data_user') && $request->session()->get('data_user')['id']) {
+            return $next($request);
+        }
+        return redirect()->route('halaman_login_user')->with('gagal_masuk', 'Harap login terlebih dahulu!!!');
     }
 }

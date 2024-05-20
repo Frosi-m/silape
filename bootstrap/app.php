@@ -11,7 +11,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->alias([
+            'user_masuk' => \App\Http\Middleware\cek_user::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

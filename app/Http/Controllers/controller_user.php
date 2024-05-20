@@ -153,7 +153,7 @@ class controller_user extends Controller
             'email'     => $request->email,
             'password'  => $request->password
         ];
-
+        // dd(Auth::guard('tb_user')->check());
         if (Auth::guard('tb_user')->attempt($data)) {
             $user = Auth::guard('tb_user')->user();
             

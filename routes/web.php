@@ -11,22 +11,24 @@ Route::get('/', function () {
 
 // bagian user
 
-Route::controller(controller_user::class)->group(function () {
+Route::middleware(['user_masuk'])->group(function () {
+    Route::controller(controller_user::class)->group(function () {
 
-    Route::get('/biodata_user', 'bio_user')->name('bio_user');
-    Route::get('/edit_user', 'edit_user')->name('edit_user');
-    Route::get('/dashboard_user', 'dashboard_user')->name('dashboard_untuk_user');
-    Route::get('/halaman_laporan', 'halaman_laporan')->name('halaman_laporan');
-    Route::get('/list_laporan', 'list_laporan')->name('list_laporan');
-    Route::get('/detail_laporan/{data}', 'detail_laporan');
-    Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
-    Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
-    Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');
+        Route::get('/biodata_user', 'bio_user')->name('bio_user');
+        Route::get('/edit_user', 'edit_user')->name('edit_user');
+        Route::get('/dashboard_user', 'dashboard_user')->name('dashboard_untuk_user');
+        Route::get('/halaman_laporan', 'halaman_laporan')->name('halaman_laporan');
+        Route::get('/list_laporan', 'list_laporan')->name('list_laporan');
+        Route::get('/detail_laporan/{data}', 'detail_laporan');
+        Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
+        Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
+        Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');
 
-    Route::post('/proses_login_user', 'proses_login_user')->name('autentikasi');
-    Route::post('/tambah_akun_user', 'tambah_user')->name('register_user');
-    Route::post('/ubah_data_diri', 'proses_edit_user')->name('proses_edit');
-    Route::post('/dashboard_user/tambah_laporan', 'tambah_laporan')->name('tambah_laporan');
+        
+        
+        Route::post('/ubah_data_diri', 'proses_edit_user')->name('proses_edit');
+        Route::post('/dashboard_user/tambah_laporan', 'tambah_laporan')->name('tambah_laporan');
+    });
 });
 
 Route::get('/halaman_login_user', function () {
@@ -36,7 +38,8 @@ Route::get('/halaman_login_user', function () {
 Route::get('/register_user', function () {
     return view('user/register_user');
 });
-
+Route::post('/tambah_akun_user', [controller_user::class, 'tambah_user'])->name('register_user');
+Route::post('/proses_login_user', [controller_user::class,'proses_login_user'])->name('autentikasi');
 
 Route::controller(controller_pa::class)->group(function () {
 
