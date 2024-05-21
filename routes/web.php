@@ -22,7 +22,6 @@ Route::middleware(['user_masuk'])->group(function () {
         Route::get('/detail_laporan/{data}', 'detail_laporan');
         Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
         Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
-        Route::get('/dashboard_user/tambah_laporan', 'tambah_laporan');
 
         
         
@@ -33,7 +32,7 @@ Route::middleware(['user_masuk'])->group(function () {
 
 Route::get('/halaman_login_user', function () {
     return view('user/halaman_login_user');
-})->name('halaman_login_user');
+})->name('halaman_login_user')->middleware('user_keluar');
 
 Route::get('/register_user', function () {
     return view('user/register_user');

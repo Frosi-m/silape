@@ -13,7 +13,7 @@
                 id="logo_smart_peamekasan_2" />
 
             @if (!$list_lp->isEmpty())
-                <table id="example2" class="table table-bordered table-striped bg-light align-middle">
+                <table id="example2" class="table table-bordered table-striped bg-light align-center">
                     <thead>
                         <tr>
                             <th>No</th>

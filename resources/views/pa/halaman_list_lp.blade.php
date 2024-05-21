@@ -9,35 +9,41 @@
             <div nameid="Input Tanggapan" id="input_tanggapan" style="font-size: 35px">
                 Manajemen laporan
             </div>
+            <img src="\assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
+                id="logo_smart_peamekasan_2" />
 
             @if (!$list_lp->isEmpty())
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Jenis laporan</th>
-                        <th>Tanggal laporan</th>
-                        <th>Isi laporan</th>
-                        <th>Opsi</th>
-                    </tr>
-                    <?php
-                    $no = 1;
-                    ?>
-                    @foreach ($list_lp as $data_list)
+                <table id="example2" class="table table-bordered table-striped bg-light align-middle">
+                    <thead>
                         <tr>
-                            <td>{{ $no }}</td>
-                            <td>{{ $data_list->jenis_laporan }}</td>
-                            <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
-                            <td>{{ $data_list->isi_laporan }}</td>
-                            <td>
-                                <div class="nav_table">
-                                    <a
-                                        onclick="window.location.href='{{ route('input_tanggapan', $data_list->id_pelaporan) }}'">konfirmasi</a>
-                                </div>
-                            </td>
-                            <?php
-                            $no++;
-                            ?>
-                    @endforeach
+                            <th>No</th>
+                            <th>Jenis laporan</th>
+                            <th>Tanggal laporan</th>
+                            <th>Isi laporan</th>
+                            <th>Opsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $no = 1;
+                        ?>
+                        @foreach ($list_lp as $data_list)
+                            <tr>
+                                <td>{{ $no }}</td>
+                                <td>{{ $data_list->jenis_laporan }}</td>
+                                <td>{{ echo date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                                <td>{{ $data_list->isi_laporan }}</td>
+                                <td>
+                                    <div class="nav_table">
+                                        <a
+                                            onclick="window.location.href='{{ route('input_tanggapan', $data_list->id_pelaporan) }}'">konfirmasi</a>
+                                    </div>
+                                </td>
+                                <?php
+                                $no++;
+                                ?>
+                        @endforeach
+                    </tbody>
                 </table>
             @else
                 <div class="pesan">
@@ -47,11 +53,9 @@
 
         </div>
 
-        <img src="\assets\images\logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
-            id="logo_smart_peamekasan_2" />
-        <div id="group_13" nameid="Group 13">
 
 
-        </div>
+
+    </div>
     </div>
 @endsection

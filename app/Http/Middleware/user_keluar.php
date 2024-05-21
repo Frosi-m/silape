@@ -6,8 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-
-class cek_user
+class user_keluar
 {
     /**
      * Handle an incoming request.
@@ -17,8 +16,8 @@ class cek_user
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->session()->has('data_user') && $request->session()->get('data_user')['id']) {
-            return $next($request);
+            return redirect()->route('dashboard_untuk_user')->with('masih_masuk', 'Harap logout terlebih dahulu!!!');
         }
-        return redirect()->route('halaman_login_user')->with('gagal_masuk', 'Harap login terlebih dahulu!!!');
+        return $next($request);
     }
 }
