@@ -31,7 +31,7 @@
                             <tr>
                                 <td>{{ $no }}</td>
                                 <td>{{ $data_list->jenis_laporan }}</td>
-                                <td>{{ echo date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
+                                <td>{{ date('d/F/Y', strtotime($data_list->tgl_laporan)) }}</td>
                                 <td>{{ $data_list->isi_laporan }}</td>
                                 <td>
                                     <div class="nav_table">
