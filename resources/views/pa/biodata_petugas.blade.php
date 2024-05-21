@@ -62,7 +62,6 @@
                     <div nameid="Batal" id="batal">
                         Kembali
                     </div>
-
                 </div>
 
             </div>

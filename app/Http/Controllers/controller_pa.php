@@ -41,7 +41,7 @@ class controller_pa extends Controller
 
                 array_push($ttl_data, $jml_data_thn);
             }
-        
+
             $simpan_data =  [
                 "tahunan"   => $data_thn_tp,
                 "data_thn"  => $ttl_data,
@@ -221,7 +221,7 @@ class controller_pa extends Controller
         $t_lp_r = DB::table('detail_laporan')
                         ->where('jenis_laporan', 'radiologi')
                         ->count();
-        
+
         $data_lp_user  = DB::table('tb_laporan')
                         ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
                         ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
@@ -293,7 +293,7 @@ class controller_pa extends Controller
                         ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
                         ->where('jenis_laporan', 'fasilitas')
                         ->get();
-            
+
         }
         elseif ($jenis_laporan == "Rawat_jalan") {
             //ini bagian laporan
@@ -558,7 +558,7 @@ class controller_pa extends Controller
         $t_lp_sup = DB::table('detail_laporan')
                         ->where('status_laporan', 'selesai diproses')
                         ->count();
-        
+
         $data_lp_user  = DB::table('tb_laporan')
                         ->join('tb_user', 'tb_user.id_user', '=', 'tb_laporan.id_pelapor')
                         ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
@@ -941,12 +941,12 @@ class controller_pa extends Controller
         $data_s_per_thn = [
             "tahunan"       => $data_thn_lp,
             "data_thn"      => [
-                                $jml_data_g, 
-                                $jml_data_b, 
-                                $jml_data_sd, 
+                                $jml_data_g,
+                                $jml_data_b,
+                                $jml_data_sd,
                                 $jml_data_sl
                             ],
-            "list_lp"       => $data_lp_user 
+            "list_lp"       => $data_lp_user
         ];
         // dd($data_s_per_thn['data_thn'][0][0]);
         return view('pa/detail_status_laporan', compact('data_s_per_thn'));
@@ -1011,7 +1011,7 @@ class controller_pa extends Controller
                 'jbt'   => $user->jabatan
             ];
             session()->put('data_pa', $data);
-
+            dd(session('data_pa'));
             if ($user->jabatan == "admin") {
 
                 return redirect()->route('da_admin');
