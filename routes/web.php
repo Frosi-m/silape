@@ -42,9 +42,9 @@ Route::post('/tambah_akun_user', [controller_user::class, 'tambah_user'])->name(
 Route::post('/proses_login_user', [controller_user::class,'proses_login_user'])->name('autentikasi');
 
 
-Route::middleware(['pa_masuk'])->group(function () {
-    Route::controller(controller_pa::class)->group(function () {
+Route::controller(controller_pa::class)->group(function () {
 
+    Route::middleware(['admin_masuk'])->group(function () {
 
         // bagian admin
         Route::get('/da_admin', 'da_admin')->name('da_admin');
@@ -64,6 +64,9 @@ Route::middleware(['pa_masuk'])->group(function () {
         Route::post('/tambah_petugas', 'tambah_akun')->name('tambah_akun');
         Route::post('/proses_edit_akun', 'proses_edit_akun')->name('edit_pa');
 
+    });
+
+    Route::middleware(['petugas_masuk'])->group(function () {
         // petugas
 
         Route::get('/data_tanggapan', 'data_tanggapan')->name('data_tanggapan');
@@ -71,16 +74,16 @@ Route::middleware(['pa_masuk'])->group(function () {
         Route::get('/input_tanggapan/{s}', 'input_tanggapan')->name('input_tanggapan');
         Route::get('/dashboard_petugas', 'dashboard_petugas')->name('dashboard_petugas');
         Route::get('/biodata_petugas', 'biodata_petugas')->name('biodata_petugas');
-        Route::get('/logout_pa', 'logout_pa')->name('logout_untuk_pa');
 
         Route::post('/p_lp', 'proses_tanggapan')->name('proses_tanggapan');
     });
-
 });
 
 Route::get('/halaman_login_pa', function () {
     return view('pa/halaman_login_pa');
-})->name('halaman_login_pa');
+})->name('halaman_login_pa')->middleware('admin_keluar');
+
+Route::get('/logout_pa', [controller_pa::class,'logout_pa'])->name('logout_untuk_pa');
 
 Route::post('/proses_login_pa', [controller_pa::class, 'proses_login_pa'])->name('autentikasi_pa');
 

@@ -1011,7 +1011,7 @@ class controller_pa extends Controller
                 'jbt'   => $user->jabatan
             ];
             session()->put('data_pa', $data);
-            dd(session('data_pa'));
+            // dd(session('data_pa'));
             if ($user->jabatan == "admin") {
 
                 return redirect()->route('da_admin');
