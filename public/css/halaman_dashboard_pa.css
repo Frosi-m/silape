@@ -270,7 +270,7 @@ div {
     transition: 0.3s ease-in-out;
 }
 
-#carbon_report_data {
+#carbon_report_data_p {
     top: 0px;
     left: 12px;
     width: 96px;
@@ -284,9 +284,9 @@ div {
     height: 96px;
 }
 
-#vector {
+#vector_p {
     top: 42px;
-    left: 30px;
+    left: 23px;
     width: 36px;
     height: 30px;
 }
@@ -367,7 +367,7 @@ div {
     transition: 0.3s ease-in-out;
 }
 
-#ri_user_smile_fill {
+#ri_user_smile_fill_p {
     top: 0px;
     left: 12px;
     width: 96px;
@@ -517,7 +517,7 @@ div {
     transition: 0.3s ease-in-out;
 }
 
-#ri_user_smile_fill_ek2 {
+#ri_user_smile_fill_ek2_p {
     top: 0px;
     left: 11px;
     width: 96px;
@@ -647,7 +647,7 @@ div {
         width: 150%;
     }
     #flat_color_icons_feedback,
-    #carbon_report_data,
+    #carbon_report_data_p,
     #ri_user_smile_fill_ek2 {
         transform: scale(1.5);
     }

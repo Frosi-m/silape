@@ -54,10 +54,10 @@
                 @enderror
 
                 <a href="biodata_user">
-                    <div class="rectangle-7_edit_user"><span class="batal">Batal</span></div>
+                    <div class="rectangle-7_edit_user"><span class="batal_edit_user">Batal</span></div>
                 </a>
                 <button href="biodata_user">
-                    <div class="rectangle-1_edit_user"><span class="simpan">Simpan</span>
+                    <div class="rectangle-1_edit_user"><span class="simpan_edit_user">Simpan</span>
                     </div>
                 </button>
             </form>

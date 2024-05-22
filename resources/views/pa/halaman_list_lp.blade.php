@@ -1,7 +1,7 @@
 @extends('pa.layouts.dashboard-pa')
 @section('isi')
-    <div id="group_32" nameid="Group 32">
-        <div nameid="Rectangle 18" id="rectangle_18">
+    <div id="group_32_laporan" nameid="Group 32">
+        <div nameid="Rectangle 18" id="rectangle_18_laporan">
             <a href="dashboard_petugas">
                 <span class="ion--arrow-back-circle"></span>
             </a>
@@ -35,8 +35,8 @@
                                 <td>{{ $data_list->isi_laporan }}</td>
                                 <td>
                                     <div class="nav_table">
-                                        <a
-                                            onclick="window.location.href='{{ route('input_tanggapan', $data_list->id_pelaporan) }}'">konfirmasi</a>
+                                        <a onclick="window.location.href='{{ route('input_tanggapan', $data_list->id_pelaporan) }}'"
+                                            class="btn btn-outline-dark ">konfirmasi</a>
                                     </div>
                                 </td>
                                 <?php

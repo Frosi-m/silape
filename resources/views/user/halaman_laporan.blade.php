@@ -42,7 +42,7 @@
                 <div nameid="Isi laporan" id="isi_laporan">
                     Isi laporan
                 </div>
-                <div class="bungkus_tombol">
+                <div class="bungkus_tombol_laporan">
                     <button nameid="Kirim" id="rectangle_21_ek1">
                         Kirim
                     </button>

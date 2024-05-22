@@ -9,7 +9,7 @@
             <div nameid="Input Tanggapan" id="input_tanggapan">
                 Data tanggapan
             </div>
-            <div class="bagan_chart">
+            <div class="bagan_chart_p">
                 <canvas id="myChart_bar"></canvas>
             </div>
         </div>

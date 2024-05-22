@@ -295,6 +295,11 @@ td {
 }
 .bungkus_tombol {
     position: absolute;
+    top: 189px;
+    left: 38px;
+}
+.bungkus_tombol_laporan {
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -315,7 +320,7 @@ div {
     height: 41px;
 }
 
-#rectangle_21_ek1 {
+#rectangle_21_ek1-bio {
     top: 0px;
     left: 0px;
     width: 168px;
@@ -328,7 +333,7 @@ div {
     background: rgba(103.06, 0, 0, 1);
 }
 
-#kirim {
+#kirim-bio {
     top: 6px;
     left: 35px;
     width: 188.98px;
@@ -354,11 +359,12 @@ div {
     height: 41px;
 }
 
-#rectangle_21_ek2 {
+#rectangle_21_ek2-bio {
     top: 0px;
-    left: 0px;
+    left: 30px;
     width: 160px;
     height: 41px;
+    text-align: center;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -367,7 +373,7 @@ div {
     background: rgba(0, 0, 0, 1);
 }
 
-#batal {
+#batal-bio {
     top: 6px;
     left: 35px;
     width: 120.98px;
@@ -440,7 +446,7 @@ div {
         height: 41px;
     }
     #rectangle_19,
-    #rectangle_21_ek1 {
+    #rectangle_21_ek1-bio {
         width: 170px;
     }
     #group_13 {
@@ -458,7 +464,7 @@ div {
         width: 338px;
         height: 136px;
     }
-    #rectangle_21_ek2,
+    #rectangle_21_ek2-bio,
     #rectangle_21_ek3 {
         top: 0;
     }

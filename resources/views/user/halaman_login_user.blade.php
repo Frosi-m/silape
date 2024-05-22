@@ -23,7 +23,7 @@
                 <button class="login-button">
                     <span class="silape-text">SILAPE</span></button><span class="login-text">LOGIN</span>
                 <div class="flex-row-c">
-                    <span class="username">Username</span>
+                    <span class="username">Email</span>
                     <input class="username-halaman-login-user" type="text" name="email"
                         value="{{ old('email') }}">
                     @error('email')

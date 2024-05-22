@@ -37,7 +37,7 @@ button {
     position: absolute;
     width: 1098px;
     height: 613px;
-    top: 50%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #f3f3f3;
@@ -533,7 +533,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 1201px) {
     /* untuk desktop */
-    .rectangle {
+    .rectangle_edit_user {
         position: absolute;
         top: 70%;
         left: 50%;

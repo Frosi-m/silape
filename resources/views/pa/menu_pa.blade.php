@@ -18,7 +18,7 @@
 
                         <div id="carbon_report_data" nameid="carbon:report-data">
                             <div nameid="carbon:report-data" id="_bg__carbon_report_data_ek1"></div>
-                            <img src="assets/images/vector.png" nameid="Vector" id="vector" />
+                            <img src="assets/images/vector.png" nameid="Vector" id="vector_p" />
                             <img src="assets/images/vector_ek1.png" nameid="Vector" id="vector_ek1" />
 
                         </div>
@@ -39,7 +39,7 @@
                         <div nameid="Group 31" id="_bg__group_31_ek1"></div>
                         <img src="assets/images/polygon_5.png" nameid="Polygon 4" id="polygon_4" />
 
-                        <div id="ri_user_smile_fill" nameid="ri:user-smile-fill">
+                        <div id="ri_user_smile_fill_p" nameid="ri:user-smile-fill">
                             <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek1"></div>
 
                             <div id="flat_color_icons_feedback" nameid="flat-color-icons:feedback">
@@ -73,7 +73,7 @@
                     <div nameid="Group 29" id="_bg__group_29_ek1"></div>
                     <img src="assets/images/polygon_5.png" nameid="Polygon 2" id="polygon_2" />
 
-                    <div id="ri_user_smile_fill_ek2" nameid="ri:user-smile-fill">
+                    <div id="ri_user_smile_fill_ek2_p" nameid="ri:user-smile-fill">
                         <div nameid="ri:user-smile-fill" id="_bg__ri_user_smile_fill_ek3"></div>
                         <img src="assets/images/vector_ek7.png" nameid="Vector" id="vector_ek7" />
                     </div>

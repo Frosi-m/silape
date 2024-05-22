@@ -39,24 +39,25 @@
         <div class="bungkus_tombol">
             <div id="tombol_konfirmasi" nameid="tombol konfirmasi">
                 <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek1"></div>
-                <div nameid="Rectangle 21" id="rectangle_21_ek1"></div>
-                <a href="edit_user">
-                    <div nameid="Kirim" id="kirim">
-                        Edit data
-                    </div>
-                </a>
-
+                <div nameid="Rectangle 21" id="rectangle_21_ek1-bio">
+                    <a href="edit_user">
+                        <div nameid="Kirim" id="kirim-bio">
+                            Edit data
+                        </div>
+                    </a>
+                </div>
 
             </div>
 
             <div id="tombol_konfirmasi_ek2" nameid="tombol konfirmasi">
                 <div nameid="tombol konfirmasi" id="_bg__tombol_konfirmasi_ek3"></div>
-                <div nameid="Rectangle 21" id="rectangle_21_ek2"></div>
-                <a href="dashboard_user">
-                    <div nameid="Batal" id="batal">
-                        Kembali
-                    </div>
-                </a>
+                <div nameid="Rectangle 21" id="rectangle_21_ek2-bio">
+                    <a href="dashboard_user">
+                        <div nameid="Batal" id="batal-bio">
+                            Kembali
+                        </div>
+                    </a>
+                </div>
             </div>
 
         </div>
