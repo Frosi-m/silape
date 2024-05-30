@@ -200,22 +200,23 @@ class controller_user extends Controller
             }
             else {
                 $akun_baru = tb_user::create([
-                    'id_auth'                   => $data_user->id,
-                    'username'                  => explode('@', $data_user->email)[0], 
-                    'nama'                      => $data_user->name,
+                    'id_auth'               => $data_user->id,
+                    'username'              => explode('@', $data_user->email)[0], 
+                    'nama'                  => $data_user->name,
                     'email'                 => $data_user->email,
                     'alamat'                => '-',
                     'no_tlp'                => 0,
                     'tempat_tanggal_lahir'  => '-',
                     'password'              => bcrypt(explode('@', $data_user->email)[0]),
                 ]);
-                Auth::login($akun_baru);
-
+                $cari_akun = tb_user::where('id_auth', $akun_baru->id_auth)->first();
                 $ada = [
-                    'id'    => $cari_user->id_user,
-                    'nama'  => $cari_user->nama
+                    'id'    => $cari_akun->id_user,
+                    'nama'  => $cari_akun->nama
                 ];
                 session()->put('data_user', $ada);
+                Auth::login($akun_baru);
+
                 return redirect()->route('dashboard_untuk_user');
 
 
