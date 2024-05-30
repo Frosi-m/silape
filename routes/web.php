@@ -35,6 +35,8 @@ Route::get('/halaman_login_user', function () {
     return view('user/halaman_login_user');
 })->name('halaman_login_user')->middleware('user_keluar');
 
+Route::get('oauth/google', [controller_user::class, 'redirect_to_provider'])->name('oauth.google');  
+Route::get('oauth/google/callback', [controller_user::class, 'handle_provider_callback'])->name('oauth.google.callback');
 Route::get('/register_user', function () {
     return view('user/register_user');
 });

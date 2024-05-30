@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\tb_user;
+use App\Models\tb_laporan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
+use App\Models\detail_laporan_u;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Carbon;
 use Illuminate\Http\RedirectResponse;
-use App\Models\tb_user;
-use App\Models\tb_laporan;
-use App\Models\detail_laporan_u;
+use Laravel\Socialite\Facades\Socialite;
 
 class controller_user extends Controller
 {
@@ -31,7 +32,7 @@ class controller_user extends Controller
         $request->validate([
             'email'     => 'required',
             'pass_u'    => 'required',
-            'username'  => 'required',
+            'nama'      => 'required',
             'alamat'    => 'required',
             'tlp'       => 'required'
         ]);
@@ -39,7 +40,8 @@ class controller_user extends Controller
 
         $inputan  = new tb_user;
 
-        $inputan->username  = $request->username;
+        $inputan->username  = explode("@", $request->email)[0];
+        $inputan->nama      = $request->nama;
         $inputan->password  = bcrypt($request->pass_u);
         $inputan->alamat    = $request->alamat;
         $inputan->no_tlp    = $request->tlp;
@@ -149,17 +151,22 @@ class controller_user extends Controller
             'password'  => 'required',
         ]);
 
-        $data = [
+        $data1 = [
             'email'     => $request->email,
             'password'  => $request->password
         ];
-        // dd(Auth::guard('tb_user')->check());
-        if (Auth::guard('tb_user')->attempt($data)) {
+        $data2 = [
+            'username'  => explode("@",$request->email)[0],
+            'password'  => $request->password
+        ];
+        // dd(Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2));
+        // dd($data);
+        if (Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2)) {
             $user = Auth::guard('tb_user')->user();
             
             $ada = [
                 'id'    => $user->id_user,
-                'nama'  => $user->username
+                'nama'  => $user->nama
             ];
             
             session()->put('data_user', $ada);
@@ -171,6 +178,57 @@ class controller_user extends Controller
         }
 
     }
+
+    public function redirect_to_provider(){
+        return Socialite::driver('google')->redirect();
+    }
+
+    public function handle_provider_callback(){
+        try {
+            $data_user = Socialite::driver('google')->user();
+            // dd($data_user);
+            $cari_user = tb_user::where('id_auth', $data_user->id)->first();
+
+            if ($cari_user) {
+                Auth::login($cari_user);
+                $ada = [
+                    'id'    => $cari_user->id_user,
+                    'nama'  => $cari_user->nama
+                ];
+                session()->put('data_user', $ada);
+                return redirect()->route('dashboard_untuk_user');
+            }
+            else {
+                $akun_baru = tb_user::create([
+                    'id_auth'                   => $data_user->id,
+                    'username'                  => explode('@', $data_user->email)[0], 
+                    'nama'                      => $data_user->name,
+                    'email'                 => $data_user->email,
+                    'alamat'                => '-',
+                    'no_tlp'                => 0,
+                    'tempat_tanggal_lahir'  => '-',
+                    'password'              => bcrypt(explode('@', $data_user->email)[0]),
+                ]);
+                Auth::login($akun_baru);
+
+                $ada = [
+                    'id'    => $cari_user->id_user,
+                    'nama'  => $cari_user->nama
+                ];
+                session()->put('data_user', $ada);
+                return redirect()->route('dashboard_untuk_user');
+
+
+                
+            } 
+        }    
+        catch (Excption $e) {
+            return redirect()->route('halaman_login_user');
+        }
+
+        
+    }
+
 
     public function logout_user(){
         Auth::logout();

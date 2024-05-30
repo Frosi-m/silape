@@ -52,7 +52,9 @@
                     <div class="vector-3"></div>
                 </div>
                 <div class="flex-row-fa">
-                    <div class="flat-color-icons-google"></div>
+                    <a href="{{ route('oauth.google') }}">
+                        <div class="flat-color-icons-google"></div>
+                    </a>
                     <div class="logos-facebook"></div>
                     <div class="square-x-twitter">
                         <div class="vector-4"></div>
