@@ -52,13 +52,17 @@
                     <div class="vector-3"></div>
                 </div>
                 <div class="flex-row-fa">
-                    <a href="{{ route('oauth.google') }}">
+                    <a href="{{ route('r_provider', 'google') }}">
                         <div class="flat-color-icons-google"></div>
                     </a>
-                    <div class="logos-facebook"></div>
-                    <div class="square-x-twitter">
-                        <div class="vector-4"></div>
-                    </div>
+                    <a href="{{ route('r_provider', 'facebook') }}">
+                        <div class="logos-facebook"></div>
+                    </a>
+                    <a href="{{ route('r_provider', 'twitter') }}">
+                        <div class="square-x-twitter">
+                            <div class="vector-4"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

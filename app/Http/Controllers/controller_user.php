@@ -179,16 +179,18 @@ class controller_user extends Controller
 
     }
 
-    public function redirect_to_provider(){
-        return Socialite::driver('google')->redirect();
+    public function redirect_to_provider($nama_provider){
+        return Socialite::driver($nama_provider)->redirect();
     }
 
-    public function handle_provider_callback(){
+    public function handle_provider_callback($nama_provider){
         try {
-            $data_user = Socialite::driver('google')->user();
+            $data_user = Socialite::driver($nama_provider)->user();
             // dd($data_user);
-            $cari_user = tb_user::where('id_auth', $data_user->id)->first();
-
+            $cari_user = tb_user::where('id_auth', $data_user->id)
+                                        ->OrWhere('email', $data_user->email)
+                                        ->first();
+            // dd($cari_user);
             if ($cari_user) {
                 Auth::login($cari_user);
                 $ada = [
