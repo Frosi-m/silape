@@ -190,7 +190,7 @@ class controller_user extends Controller
             $cari_user = tb_user::where('id_auth', $data_user->id)
                                         ->OrWhere('email', $data_user->email)
                                         ->first();
-            dd($cari_user);
+            // dd($cari_user);
             if ($cari_user) {
                 Auth::login($cari_user);
                 $ada = [
