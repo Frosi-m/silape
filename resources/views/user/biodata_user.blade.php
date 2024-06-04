@@ -15,7 +15,7 @@
                 <tr>
                     <td>Nama</td>
                     <td>:</td>
-                    <td>{{ $data->username }}</td>
+                    <td>{{ $data->nama }}</td>
                 </tr>
                 <tr>
                     <td>Alamat</td>

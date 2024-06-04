@@ -12,7 +12,7 @@
                 @csrf
                 <input type="hidden" name="id_kunci_edit_user" value="{{ $data->id_user }}">
                 <span class="nama_edit_user">Nama</span>
-                <input class="rectangle-2_edit_user" type="text" value="{{ $data->username }}" name="namauser">
+                <input class="rectangle-2_edit_user" type="text" value="{{ $data->nama }}" name="namauser">
                 @error('nama_user')
                     <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Email
                         harap diisi
@@ -38,7 +38,8 @@
                 @enderror
 
                 <span class="no-tlp_edit_user">No tlp</span>
-                <input class="rectangle-8_edit_user" type="number" value="{{ $data->no_tlp }}" name="no_tlp">
+                <input class="rectangle-8_edit_user" type="number" value="{{ $data->no_tlp }}" name="no_tlp"
+                    maxlength="12">
                 @error('no_tlp')
                     <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Email
                         harap diisi

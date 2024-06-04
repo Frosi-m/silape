@@ -30,7 +30,7 @@
                         harap diisi
                         dengan benar*</small>
                 @enderror
-                <span class="nama-input">Username</span>
+                <span class="nama-input">Nama</span>
                 <input class="main-content" type="text" name="username">
                 @error('username')
                     <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username

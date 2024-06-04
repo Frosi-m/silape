@@ -86,7 +86,7 @@ class controller_user extends Controller
         ]);
         $update_user = tb_user::find($request->id_kunci);
 
-        $update_user->username              = $request->namauser;
+        $update_user->nama              = $request->namauser;
         $update_user->tempat_tanggal_lahir  = $request->tela.",".$request->tala;
         $update_user->no_tlp                = $request->no_tlp;
         $update_user->alamat                = $request->tempat;
