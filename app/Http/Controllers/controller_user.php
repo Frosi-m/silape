@@ -92,7 +92,7 @@ class controller_user extends Controller
         $update_user->alamat                = $request->tempat;
         
         $update_user->save();
-        // dd($cek);
+
 
         //ini menggunakan cara update sederhana untuk mengubah data pada table tb_user
 
@@ -124,7 +124,6 @@ class controller_user extends Controller
                             ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
                             ->where('id_pelapor',session('data_user')['id'])
                             ->get();
-        // dd($data_user);
         return view('user/list_laporan', ['list_lp' => $data_user]);
     }
 
@@ -159,8 +158,7 @@ class controller_user extends Controller
             'username'  => explode("@",$request->email)[0],
             'password'  => $request->password
         ];
-        // dd(Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2));
-        // dd($data);
+
         if (Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2)) {
             $user = Auth::guard('tb_user')->user();
             
@@ -186,11 +184,9 @@ class controller_user extends Controller
     public function handle_provider_callback($nama_provider){
         try {
             $data_user = Socialite::driver($nama_provider)->user();
-            // dd($data_user);
             $cari_user = tb_user::where('id_auth', $data_user->id)
                                         ->OrWhere('email', $data_user->email)
                                         ->first();
-            // dd($cari_user);
             if ($cari_user) {
                 Auth::login($cari_user);
                 $ada = [
