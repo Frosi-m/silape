@@ -15,3 +15,5 @@ pw =mrxlagikp
 untuk twitter
 client id = s1nlv68Gb2HVTKQzaunCMyntY
 client secret = z0BHYz5FhAZRz5CdKFQi9ECt9krpbv2NsFS4DYvScZHMPHohV6
+
+password cpanel=06032003Rosi.

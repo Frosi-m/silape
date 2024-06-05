@@ -30,17 +30,18 @@ class controller_user extends Controller
     public function tambah_user(Request $request): RedirectResponse
     {
         $request->validate([
-            'email'     => 'required',
+            'email'     => 'required|email:dns|unique:tb_user',
             'pass_u'    => 'required',
             'nama'      => 'required',
             'alamat'    => 'required',
-            'tlp'       => 'required'
+            'tlp'       => 'required|max:12|min:12'
         ]);
         // ini menggunakan metode eloquent laravel untuk menambahkan data di tb_user
 
         $inputan  = new tb_user;
 
         $inputan->username  = explode("@", $request->email)[0];
+        $inputan->id_auth   = 0;
         $inputan->nama      = $request->nama;
         $inputan->password  = bcrypt($request->pass_u);
         $inputan->alamat    = $request->alamat;
@@ -81,7 +82,7 @@ class controller_user extends Controller
             'namauser'  => 'required',
             'tela'      => 'required',
             'tala'      => 'required',
-            'no_tlp'    => 'required',
+            'no_tlp'    => 'required|max:12|min:12',
             'tempat'    => 'required'
         ]);
         $update_user = tb_user::find($request->id_kunci);

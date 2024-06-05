@@ -27,7 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Add your custom HEAD content here -->
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700,800">
 </head>
 
 <body>

@@ -26,6 +26,7 @@
                     <span class="username">Username/Email</span>
                     <input class="username-halaman-login-user" type="text" name="email"
                         value="{{ old('email') }}">
+                    <br>
                     @error('email')
                         <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
                             harap diisi

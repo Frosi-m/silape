@@ -33,6 +33,7 @@ button {
     background: #858585;
     overflow: hidden;
 }
+
 .rectangle {
     position: relative;
     width: 681px;
@@ -282,6 +283,16 @@ input::-webkit-inner-spin-button {
     z-index: 17;
     border-radius: 70px;
 }
+small.pesan {
+    display: inline-table;
+    width: 294px;
+    color: red;
+    font-style: italic;
+    position: relative;
+    top: 12px;
+    left: 127px;
+}
+
 .buat-akun {
     display: flex;
     align-items: flex-start;
