@@ -87,7 +87,7 @@ class controller_user extends Controller
         ]);
         $update_user = tb_user::find($request->id_kunci);
 
-        $update_user->nama              = $request->namauser;
+        $update_user->nama                  = $request->namauser;
         $update_user->tempat_tanggal_lahir  = $request->tela.",".$request->tala;
         $update_user->no_tlp                = $request->no_tlp;
         $update_user->alamat                = $request->tempat;
@@ -141,6 +141,28 @@ class controller_user extends Controller
     public  function ubah_pw()
     {
         return view('user/ubah_pw');
+    }
+
+    public function proses_ubah_pw(Request $request){
+        $request->validate([
+            'pw_lama'       => 'required',
+            'pw_baru'       => 'required',
+            'pw_konfirmasi' => 'required'
+        ]);
+
+        $cari_data = tb_user::where('password', $data_user->id)
+                                        ->Where('id_user', session('data_user')['id'])
+                                        ->first();
+        if ($cari_data) {
+            if ($request->pw_baru == $request->pw_konfirmasi) {
+                $update_user = tb_user::find(session('data_user')['id']);
+            }
+        }
+
+        $update_user->password = bcrypt($request->pw_konfirmasi);
+        
+        $update_user->save();
+
     }
 
     #untuk login user

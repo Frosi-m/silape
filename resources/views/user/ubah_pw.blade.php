@@ -1,22 +1,25 @@
 @extends('user.layouts.dashboard-user')
 
 @section('isi')
+    {{-- <form action="{{ route('p_ubah_pw') }}" method="post"> --}}
+    @csrf
     <div class="rectangle">
         <button class="rectangle-1"></button><span class="ubah-password">Ubah password</span>
-        <div class="rectangle-2"></div>
         <span class="password-lama">Password lama</span>
-        <div class="rectangle-3"></div>
+        <input type="password" class="rectangle-3" name="pw_lama">
         <div class="logo-smart-peamekasan"></div>
         <span class="password-baru">Password baru</span>
-        <div class="rectangle-4"></div>
+        <input type="password" class="rectangle-4" name="pw_baru">
         <span class="konfirmasi-password-baru">Konfirmasi password baru</span>
-        <div class="rectangle-5"></div>
+        <input type="password" class="rectangle-5" name="pw_konfirmasi">
         <button class="tombol-konfirmasi">
             <span class="simpan">Simpan</span>
             <div class="rectangle-6"></div>
-        </button><button class="tombol-konfirmasi-7">
+        </button>
+        <button class="tombol-konfirmasi-7">
             <span class="batal">Batal</span>
             <div class="rectangle-8"></div>
         </button>
     </div>
+    </form>
 @endsection

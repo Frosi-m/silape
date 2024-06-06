@@ -47,7 +47,7 @@ button {
     position: absolute;
     width: 479px;
     height: 428px;
-    top: 0;
+    top: 20%;
     left: 50%;
     background: #f3f3f3;
     transform: translate(-50%, 0);
@@ -93,6 +93,7 @@ button {
     border-radius: 50px;
 }
 .rectangle-3 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
@@ -132,6 +133,7 @@ button {
     z-index: 8;
 }
 .rectangle-4 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
@@ -159,6 +161,7 @@ button {
     z-index: 10;
 }
 .rectangle-5 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
@@ -270,7 +273,7 @@ button {
     }
     .rectangle {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1.25);
     }
@@ -280,7 +283,7 @@ button {
     /* untuk desktop */
     .rectangle {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%) scale(100%);
     }
