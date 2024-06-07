@@ -572,6 +572,7 @@ div {
     }
     #content-container {
         overflow: scroll;
+        overflow-x: hidden;
     }
 
     #_bg__halaman_dashboard_petugas {

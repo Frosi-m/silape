@@ -10,7 +10,7 @@ class tb_user extends Authenticatable
 {
     use HasFactory;
     protected $table        = 'tb_user';
-    protected $primaryKey   = 'id';
+    protected $primaryKey   = 'id_user';
 
     protected $fillable = [
         'username',

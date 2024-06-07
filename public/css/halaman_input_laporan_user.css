@@ -432,6 +432,7 @@ select {
         height: 100vh;
     }
     #rectangle_18 {
+        top: 50%;
         width: 697px;
         height: 1090px;
         transform: translate(-50%, -50%) scale(0.8);
@@ -456,14 +457,30 @@ select {
         height: 136px;
     }
     #tombol_konfirmasi,
-    #tombol_konfirmasi_ek2 {
-        top: 0;
+    #tombol_konfirmasi_ek2,
+    #rectangle_21_ek1 {
+        top: 416px;
+    }
+    #rectangle_18_laporan {
+        position: absolute;
+        width: 1098px;
+        height: 813px;
+        top: -60pc;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.75);
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        border-top-left-radius: 35px;
+        background: rgba(243.31, 243.31, 243.31, 1);
     }
     .bungkus_tombol {
-        top: 413px;
+        top: 832px;
         left: 50%;
-        width: 95%;
-        transform: translate(-50%, 0);
+        width: 60%;
+        transform: translate(-50%, -50%);
     }
     #rectangle_18 .ion--arrow-back-circle {
         display: flex;

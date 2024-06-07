@@ -145,23 +145,25 @@ class controller_user extends Controller
 
     public function proses_ubah_pw(Request $request){
         $request->validate([
-            'pw_lama'       => 'required',
             'pw_baru'       => 'required',
             'pw_konfirmasi' => 'required'
         ]);
 
-        $cari_data = tb_user::where('password', $data_user->id)
-                                        ->Where('id_user', session('data_user')['id'])
-                                        ->first();
-        if ($cari_data) {
+        if (session('data_user')['id']) {
             if ($request->pw_baru == $request->pw_konfirmasi) {
                 $update_user = tb_user::find(session('data_user')['id']);
+
+                $update_user->password = bcrypt($request->pw_konfirmasi);
+        
+                $update_user->save();
+                return redirect()->route('dashboard_untuk_user')->with('pw_berhasil', 'password berhasil diubah');
             }
+            
         }
 
-        $update_user->password = bcrypt($request->pw_konfirmasi);
+        return redirect()->route('ubah_pw');
+
         
-        $update_user->save();
 
     }
 

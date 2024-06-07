@@ -141,7 +141,7 @@ table {
 
 #group_32_laporan {
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
 }
@@ -173,6 +173,7 @@ div.dataTables_wrapper div.dataTables_filter label {
 #example2 {
     position: absolute;
     left: 3pc;
+    top: 12pc;
 }
 .btn {
     display: inline;
@@ -601,6 +602,12 @@ button {
         left: 50%;
         transform: translate(-50%, -50%) scale(155%);
     }
+    #group_32_laporan {
+        position: absolute;
+        top: 00;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
     #logo_smart_peamekasan_2 {
         display: block;
     }
@@ -614,6 +621,22 @@ button {
     #rectangle_18 {
         width: 697px;
         height: 1065px;
+    }
+
+    #rectangle_18_laporan {
+        position: absolute;
+        overflow: hidden;
+        width: 1098px;
+        height: 2002px;
+        top: -10pc;
+        transform: translate(-50%, 0) scale(0.75);
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        border-top-left-radius: 35px;
+        background: rgba(243.31, 243.31, 243.31, 1);
     }
     #rectangle_19,
     #rectangle_21_ek1 {
