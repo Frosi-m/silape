@@ -1,0 +1,1029 @@
+.PortalRumahSakitUkuranDesktop{
+
+position: relative;
+width: 1366px;
+height: 800px;
+
+background: rgba(0, 0, 0, 0.8);
+}
+
+/* IMG-20230525-WA0020 2 */
+
+position: absolute;
+width: 1366px;
+height: 800px;
+left: 0px;
+top: 0px;
+
+background: url(IMG-20230525-WA0020.jpg);
+filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+
+/* footer */
+
+position: absolute;
+width: 1366px;
+height: 79px;
+left: 0px;
+top: 720px;
+
+
+
+/* Rectangle 51 */
+
+position: absolute;
+width: 1366px;
+height: 79px;
+left: 0px;
+top: 720px;
+
+background: #1B0000;
+
+
+/* copy right RSUD Dr. H. SLAMET MARTODIJO kota Pamekasan */
+
+position: absolute;
+width: 707px;
+height: 29px;
+left: calc(50% - 707px/2 + 0.5px);
+top: 745px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Group 35 */
+
+position: absolute;
+width: 925.07px;
+height: 349px;
+left: calc(50% - 925.07px/2 - 0.46px);
+top: 244px;
+
+
+
+/* Group 36 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 220px;
+top: 244px;
+
+
+
+/* Rectangle 39 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 220px;
+top: 244px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 6 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 233px;
+top: 357px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+.carbon:report{
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 251px;
+top: 276px;
+}
+
+
+/* Vector */
+
+position: absolute;
+left: 31.25%;
+right: 31.25%;
+top: 40.62%;
+bottom: 21.88%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.62%;
+right: 15.62%;
+top: 6.25%;
+bottom: 6.25%;
+
+background: #000000;
+
+
+/* Silape */
+
+position: absolute;
+width: 69px;
+height: 29px;
+left: 250px;
+top: 361px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 43 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 858px;
+top: 439px;
+
+
+
+/* Rectangle 49 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 858px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 15 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 872.33px;
+top: 553px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 889.33px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 889px;
+top: 468px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 46 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 1017px;
+top: 439px;
+
+
+
+/* Rectangle 50 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 1017px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 16 */
+
+position: absolute;
+width: 86.6px;
+height: 100px;
+left: 1031.3px;
+top: 546.3px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 1048px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 1047px;
+top: 468px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 38 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 220px;
+top: 439px;
+
+
+
+/* Rectangle 45 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 220px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 11 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 233px;
+top: 553px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 250px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 251px;
+top: 470px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 37 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 379px;
+top: 439px;
+
+
+
+/* Rectangle 46 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 379px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 12 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 393.84px;
+top: 553px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 410.84px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 411px;
+top: 470px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 40 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 539px;
+top: 439px;
+
+
+
+/* Rectangle 47 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 539px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 13 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 552.66px;
+top: 553px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 569.66px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 570px;
+top: 470px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 42 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 698px;
+top: 439px;
+
+
+
+/* Rectangle 48 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 698px;
+top: 439px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 14 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 712.51px;
+top: 553px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 729.51px;
+top: 553px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 730px;
+top: 470px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 45 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 1017px;
+top: 244px;
+
+
+
+/* Rectangle 44 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 1017px;
+top: 244px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 10 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1031.17px;
+top: 357px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 1048px;
+top: 276px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 1048.17px;
+top: 361px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 41 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 698px;
+top: 246px;
+
+
+
+/* Rectangle 42 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 698px;
+top: 246px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 6 */
+
+position: absolute;
+width: 102.46px;
+height: 100px;
+left: 712.55px;
+top: 360.23px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 729.51px;
+top: 363px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 730px;
+top: 276px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 44 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 858px;
+top: 246px;
+
+
+
+/* Rectangle 43 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 858px;
+top: 246px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 9 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 872.33px;
+top: 359px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 889.33px;
+top: 363px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 889px;
+top: 276px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 47 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 379px;
+top: 244px;
+
+
+
+/* Rectangle 40 */
+
+position: absolute;
+width: 129.1px;
+height: 154px;
+left: 379px;
+top: 244px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 7 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 394.84px;
+top: 357px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: calc(50% - 65px/2 - 239.66px);
+top: 361px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 411px;
+top: 276px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 39 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 539px;
+top: 244px;
+
+
+
+/* Rectangle 41 */
+
+position: absolute;
+width: 128.07px;
+height: 154px;
+left: 539px;
+top: 244px;
+
+background: rgba(186, 255, 157, 0.8);
+border-radius: 8px;
+
+
+/* Polygon 8 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 552.66px;
+top: 357px;
+
+background: #D9D9D9;
+transform: rotate(-90deg);
+
+
+/* insert */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 569.66px;
+top: 361px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* material-symbols:help-outline */
+
+position: absolute;
+width: 66px;
+height: 66px;
+left: 570px;
+top: 276px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #222222;
+
+
+/* Group 34 */
+
+position: absolute;
+width: 544px;
+height: 144px;
+left: calc(50% - 544px/2);
+top: 55px;
+
+
+
+/* Group 48 */
+
+position: absolute;
+width: 144px;
+height: 144px;
+left: 411px;
+top: 55px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Polygon 17 */
+
+position: absolute;
+width: 144px;
+height: 144px;
+left: 411px;
+top: 55px;
+
+background: linear-gradient(208.23deg, #F1F1F1 17.11%, #A1D486 76.19%);
+border-radius: 12px;
+
+
+/* logo smart peamekasan 4 */
+
+position: absolute;
+width: 98.26px;
+height: 98.26px;
+left: 433.87px;
+top: 77.87px;
+
+background: url(logo smart peamekasan.png);
+
+
+/* RSUD Dr. H. SLAMET MARTODIJO PAMEKASAN (insert slogan) */
+
+position: absolute;
+width: 389px;
+height: 88px;
+left: 566px;
+top: 83px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFFFF;
+
