@@ -22,6 +22,8 @@ Route::middleware(['user_masuk'])->group(function () {
         Route::get('/list_laporan', 'list_laporan')->name('list_laporan');
         Route::get('/detail_laporan/{data}', 'detail_laporan');
         Route::get('/ubah_pw', 'ubah_pw')->name('ubah_pw');
+        Route::post('/proses_ubah_pw', 'proses_ubah_pw')->name('p_ubah_pw');
+
         Route::get('/logout_user', 'logout_user')->name('logout_untuk_user');
 
 

@@ -192,6 +192,11 @@ button {
         left: 50%;
         transform: translate(-50%, -50%) scale(55%);
     }
+    .bungkus_tombol_bio {
+        position: absolute;
+        top: 189px;
+        left: 38px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -293,11 +298,13 @@ td {
     left: 127px;
     transform: translate(0, -50%);
 }
-.bungkus_tombol {
+.bungkus_tombol,
+.bungkus_tombol_bio {
     position: absolute;
-    top: 189px;
-    left: 38px;
+    top: 75%;
+    left: 4%;
 }
+
 .bungkus_tombol_laporan {
     position: absolute;
     top: 0;
@@ -360,8 +367,8 @@ div {
 }
 
 #rectangle_21_ek2-bio {
-    top: 0px;
-    left: 30px;
+    /* top: 0px; */
+    left: 188px;
     width: 160px;
     height: 41px;
     text-align: center;
@@ -408,11 +415,11 @@ div {
     #group_13,
     .logo_smart_peamekasan {
         position: absolute;
-        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(75%);
     }
     .rectangle-bio {
+        top: 30pc;
         width: 697px;
         height: 1090px;
     }
@@ -464,15 +471,18 @@ div {
         width: 338px;
         height: 136px;
     }
-    #rectangle_21_ek2-bio,
-    #rectangle_21_ek3 {
-        top: 0;
-    }
     .bungkus_tombol {
         top: 872px;
         left: 50%;
         width: 55%;
         height: 86px;
+        transform: translate(-50%, 0);
+    }
+    .bungkus_tombol_bio {
+        top: 828px;
+        left: 50%;
+        width: 50%;
+        height: 88px;
         transform: translate(-50%, 0);
     }
     /* #frame_27 {

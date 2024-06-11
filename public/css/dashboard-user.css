@@ -571,10 +571,14 @@ div {
 @media (min-width: 360px) and (max-width: 599px) {
     /* untuk mobile */
     #_bg__halaman_dashboard_user {
-        height: 950px;
+        height: 100vh;
     }
     #logo_smart_peamekasan_2 {
         position: fixed;
+    }
+    #content-container {
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     #ri_user_smile_fill,
     #material_symbols_lock,
@@ -588,6 +592,11 @@ div {
         font-size: 35px;
         width: 300px;
     }
+
+    body {
+        overflow: hidden;
+    }
+
     .list_dropdown {
         display: none;
         position: absolute;
@@ -642,13 +651,6 @@ div {
         background: rgba(217, 217, 217, 0.75);
         box-shadow: 0 2px #00000088;
         transition: 0.3s ease-in-out;
-    }
-    #frame_27 {
-        transform: translate(-50%, 0) scale(55%);
-        top: -20%;
-        left: 50%;
-        width: 700px;
-        height: 1300px;
     }
 
     #logo_smart_peamekasan_2 {

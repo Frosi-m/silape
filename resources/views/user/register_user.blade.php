@@ -17,40 +17,41 @@
                 <div class="rectangle-1"><span class="silape">SILAPE</span></div>
                 <span class="register">REGISTER</span>
                 <span class="username-input">Email</span>
-                <input class="rectangle-2" type="text" name="email">
+                <input class="rectangle-2" type="text" name="email" value="{{ old('email') }}">
                 @error('email')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Email
+                    <small class="pesan">Email
                         harap diisi
                         dengan benar*</small>
                 @enderror
                 <span class="password-input">Password</span>
                 <input class="rectangle-3" type="password" name="pass_u">
                 @error('pass_u')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Password
+                    <small class="pesan">Password
                         harap diisi
                         dengan benar*</small>
                 @enderror
-                <span class="nama-input">Username</span>
-                <input class="main-content" type="text" name="username">
-                @error('username')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
+                <span class="nama-input">Nama</span>
+                <input class="main-content" type="text" name="nama" value="{{ old('nama') }}">
+                @error('nama')
+                    <small class="pesan">Username
                         harap diisi
                         dengan benar*</small>
                 @enderror
                 <span class="address-field">Alamat</span>
-                <textarea class="rectangle-box-4" name="alamat"></textarea>
+                <textarea class="rectangle-box-4" name="alamat">{{ old('alamat') }}</textarea>
                 @error('alamat')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Alamat
+                    <small class="pesan">Alamat
                         harap diisi
                         dengan benar*</small>
                 @enderror
                 <span class="no-telp">No telp</span>
-                <input class="rectangle-5" type="number" name="tlp">
+                <input class="rectangle-5" type="number" name="tlp" value="{{ old('tlp') }}">
                 @error('tlp')
-                    <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">No telp
+                    <small class="pesan">No telp
                         harap diisi
                         dengan benar*</small>
                 @enderror
+                <br>
                 <button class="rectangle-6">
                     <span class="buat-akun">Buat akun</span>
                 </button>

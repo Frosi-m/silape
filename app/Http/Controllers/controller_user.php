@@ -30,17 +30,18 @@ class controller_user extends Controller
     public function tambah_user(Request $request): RedirectResponse
     {
         $request->validate([
-            'email'     => 'required',
+            'email'     => 'required|email:dns|unique:tb_user',
             'pass_u'    => 'required',
             'nama'      => 'required',
             'alamat'    => 'required',
-            'tlp'       => 'required'
+            'tlp'       => 'required|max:12|min:12'
         ]);
         // ini menggunakan metode eloquent laravel untuk menambahkan data di tb_user
 
         $inputan  = new tb_user;
 
         $inputan->username  = explode("@", $request->email)[0];
+        $inputan->id_auth   = 0;
         $inputan->nama      = $request->nama;
         $inputan->password  = bcrypt($request->pass_u);
         $inputan->alamat    = $request->alamat;
@@ -81,18 +82,18 @@ class controller_user extends Controller
             'namauser'  => 'required',
             'tela'      => 'required',
             'tala'      => 'required',
-            'no_tlp'    => 'required',
+            'no_tlp'    => 'required|max:12|min:12',
             'tempat'    => 'required'
         ]);
         $update_user = tb_user::find($request->id_kunci);
 
-        $update_user->username              = $request->namauser;
+        $update_user->nama                  = $request->namauser;
         $update_user->tempat_tanggal_lahir  = $request->tela.",".$request->tala;
         $update_user->no_tlp                = $request->no_tlp;
         $update_user->alamat                = $request->tempat;
         
         $update_user->save();
-        // dd($cek);
+
 
         //ini menggunakan cara update sederhana untuk mengubah data pada table tb_user
 
@@ -124,7 +125,6 @@ class controller_user extends Controller
                             ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
                             ->where('id_pelapor',session('data_user')['id'])
                             ->get();
-        // dd($data_user);
         return view('user/list_laporan', ['list_lp' => $data_user]);
     }
 
@@ -143,6 +143,30 @@ class controller_user extends Controller
         return view('user/ubah_pw');
     }
 
+    public function proses_ubah_pw(Request $request){
+        $request->validate([
+            'pw_baru'       => 'required',
+            'pw_konfirmasi' => 'required'
+        ]);
+
+        if (session('data_user')['id']) {
+            if ($request->pw_baru == $request->pw_konfirmasi) {
+                $update_user = tb_user::find(session('data_user')['id']);
+
+                $update_user->password = bcrypt($request->pw_konfirmasi);
+        
+                $update_user->save();
+                return redirect()->route('dashboard_untuk_user')->with('pw_berhasil', 'password berhasil diubah');
+            }
+            
+        }
+
+        return redirect()->route('ubah_pw');
+
+        
+
+    }
+
     #untuk login user
 
     public function proses_login_user(Request $request){
@@ -159,8 +183,7 @@ class controller_user extends Controller
             'username'  => explode("@",$request->email)[0],
             'password'  => $request->password
         ];
-        // dd(Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2));
-        // dd($data);
+
         if (Auth::guard('tb_user')->attempt($data1) || Auth::guard('tb_user')->attempt($data2)) {
             $user = Auth::guard('tb_user')->user();
             
@@ -186,11 +209,9 @@ class controller_user extends Controller
     public function handle_provider_callback($nama_provider){
         try {
             $data_user = Socialite::driver($nama_provider)->user();
-            // dd($data_user);
             $cari_user = tb_user::where('id_auth', $data_user->id)
                                         ->OrWhere('email', $data_user->email)
                                         ->first();
-            dd($cari_user);
             if ($cari_user) {
                 Auth::login($cari_user);
                 $ada = [

@@ -33,6 +33,7 @@ button {
     background: #858585;
     overflow: hidden;
 }
+
 .rectangle {
     position: relative;
     width: 681px;
@@ -92,7 +93,7 @@ button {
 .username-input {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     width: 107px;
     height: 30px;
@@ -150,7 +151,7 @@ button {
 .nama-input {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     width: 67.707px;
     height: 29.946px;
@@ -208,11 +209,11 @@ button {
 .address-field {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     width: 80.464px;
     height: 29.946px;
-    margin: 32.229px 0 0 80px;
+    margin: 32.229px 0 0 88px;
     color: #000000;
     font-family: Inter, var(--default-font-family);
     font-size: 20px;
@@ -282,6 +283,16 @@ input::-webkit-inner-spin-button {
     z-index: 17;
     border-radius: 70px;
 }
+small.pesan {
+    display: inline-table;
+    width: 294px;
+    color: red;
+    font-style: italic;
+    position: relative;
+    top: 12px;
+    left: 127px;
+}
+
 .buat-akun {
     display: flex;
     align-items: flex-start;

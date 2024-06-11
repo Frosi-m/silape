@@ -47,7 +47,7 @@ button {
     position: absolute;
     width: 479px;
     height: 428px;
-    top: 0;
+    top: 20%;
     left: 50%;
     background: #f3f3f3;
     transform: translate(-50%, 0);
@@ -93,6 +93,7 @@ button {
     border-radius: 50px;
 }
 .rectangle-3 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
@@ -106,11 +107,11 @@ button {
     position: absolute;
     width: 164px;
     height: 164px;
-    top: 122px;
+    top: 50%;
     left: 50%;
     background: url(../assets/images/logo-smart-pamekasan.png) no-repeat center;
     background-size: cover;
-    transform: translate(-49.7%, 0);
+    transform: translate(-50%, -50%);
     opacity: 0.25;
     z-index: 1;
 }
@@ -120,7 +121,7 @@ button {
     justify-content: flex-start;
     position: absolute;
     height: 17px;
-    top: 145px;
+    top: 115px;
     left: 123.703px;
     color: #000000;
     font-family: Inter, var(--default-font-family);
@@ -132,10 +133,11 @@ button {
     z-index: 8;
 }
 .rectangle-4 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
-    top: 170.639px;
+    top: 142.639px;
     left: 121px;
     background: #b8b8b8;
     z-index: 7;
@@ -146,8 +148,8 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
-    height: 17px;
-    top: 212px;
+    height: 30px;
+    top: 204px;
     left: 123.703px;
     color: #000000;
     font-family: Inter, var(--default-font-family);
@@ -159,10 +161,11 @@ button {
     z-index: 10;
 }
 .rectangle-5 {
+    border: none;
     position: absolute;
     width: 237.893px;
     height: 32.091px;
-    top: 237.612px;
+    top: 231.612px;
     left: 121px;
     background: #b8b8b8;
     z-index: 9;
@@ -188,9 +191,9 @@ button {
     /* margin: 6.228px 0 0 24.258px; */
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    /* line-height: 14.523px; */
+    line-height: 15.523px;
     text-align: center;
     white-space: nowrap;
     z-index: 13;
@@ -226,9 +229,9 @@ button {
     /* margin: 6.228px 0 0 31.52px; */
     color: #ffffff;
     font-family: Inter, var(--default-font-family);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    /* line-height: 14.523px; */
+    line-height: 28.523px;
     text-align: center;
     white-space: nowrap;
     z-index: 16;
@@ -258,8 +261,8 @@ button {
         transform: translate(-50%, 0) scale(55%);
         top: -25%;
         left: 50%;
-        width: 700px;
-        height: 900px;
+        /* width: 700px; */
+        height: 1200px;
     }
 }
 
@@ -270,7 +273,7 @@ button {
     }
     .rectangle {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1.25);
     }
@@ -280,7 +283,7 @@ button {
     /* untuk desktop */
     .rectangle {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%) scale(100%);
     }

@@ -19,7 +19,7 @@
                     Kriteria laporan
                 </div>
                 <div nameid="Rectangle 19" id="rectangle_19">
-                    <span>
+                    <span id="isi">
                         {{ $dt_laporan->jenis_laporan }}
                     </span>
                 </div>
@@ -27,7 +27,7 @@
                     nama pelapor
                 </div>
                 <div nameid="Rectangle 21" id="rectangle_21_ek1">
-                    <span>
+                    <span class="isi">
                         {{ $dt_laporan->username }}
                     </span>
                 </div>
