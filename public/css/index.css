@@ -47,7 +47,6 @@ button {
     top: -7%;
     transform: translate(-50%, 0) scale(0.9);
     z-index: 72;
-    animation: 0.8s ease-in;
 }
 
 @keyframes a {
@@ -130,7 +129,7 @@ button {
     height: 156px;
     margin: 45px 0 0 0;
     z-index: 72;
-    animation: b 0.8s ease-in;
+    animation: b 0.8s ease-in-out;
 }
 .rectangle {
     flex-shrink: 0;
@@ -455,7 +454,7 @@ button {
     height: 154px;
     margin: 39px 0 0 0;
     z-index: 42;
-    animation: a 0.8s ease-in;
+    animation: a 0.8s ease-in-out;
 }
 .rectangle-1a {
     flex-shrink: 0;
