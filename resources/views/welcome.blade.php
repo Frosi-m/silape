@@ -30,6 +30,15 @@
                         </div>
                     </div>
                     <span class="silape">Silape</span>
+                    <div class="list_dropdown">
+                        <a href="{{ route('halaman_login_user') }}">
+                            Login user
+                        </a>
+
+                        <a href="{{ route('halaman_login_pa') }}">
+                            Login pa
+                        </a>
+                    </div>
                 </div>
                 <div class="rectangle-2 hidden-l">
                     <div class="polygon-3">

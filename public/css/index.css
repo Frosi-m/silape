@@ -49,6 +49,35 @@ button {
     z-index: 72;
 }
 
+.list_dropdown {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    min-width: 13a0px;
+    background: #e3e3e3;
+    top: 25%;
+    left: 10%;
+    font-family: sans-serif;
+    border-radius: 4px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    box-shadow: -2px 2px 5px black;
+    z-index: 999;
+}
+.list_dropdown a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+}
+.list_dropdown a:hover {
+    background: gold;
+}
+
+.rectangle:hover .list_dropdown {
+    display: block;
+}
+
 @keyframes a {
     from {
         right: -80px;
