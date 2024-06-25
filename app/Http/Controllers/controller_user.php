@@ -130,11 +130,12 @@ class controller_user extends Controller
 
     public function detail_laporan($data){
         $data_user  = DB::table('tb_laporan')
-                            ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
-                            ->select('tb_laporan.isi_laporan', 'tb_laporan.id_laporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan', 'detail_laporan.status_laporan')
-                            ->where('id_laporan',$data)
-                            ->first();
-        dd($data_user);
+                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->join('tb_user', 'tb_laporan.id_pelapor', '=', 'tb_user.id_user')
+                        ->select('tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan', 'detail_laporan.id_pelaporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan')
+                        ->where('id_laporan',$data)
+                        ->first();
+        // dd($data_user);
         return view('user/detail_laporan', ['detail_lp' => $data_user]);
     }
 
@@ -194,6 +195,12 @@ class controller_user extends Controller
             
             session()->put('data_user', $ada);
 
+            $data_user  = DB::table('tb_user')->where('id_user',session('data_user')['id'])->first();
+
+            if (password_verify($data_user->username, $data_user->password)  ) {
+                return redirect()->route('dashboard_untuk_user')->with('pw_sama', 'Username dan pasword sama harap diubah');
+            }
+
             return redirect()->route('dashboard_untuk_user');
         }
         else {
@@ -219,6 +226,12 @@ class controller_user extends Controller
                     'nama'  => $cari_user->nama
                 ];
                 session()->put('data_user', $ada);
+
+                $data_user  = DB::table('tb_user')->where('id_user',session('data_user')['id'])->first();
+
+                if (password_verify($data_user->username, $data_user->password)  ) {
+                    return redirect()->route('dashboard_untuk_user')->with('pw_sama', 'Username dan pasword sama harap diubah');
+                }
                 return redirect()->route('dashboard_untuk_user');
             }
             else {
@@ -240,6 +253,11 @@ class controller_user extends Controller
                 session()->put('data_user', $ada);
                 Auth::login($akun_baru);
 
+                $data_user  = DB::table('tb_user')->where('id_user',session('data_user')['id'])->first();
+
+                if (password_verify($data_user->username, $data_user->password)  ) {
+                    return redirect()->route('dashboard_untuk_user')->with('pw_sama', 'Username dan pasword sama harap diubah');
+                }
                 return redirect()->route('dashboard_untuk_user');
 
 
