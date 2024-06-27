@@ -13,7 +13,7 @@ class tb_pa extends Authenticatable
     protected $primaryKey    = 'id';
 
     protected $fillable = [
-        'username',
+        'username_pa',
         'jabatan',
         'password',
         'alamat',

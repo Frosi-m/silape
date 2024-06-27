@@ -129,10 +129,12 @@ class controller_user extends Controller
     }
 
     public function detail_laporan($data){
-        $data_user  = DB::table('tb_laporan')
-                        ->join('detail_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+        $data_user  = DB::table('detail_laporan')
+                        ->join('tb_laporan', 'tb_laporan.id_laporan', '=', 'detail_laporan.id_pelaporan')
+                        ->join('tb_tanggapan', 'tb_tanggapan.id_tanggapan', '=', 'detail_laporan.id_umpan_balik')
                         ->join('tb_user', 'tb_laporan.id_pelapor', '=', 'tb_user.id_user')
-                        ->select('tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan', 'detail_laporan.id_pelaporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan')
+                        ->join('tb_pa', 'tb_tanggapan.id_petugas', '=', 'tb_pa.id_pa')
+                        ->select('tb_tanggapan.isi_tanggapan','tb_pa.username_pa','tb_user.username','tb_laporan.isi_laporan', 'detail_laporan.id_detail_laporan', 'detail_laporan.id_pelaporan','detail_laporan.jenis_laporan', 'detail_laporan.tgl_laporan')
                         ->where('id_laporan',$data)
                         ->first();
         // dd($data_user);

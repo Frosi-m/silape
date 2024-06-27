@@ -28,7 +28,7 @@
                     @foreach ($data_p as $data)
                         <tr>
                             <td>{{ $no }}</td>
-                            <td>{{ $data->username }}</td>
+                            <td>{{ $data->username_pa }}</td>
                             <td>{{ $data->jabatan }}</td>
                             <td>{{ $data->alamat }}</td>
                             <td class="align-middle"><a href="edit_petugas\{{ $data->id_pa }}"

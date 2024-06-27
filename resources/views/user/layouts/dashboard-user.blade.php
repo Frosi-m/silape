@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
     <link rel="stylesheet" href="css/background-logo.css" />
     <link rel="stylesheet" href="css/edit-data-user.css" />
-    <link rel="StyleSheet" href="../css/detail_laporan_user.css" />
+
     <link rel="StyleSheet" href="css/halaman_input_laporan_user.css" />
     <link rel="StyleSheet" href="../css/dashboard-user.css" />
     <link rel="stylesheet" href="css/ubah_pw.css" />

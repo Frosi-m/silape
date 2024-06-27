@@ -178,7 +178,7 @@ class controller_pa extends Controller
 
         $inputan = new tb_pa;
 
-        $inputan->username  = $request->username;
+        $inputan->username_pa  = $request->username;
         $inputan->password  = bcrypt($request->pass_p);
         $inputan->alamat    = $request->alamat;
         $inputan->jabatan  = $request->jabatan;
@@ -969,7 +969,7 @@ class controller_pa extends Controller
         //ini menggunakan metode eloquent
         $update_pa = tb_pa::find($request->kunci);
 
-        $update_pa->username    = $request->username;
+        $update_pa->username_pa    = $request->username;
         $update_pa->password    = bcrypt($request->pass_p);
         $update_pa->jabatan     = $request->jabatan;
         $update_pa->alamat      = $request->alamat;
@@ -999,7 +999,7 @@ class controller_pa extends Controller
         ]);
 
         $data = [
-            'username' => $request->username,
+            'username_pa' => $request->username,
             'password' => $request->password
         ];
         if (Auth::guard('tb_pa')->attempt($data)) {
@@ -1007,7 +1007,7 @@ class controller_pa extends Controller
 
             $data = [
                 'id'    => $user->id_pa,
-                'nama'  => $user->username,
+                'nama'  => $user->username_pa,
                 'jbt'   => $user->jabatan
             ];
             session()->put('data_pa', $data);

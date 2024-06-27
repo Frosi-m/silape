@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tb_pa', function (Blueprint $table) {
             $table->integer('id_pa')->autoIncrement();
-            $table->string('username');
+            $table->string('username_pa');
             $table->string('password');
             $table->string('jabatan');
             $table->text('alamat');

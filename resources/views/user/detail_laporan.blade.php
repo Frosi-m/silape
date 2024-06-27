@@ -1,5 +1,6 @@
 @extends('user.layouts.dashboard-user')
 @section('isi')
+    <link rel="StyleSheet" href="../css/detail_laporan_user.css" />
     <div id="group_32" nameid="Group 32">
         <div nameid="Rectangle 18" id="rectangle_18">
             <img src="\assets\images\rectangle_21.png" nameid="Rectangle 21" id="rectangle_21" />
@@ -35,7 +36,7 @@
             </div>
             <div nameid="Rectangle 21" id="rectangle_21_ek12">
                 <span class="isi">
-                    {{ $detail_lp->username }}
+                    {{ $detail_lp->username_pa }}
                 </span>
             </div>
 
@@ -46,7 +47,9 @@
                 Isi laporan
             </div>
 
-            <div name="isi_tanggapan" nameid="Rectangle 20" id="rectangle_20_isi_tp"></div>
+            <div name="isi_tanggapan" nameid="Rectangle 20" id="rectangle_20_isi_tp">
+                {{ $detail_lp->isi_tanggapan }}
+            </div>
             <div id="isi_tanggapan_2">
                 Isi tanggapan
             </div>
