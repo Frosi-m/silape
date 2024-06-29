@@ -8,9 +8,6 @@
             <div nameid="Input Laporan" id="input_laporan">
                 Input Laporan
             </div>
-            <div nameid="Sisa laporan :" id="sisa_laporan__">
-                Sisa laporan : {{ session('batas') }}
-            </div>
 
             <img src="assets/images/logo_smart_peamekasan_2.png" nameid="logo smart peamekasan 2"
                 id="logo_smart_peamekasan_2" />

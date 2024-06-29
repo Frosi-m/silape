@@ -114,8 +114,6 @@ class controller_user extends Controller
 
     public  function halaman_laporan()
     {
-        $data_user  = DB::table('tb_user')->where('id_user',session('data_user')['id'])->first();
-        session()->put('batas', $data_user->batas_laporan);
         return view('user/halaman_laporan');
     }
     public  function list_laporan()
