@@ -8,7 +8,7 @@
                 <div class="rectangle-1"><span class="silape">SILAPE</span></div>
                 <span class="register">Edit akun</span>
                 <span class="username-input">Username</span>
-                <input class="rectangle-2" type="text" name="username" value="{{ $data->username }}">
+                <input class="rectangle-2" type="text" name="username" value="{{ $data->username_pa }}">
                 @error('username')
                     <small style="color: red;font-style: italic; position: relative; top: 85px; left: 38px;">Username
                         harap diisi
